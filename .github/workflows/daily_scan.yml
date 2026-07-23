@@ -23,6 +23,7 @@ jobs:
       - name: 安装依赖
         run: |
           pip install -r requirements-render.txt
+          pip install Pillow
 
       - name: 运行扫描 + 建议
         run: |
@@ -33,35 +34,27 @@ jobs:
         run: |
           python screener/history.py
 
+      - name: 推荐涨跌统计
+        run: |
+          python screener/recommendation_stats.py || true
+
+      - name: 盈亏汇总
+        run: |
+          python screener/portfolio_stats.py || true
+
       - name: 生成前端数据包
         run: |
           python screener/generate_web_data.py
 
-      - name: 推送企业微信
+      - name: 推送企业微信（图片格式）
         env:
           WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
         run: |
-          python -c "
-          import os, json, requests
-          wh = os.getenv('WECOM_WEBHOOK')
-          if not wh:
-              print('未配置 WECOM_WEBHOOK secret，跳过推送')
-          else:
-              with open('reports/每日操作建议.md', encoding='utf-8') as f:
-                  text = f.read()
-              lines = text.split('\n')
-              out, cnt, skip = [], 0, False
-              for ln in lines:
-                  if ln.strip().startswith(('⛔','🛑','🎯','⏱','📝','🔥')):
-                      continue
-                  out.append(ln)
-                  if ln.startswith('### '):
-                      cnt += 1
-                      if cnt > 5: break
-              content = '\n'.join(out)[:3900]
-              r = requests.post(wh, json={'msgtype':'markdown','markdown':{'content':content}})
-              print('推送结果:', r.json())
-          "
+          if [ -n "$WECOM_WEBHOOK" ]; then
+            python delivery/wecom_image.py
+          else
+            echo "未配置 WECOM_WEBHOOK secret，跳过推送"
+          fi
 
       - name: 提交数据回仓库
         run: |

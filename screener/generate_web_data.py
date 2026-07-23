@@ -77,6 +77,23 @@ def generate_bundle():
     # 也存一份带日期的快照（永久保留）
     snapshot = OUT_DIR / f"snapshot_{today}.json"
     shutil.copy(out_path, snapshot)
+
+    # 复制盈亏汇总 + 推荐统计到前端可读目录
+    for src_name, dst_name in [("portfolio.json", "portfolio.json"), ("recommendation_stats.json", "recommendation_stats.json")]:
+        src = BASE / "data" / src_name
+        if src.exists():
+            dst = OUT_DIR / dst_name
+            # 盈亏汇总可能含交易明细，做脱敏：只保留统计和持仓
+            with open(src, encoding="utf-8") as f:
+                d = json.load(f)
+            # 移除 recent_realized 中的 reason/emotion（隐私）
+            if "recent_realized" in d:
+                for r in d["recent_realized"]:
+                    r.pop("reason", None)
+                    r.pop("emotion", None)
+            with open(dst, "w", encoding="utf-8") as f:
+                json.dump(d, f, ensure_ascii=False, indent=1)
+            print(f"✅ {dst_name}: {dst}")
     print(f"✅ 每日快照: {snapshot}")
     return out_path
 

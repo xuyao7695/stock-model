@@ -109,8 +109,25 @@ def advise_one(c, rules, portfolio, total_assets):
         "matched": c.get("matched", []),
     }
 
+def dedupe_by_industry(advices, max_per_industry=2, top_n=6):
+    """同板块只留 max_per_industry 个，取评分最高的 top_n 个"""
+    by_ind = {}
+    for a in advices:
+        ind = a.get("industry", "—")
+        by_ind.setdefault(ind, []).append(a)
+    # 每个行业按分排序，取前 max_per_industry
+    result = []
+    for ind, lst in by_ind.items():
+        lst.sort(key=lambda x: x.get("score", 0), reverse=True)
+        result.extend(lst[:max_per_industry])
+    # 总体按分排序，取 top_n
+    result.sort(key=lambda x: x.get("score", 0), reverse=True)
+    return result[:top_n]
+
 def build_report(candidates, rules, portfolio, total_assets, scan_time):
-    advices = [advise_one(c, rules, portfolio, total_assets) for c in candidates]
+    all_advices = [advise_one(c, rules, portfolio, total_assets) for c in candidates]
+    # 同板块��重，取最优 6 个
+    advices = dedupe_by_industry(all_advices, max_per_industry=2, top_n=6)
     # 统计
     n_pass = sum(1 for a in advices if a["gate_pass"])
     n_block = len(advices) - n_pass
@@ -169,6 +186,7 @@ def main():
         "today_pnl": 0,
         "trades_today": 0,
     }
+    all_advices = [advise_one(c, rules, portfolio, portfolio["total_assets"]) for c in candidates]
     report, advices = build_report(candidates, rules, portfolio, portfolio["total_assets"], scan_time)
     out = Path("reports/每日操作建议.md")
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -181,11 +199,13 @@ def main():
         json.dump({
             "scan_time": scan_time,
             "total_zt": len(candidates),
+            "top_n": 6,
             "advices": advices,
+            "all_advices": all_advices,
         }, f, ensure_ascii=False, indent=1)
     print(f"✅ 操作建议已保存: {out}")
     print(f"✅ 结构化建议: {adv_path}")
-    print(f"   候选 {len(advices)} 只，通过 {sum(1 for a in advices if a['gate_pass'])}，拦截 {sum(1 for a in advices if not a['gate_pass'])}")
+    print(f"   总候选 {len(all_advices)} → 去重后 {len(advices)} 只（同板块≤2，Top6）")
 
 if __name__ == "__main__":
     main()

@@ -61,21 +61,30 @@ label{font-size:13px;color:#8b949e;display:block;margin:4px 0 2px}
 <div class="nav">
   <a href="#" onclick="showPage('home');return false" id="nav-home">🏠 首页</a>
   <a href="#" onclick="showPage('record');return false" id="nav-record">📝 录入</a>
+  <a href="#" onclick="showPage('stats');return false" id="nav-stats">📊 统计</a>
   <a href="#" onclick="showPage('history');return false" id="nav-history">📜 历史</a>
   <a href="#" onclick="showPage('rules');return false" id="nav-rules">⚙️ 规则</a>
 </div>
 
 <script>
 let BUNDLE = null;
+let PORTFOLIO = null;
+let REC_STATS = null;
 let CURRENT_DATE = null;
 
 async function loadData() {
   // GitHub Pages: 数据在 docs/data/bundle.json
   // 加时间戳防缓存
-  const url = (location.hostname.includes('github.io') ? './data/bundle.json' : './data/bundle.json') + '?t=' + Date.now();
+  const ts = '?t=' + Date.now();
   try {
-    const resp = await fetch(url);
-    BUNDLE = await resp.json();
+    const [bundleResp, portResp, statsResp] = await Promise.all([
+      fetch('./data/bundle.json' + ts),
+      fetch('./data/portfolio.json' + ts).catch(() => null),
+      fetch('./data/recommendation_stats.json' + ts).catch(() => null),
+    ]);
+    BUNDLE = await bundleResp.json();
+    if (portResp && portResp.ok) PORTFOLIO = await portResp.json();
+    if (statsResp && statsResp.ok) REC_STATS = await statsResp.json();
     document.getElementById('page-meta').textContent = '更新于 ' + BUNDLE.generated_at;
     showPage('home');
   } catch(e) {
@@ -85,12 +94,13 @@ async function loadData() {
 
 function showPage(page) {
   // 更新导航高亮
-  ['home','record','history','rules'].forEach(p => {
+  ['home','record','stats','history','rules'].forEach(p => {
     document.getElementById('nav-'+p).classList.toggle('active', p === page);
   });
   const content = document.getElementById('app-content');
   if (page === 'home') content.innerHTML = renderHome();
   else if (page === 'record') content.innerHTML = renderRecord();
+  else if (page === 'stats') content.innerHTML = renderStats();
   else if (page === 'history') content.innerHTML = renderHistory();
   else if (page === 'rules') content.innerHTML = renderRules();
   window.scrollTo(0, 0);
@@ -244,6 +254,77 @@ function renderHistory() {
     items += `<div class="tl-item" onclick="showDay('${h.date}')"><div class="tl-date">${h.date.slice(5)}</div><div class="tl-info">周${h.weekday} ｜ 建议${h.scan_count}只 ｜ 操作${h.trade_count}笔</div></div>`;
   });
   return `<div class="meta">最近10天历史 · 永久存档于 GitHub</div><div class="timeline">${items}</div>`;
+}
+
+function renderStats() {
+  let html = '<div class="meta">盈亏汇总 + 推荐统计</div>';
+
+  // 盈亏汇总
+  if (PORTFOLIO && PORTFOLIO.total_trades > 0) {
+    const p = PORTFOLIO;
+    const pnlCls = p.cumulative_pnl >= 0 ? 'pos' : 'neg';
+    html += `<div class="section-h">💰 盈亏汇总</div>`;
+    html += `<div class="riskbar">
+      <div class="rk">总交易<b>${p.total_trades}</b></div>
+      <div class="rk">已配对<b>${p.realized_count}</b></div>
+      <div class="rk">累计盈亏<b class="${pnlCls}">${p.cumulative_pnl>0?'+':''}${p.cumulative_pnl.toFixed(0)}</b></div>
+    </div>`;
+    // 月度
+    if (p.monthly && p.monthly.length > 0) {
+      html += `<div class="section-h">📅 月度统计</div>`;
+      p.monthly.forEach(m => {
+        const cls = m.pnl >= 0 ? 'pos' : 'neg';
+        html += `<div class="card">
+          <div class="ch"><div class="nm">${m.month}</div><div class="sc ${cls}">${m.pnl>0?'+':''}${m.pnl.toFixed(0)}</div></div>
+          <div class="tag">${m.wins}胜${m.losses}负 ｜ 胜率${m.win_rate}% ｜ 共${m.total}笔</div>
+        </div>`;
+      });
+    }
+    // 当前持仓
+    if (p.current_holdings && p.current_holdings.length > 0) {
+      html += `<div class="section-h">📦 当前持仓</div>`;
+      p.current_holdings.forEach(h => {
+        html += `<div class="card">
+          <div class="ch"><div class="nm">${h.name}</div><div class="sc">${h.qty}股</div></div>
+          <div class="tag">均价 ${h.avg_cost} ｜ 成本 ${h.cost_total}</div>
+        </div>`;
+      });
+    }
+    // 最近已实现
+    if (p.recent_realized && p.recent_realized.length > 0) {
+      html += `<div class="section-h">📋 最近成交（${p.recent_realized.length}笔）</div>`;
+      p.recent_realized.slice(-10).reverse().forEach(r => {
+        const cls = r.pnl >= 0 ? 'pos' : 'neg';
+        html += `<div class="card">
+          <div class="ch"><div class="nm">${r.name}</div><div class="sc ${cls}">${r.pnl>0?'+':''}${r.pnl.toFixed(0)}</div></div>
+          <div class="tag">${r.buy_date}买 ${r.sell_date}卖 ｜ ${r.qty}股 ｜ ${r.buy_price}→${r.sell_price}</div>
+        </div>`;
+      });
+    }
+  } else {
+    html += `<div class="card"><div class="empty">暂无实际操作记录<br>到「录入」页记录你的买卖</div></div>`;
+  }
+
+  // 推荐涨跌统计
+  if (REC_STATS && REC_STATS.summary && REC_STATS.summary.total > 0) {
+    html += `<div class="section-h">📈 推荐后涨跌统计</div>`;
+    const s = REC_STATS.summary;
+    html += `<div class="card"><div class="tag">总推荐 ${s.total} 只</div></div>`;
+    if (s.by_period) {
+      Object.entries(s.by_period).forEach(([period, d]) => {
+        const cls = d.avg_return >= 0 ? 'pos' : 'neg';
+        const label = {1:'次日',3:'3日',5:'5日',10:'10日'}[period] || period;
+        html += `<div class="card">
+          <div class="ch"><div class="nm">${label}后</div><div class="sc ${cls}">${d.avg_return>0?'+':''}${d.avg_return}%</div></div>
+          <div class="tag">胜率 ${d.win_rate}% ｜ 样本 ${d.count} 只</div>
+        </div>`;
+      });
+    }
+  } else {
+    html += `<div class="card"><div class="empty">推荐统计需积累数据<br>每天扫描后自动更新，约 3 天后可见</div></div>`;
+  }
+
+  return html;
 }
 
 function renderRules() {
