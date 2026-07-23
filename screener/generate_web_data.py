@@ -48,7 +48,7 @@ def generate_bundle():
         s = d.get("scan") or {}
         t = d.get("trades") or {}
         adv = sorted(s.get("advices", []), key=lambda x: x.get("score", 0), reverse=True)[:10] if s else []
-        trades = t.get("trades", []) if t else []
+        trades = []  # 隐私保护：不在公开 bundle 中暴露实际交易明细
         days_detail.append({
             "date": h["date"],
             "weekday": h["weekday"],

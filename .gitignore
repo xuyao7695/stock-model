@@ -11,3 +11,9 @@ data/uploads/
 .DS_Store
 data/history/latest_scan.json
 delivery/wecom_config.json
+# 敏感交易数据（本地保留，不进仓库）
+data/trades.csv
+data/history/*_trades.json
+data/monthly_summary.csv
+ocr/*.json
+reports/行为诊断报告.md
