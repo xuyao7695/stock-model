@@ -8,6 +8,7 @@
 <title>投资模型</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;margin:0;padding:0}
+html,body{overscroll-behavior-x:none;touch-action:pan-y}
 body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#0d1117;color:#e6edf3;padding:8px;padding-bottom:50px}
 a{color:#58a6ff;text-decoration:none}
 .top{display:flex;justify-content:space-between;align-items:center;padding:2px 0 4px}
@@ -98,12 +99,15 @@ function showPage(page) {
 // 核心改进：
 //   1. 阈值降到30px，手机轻划即可触发
 //   2. Y轴判断：横向移动>纵向移动才识别为左右滑（不干扰上下滚动）
-//   3. 速度判断：快速滑动<300ms直接触发
-//   4. 淡入动画给视觉反馈，不再"没反应"
+//   3. 速度判断：快速滑动<600ms直接触发
+//   4. 淡入动画给视觉反馈
+//   5. touchmove用passive:false + preventDefault，阻止浏览器右滑后退手势
+//   6. CSS overscroll-behavior-x:none + touch-action:pan-y 彻底禁用横向历史导航
 
 const SWIPE_THRESHOLD = 30;    // 最小滑动距离px
 const SWIPE_MAX_TIME = 600;    // 滑动最大时间ms（超过则需更大距离）
 const SWIPE_RATIO = 1.2;       // X/Y移动比，确保是横向手势
+let swipeTracking = false;      // 是否在跟踪横向滑动
 
 document.addEventListener('touchstart', function(e) {
   const t = e.changedTouches[0];
@@ -111,13 +115,23 @@ document.addEventListener('touchstart', function(e) {
   touchStartY = t.clientY;
   touchStartT = Date.now();
   touchMoved = false;
+  swipeTracking = true;
 }, {passive: true});
 
 document.addEventListener('touchmove', function(e) {
+  if (!swipeTracking) return;
   touchMoved = true;
-}, {passive: true});
+  const t = e.changedTouches[0];
+  const dx = t.clientX - touchStartX;
+  const dy = t.clientY - touchStartY;
+  // 横向移动占主导时，阻止默认行为（拦截浏览器后退手势）
+  if (Math.abs(dx) > Math.abs(dy) * SWIPE_RATIO && Math.abs(dx) > 10) {
+    e.preventDefault();
+  }
+}, {passive: false});
 
 document.addEventListener('touchend', function(e) {
+  swipeTracking = false;
   if (!touchMoved) return;
   const t = e.changedTouches[0];
   const dx = t.clientX - touchStartX;
