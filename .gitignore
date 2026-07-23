@@ -10,3 +10,4 @@ data/uploads/
 *.log
 .DS_Store
 data/history/latest_scan.json
+delivery/wecom_config.json
