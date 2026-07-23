@@ -8,28 +8,30 @@
 <title>投资模型</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;margin:0;padding:0}
-body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#0d1117;color:#e6edf3;padding:12px;padding-bottom:60px}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#0d1117;color:#e6edf3;padding:8px;padding-bottom:50px}
 a{color:#58a6ff;text-decoration:none}
-.top{display:flex;justify-content:space-between;align-items:center;padding:4px 0 8px}
-.title{font-size:20px;font-weight:700}
-.meta{font-size:11px;color:#8b949e}
-.card{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:12px;margin-bottom:10px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:2px 0 4px}
+.title{font-size:18px;font-weight:700}
+.meta{font-size:10px;color:#8b949e}
+.card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:8px;margin-bottom:6px}
 .ch{display:flex;justify-content:space-between;align-items:baseline}
-.nm{font-size:17px;font-weight:700}
-.sc{font-size:13px;color:#d29922}
-.tag{font-size:11px;color:#8b949e;margin:4px 0 8px}
-.row{display:flex;gap:6px;margin:6px 0}
-.pill{flex:1;background:#0d1117;border-radius:8px;padding:6px;text-align:center;font-size:11px}
-.pill b{display:block;font-size:14px}
+.nm{font-size:15px;font-weight:700}
+.sc{font-size:12px;color:#d29922}
+.tag{font-size:10px;color:#8b949e;margin:2px 0 4px}
+.row{display:flex;gap:4px;margin:4px 0}
+.pill{flex:1;background:#0d1117;border-radius:6px;padding:4px;text-align:center;font-size:10px}
+.pill b{display:block;font-size:12px}
 .pos{color:#3fb950}.neg{color:#f85149}.warn{color:#d29922}
-.disc{font-size:11px;color:#8b949e;margin-top:6px;line-height:1.5}
-.nav{position:fixed;bottom:0;left:0;right:0;background:#161b22;border-top:1px solid #30363d;display:flex;padding:8px 0;z-index:100}
-.nav a{flex:1;text-align:center;font-size:12px;color:#8b949e;padding:4px}
+.disc{font-size:10px;color:#8b949e;margin-top:4px;line-height:1.4}
+.nav{position:fixed;bottom:0;left:0;right:0;background:#161b22;border-top:1px solid #30363d;display:flex;padding:6px 0;z-index:100}
+.nav a{flex:1;text-align:center;font-size:11px;color:#8b949e;padding:4px}
 .nav a.active{color:#58a6ff}
-.riskbar{display:flex;gap:4px;margin:8px 0}
-.rk{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:4px 6px;font-size:10px;text-align:center;flex:1}
-.rk b{display:block;font-size:13px;color:#58a6ff}
-.timeline{margin:8px 0}
+.riskbar{display:flex;gap:3px;margin:4px 0}
+.section-h{font-size:14px;font-weight:700;margin:6px 0 4px}
+.btn{display:block;width:100%;background:#238636;color:#fff;border:none;border-radius:6px;padding:8px;font-size:14px;font-weight:600;text-align:center;margin:4px 0}
+.rk{background:#161b22;border:1px solid #30363d;border-radius:6px;padding:3px 4px;font-size:9px;text-align:center;flex:1}
+.rk b{display:block;font-size:12px;color:#58a6ff}
+.timeline{margin:4px 0}
 .tl-item{display:flex;gap:8px;padding:8px;background:#161b22;border-radius:8px;margin-bottom:6px;align-items:center;cursor:pointer}
 .tl-date{font-size:14px;font-weight:700;min-width:50px}
 .tl-info{font-size:11px;color:#8b949e;flex:1}
@@ -173,14 +175,16 @@ function renderHome() {
   // 股票代码列表（逗号分隔，方便粘贴到交易软件）
   const codes = advices.map(c => c.code || '').filter(c => c).join(',');
   return `
-    <div class="section-h">⚡ 今日候选（${advices.length}只）</div>
+    <div style="display:flex;gap:6px;align-items:center;margin-bottom:4px">
+      <div class="section-h" style="margin:0;flex:1">⚡ 今日候选（${advices.length}只）</div>
+      <button onclick="copyCodes('${codes}')" style="background:#238636;color:#fff;border:none;border-radius:6px;padding:6px 10px;font-size:12px;font-weight:600;white-space:nowrap">📋复制代码</button>
+    </div>
     <div class="riskbar">
       <div class="rk">单只<b>${Math.round((r.max_single_position||0.3)*100)}%</b></div>
       <div class="rk">总仓<b>${Math.round((r.max_total_position||0.8)*100)}%</b></div>
       <div class="rk">熔断<b>${Math.round((r.daily_loss_circuit_breaker||-0.05)*100)}%</b></div>
       <div class="rk">日笔<b>${r.max_daily_trades||3}</b></div>
     </div>
-    <button class="btn" onclick="copyCodes('${codes}')" style="margin-bottom:10px">📋 一键复制股票代码</button>
     ${cards}
   `;
 }
@@ -310,9 +314,9 @@ function renderHistory() {
 
   // 表头：日期 + 每只股票（名称+板块）
   tableHtml += '<thead><tr style="position:sticky;top:0;background:#161b22;z-index:10">';
-  tableHtml += '<th style="padding:6px 8px;border:1px solid #30363d;color:#8b949e;text-align:center;white-space:nowrap;position:sticky;left:0;background:#161b22;z-index:11">日期</th>';
+  tableHtml += '<th style="padding:3px 4px;border:1px solid #30363d;color:#8b949e;text-align:center;white-space:nowrap;position:sticky;left:0;background:#161b22;z-index:11">日期</th>';
   allStocks.forEach(s => {
-    tableHtml += `<th style="padding:6px 8px;border:1px solid #30363d;text-align:center;white-space:nowrap;min-width:80px">
+    tableHtml += `<th style="padding:3px 4px;border:1px solid #30363d;text-align:center;white-space:nowrap;min-width:60px">
       <div style="color:#e6edf3;font-weight:700">${s.name}</div>
       <div style="color:#8b949e;font-size:10px">${s.industry}</div>
     </th>`;
@@ -323,7 +327,7 @@ function renderHistory() {
   daysData.forEach((d, idx) => {
     const bg = idx % 2 === 0 ? '#0d1117' : '#161b22';
     tableHtml += `<tr style="background:${bg}">`;
-    tableHtml += `<td style="padding:6px 8px;border:1px solid #30363d;text-align:center;white-space:nowrap;position:sticky;left:0;background:${bg};z-index:5">
+    tableHtml += `<td style="padding:3px 4px;border:1px solid #30363d;text-align:center;white-space:nowrap;position:sticky;left:0;background:${bg};z-index:5">
       <div style="color:#e6edf3;font-weight:600">${d.date.slice(5)}</div>
       <div style="color:#8b949e;font-size:10px">周${d.weekday}</div>
     </td>`;
@@ -351,12 +355,12 @@ function renderHistory() {
           // 没有涨跌数据，显示连板数
           retHtml = `<div style="color:#d29922;font-size:11px">${adv.zt_count||0}板</div>`;
         }
-        tableHtml += `<td style="padding:6px 8px;border:1px solid #30363d;text-align:center;background:#1a2332">
+        tableHtml += `<td style="padding:3px 4px;border:1px solid #30363d;text-align:center;background:#1a2332">
           <div style="color:#58a6ff;font-size:11px">推荐</div>
           ${retHtml}
         </td>`;
       } else {
-        tableHtml += `<td style="padding:6px 8px;border:1px solid #30363d;text-align:center;color:#484f58">—</td>`;
+        tableHtml += `<td style="padding:3px 4px;border:1px solid #30363d;text-align:center;color:#484f58">—</td>`;
       }
     });
     tableHtml += '</tr>';
@@ -364,13 +368,7 @@ function renderHistory() {
 
   tableHtml += '</tbody></table></div>';
 
-  let html = `<div class="meta">近10天推荐趋势 · 左右滑动查看 · 红涨绿跌</div>`;
-  html += `<div class="card" style="padding:8px;margin-bottom:8px"><div style="font-size:11px;color:#8b949e">
-    <span style="color:#3fb950">绿</span>=涨 ｜ 
-    <span style="color:#f85149">红</span>=跌 ｜ 
-    <span style="color:#d29922">N板</span>=推荐时连板数（涨跌数据需积累3天后显示）<br>
-    纵向看：同一只股票被推荐了几次 ｜ 横向看：每天推荐了哪些
-  </div></div>`;
+  let html = `<div class="meta">近10天推荐趋势 · 左右滑动 · <span style="color:#3fb950">涨</span> <span style="color:#f85149">跌</span> <span style="color:#d29922">N板</span></div>`;
   html += tableHtml;
 
   return html;
