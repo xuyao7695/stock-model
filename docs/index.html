@@ -150,13 +150,6 @@ function showPage(page) {
 function renderHome() {
   if (!BUNDLE) return '<div class="empty">数据加载中...</div>';
   const r = BUNDLE.rules || {};
-  // 10 天时间线
-  let tl = '';
-  BUNDLE.history_10days.forEach(h => {
-    const scBadge = h.has_scan ? `<span class="badge b-green">${h.advice_count||h.scan_count}只</span>` : '<span class="badge b-gray">无</span>';
-    const trBadge = h.has_trades ? `<span class="badge b-green">${h.trade_count}笔</span>` : '';
-    tl += `<div class="tl-item" onclick="showDay('${h.date}')"><div class="tl-date">${h.date.slice(5)}</div><div class="tl-info">周${h.weekday} ${scBadge} ${trBadge}</div></div>`;
-  });
   // 当天候选
   const todayDetail = BUNDLE.days_detail.find(d => d.date === BUNDLE.today) || BUNDLE.days_detail[0];
   const advices = todayDetail ? todayDetail.advices : [];
@@ -164,7 +157,7 @@ function renderHome() {
   if (!advices || advices.length === 0) {
     cards = '<div class="empty">今天还没有扫描数据<br>GitHub Actions 每天 9:25 自动扫描</div>';
   } else {
-    advices.slice(0, 15).forEach(c => {
+    advices.slice(0, 6).forEach(c => {
       cards += `<div class="card">
         <div class="ch"><div class="nm">${c.name} <span style="font-size:12px;color:#8b949e">${c.code||''}</span></div><div class="sc">分${(c.score||0).toFixed(2)}</div></div>
         <div class="tag">${c.path||''} ｜ 连板${c.zt_count||0} ｜ ${c.industry||''}</div>
@@ -174,7 +167,6 @@ function renderHome() {
           <div class="pill">目标<b class="pos">+${Math.round((c.target_pct||15)*100)}%</b></div>
           <div class="pill">持仓<b>${c.max_hold_days||10}天</b></div>
         </div>
-        <div class="disc">${(c.discipline||[]).join(' · ')}</div>
       </div>`;
     });
   }
@@ -190,9 +182,6 @@ function renderHome() {
     </div>
     <button class="btn" onclick="copyCodes('${codes}')" style="margin-bottom:10px">📋 一键复制股票代码</button>
     ${cards}
-    <div class="section-h">📜 最近10天</div>
-    <div class="meta">点日期查看详情</div>
-    <div class="timeline">${tl}</div>
   `;
 }
 
@@ -293,12 +282,98 @@ function exportRecord() {
 }
 
 function renderHistory() {
-  if (!BUNDLE) return '<div class="empty">加载中</div>';
-  let items = '';
-  BUNDLE.history_10days.forEach(h => {
-    items += `<div class="tl-item" onclick="showDay('${h.date}')"><div class="tl-date">${h.date.slice(5)}</div><div class="tl-info">周${h.weekday} ｜ 建议${h.scan_count}只 ｜ 操作${h.trade_count}笔</div></div>`;
+  if (!BUNDLE || !BUNDLE.days_detail) return '<div class="empty">加载中</div>';
+
+  // 收集所有出现过的股票（去重）
+  const stockMap = {};  // code -> {name, industry}
+  BUNDLE.days_detail.forEach(d => {
+    (d.advices || []).forEach(a => {
+      const key = a.code || a.name;
+      if (key && !stockMap[key]) {
+        stockMap[key] = { name: a.name, code: a.code||'', industry: a.industry||'' };
+      }
+    });
   });
-  return `<div class="meta">最近10天历史 · 永久存档于 GitHub</div><div class="timeline">${items}</div>`;
+  const allStocks = Object.values(stockMap);
+
+  // 每天的推荐列表（code集合）
+  const daysData = BUNDLE.days_detail.filter(d => d.advices && d.advices.length > 0);
+
+  if (daysData.length === 0) {
+    return '<div class="empty">暂无历史推荐数据</div>';
+  }
+
+  // 构建表格：纵向=日期，横向=股票
+  // 手机屏幕窄，用横向滚动
+  let tableHtml = '<div style="overflow-x:auto;-webkit-overflow-scrolling:touch">';
+  tableHtml += '<table style="border-collapse:collapse;font-size:12px;min-width:100%">';
+
+  // 表头：日期 + 每只股票（名称+板块）
+  tableHtml += '<thead><tr style="position:sticky;top:0;background:#161b22;z-index:10">';
+  tableHtml += '<th style="padding:6px 8px;border:1px solid #30363d;color:#8b949e;text-align:center;white-space:nowrap;position:sticky;left:0;background:#161b22;z-index:11">日期</th>';
+  allStocks.forEach(s => {
+    tableHtml += `<th style="padding:6px 8px;border:1px solid #30363d;text-align:center;white-space:nowrap;min-width:80px">
+      <div style="color:#e6edf3;font-weight:700">${s.name}</div>
+      <div style="color:#8b949e;font-size:10px">${s.industry}</div>
+    </th>`;
+  });
+  tableHtml += '</tr></thead><tbody>';
+
+  // 每天一行
+  daysData.forEach((d, idx) => {
+    const bg = idx % 2 === 0 ? '#0d1117' : '#161b22';
+    tableHtml += `<tr style="background:${bg}">`;
+    tableHtml += `<td style="padding:6px 8px;border:1px solid #30363d;text-align:center;white-space:nowrap;position:sticky;left:0;background:${bg};z-index:5">
+      <div style="color:#e6edf3;font-weight:600">${d.date.slice(5)}</div>
+      <div style="color:#8b949e;font-size:10px">周${d.weekday}</div>
+    </td>`;
+
+    // 每只股票：推荐了显示评分+连板，没推荐显示 —
+    allStocks.forEach(s => {
+      const key = s.code || s.name;
+      const adv = (d.advices || []).find(a => (a.code||a.name) === key);
+      if (adv) {
+        // 涨跌红绿：用 score 高低做颜色（暂时用推荐时的连板/评分）
+        // 如果有 recommendation_stats 的涨跌数据则用，否则用评分
+        let retHtml = '';
+        if (REC_STATS && REC_STATS.records) {
+          const rec = REC_STATS.records.find(r => r.code === s.code && r.date === d.date);
+          if (rec && rec.returns) {
+            // 显示 1 日后涨跌
+            const r1 = rec.returns['1d'];
+            if (r1 !== null && r1 !== undefined) {
+              const cls = r1 >= 0 ? 'pos' : 'neg';
+              retHtml = `<div class="${cls}" style="font-size:11px;font-weight:600">${r1>0?'+':''}${r1}%</div>`;
+            }
+          }
+        }
+        if (!retHtml) {
+          // 没有涨跌数据，显示连板数
+          retHtml = `<div style="color:#d29922;font-size:11px">${adv.zt_count||0}板</div>`;
+        }
+        tableHtml += `<td style="padding:6px 8px;border:1px solid #30363d;text-align:center;background:#1a2332">
+          <div style="color:#58a6ff;font-size:11px">推荐</div>
+          ${retHtml}
+        </td>`;
+      } else {
+        tableHtml += `<td style="padding:6px 8px;border:1px solid #30363d;text-align:center;color:#484f58">—</td>`;
+      }
+    });
+    tableHtml += '</tr>';
+  });
+
+  tableHtml += '</tbody></table></div>';
+
+  let html = `<div class="meta">近10天推荐趋势 · 左右滑动查看 · 红涨绿跌</div>`;
+  html += `<div class="card" style="padding:8px;margin-bottom:8px"><div style="font-size:11px;color:#8b949e">
+    <span style="color:#3fb950">绿</span>=涨 ｜ 
+    <span style="color:#f85149">红</span>=跌 ｜ 
+    <span style="color:#d29922">N板</span>=推荐时连板数（涨跌数据需积累3天后显示）<br>
+    纵向看：同一只股票被推荐了几次 ｜ 横向看：每天推荐了哪些
+  </div></div>`;
+  html += tableHtml;
+
+  return html;
 }
 
 function renderStats() {
