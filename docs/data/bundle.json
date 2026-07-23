@@ -1,0 +1,523 @@
+{
+ "generated_at": "2026-07-23 16:19:11",
+ "rules": {
+  "max_single_position": 0.3,
+  "max_total_position": 0.8,
+  "daily_loss_circuit_breaker": -0.05,
+  "max_single_loss": -0.08,
+  "min_risk_reward": 2.0,
+  "max_daily_trades": 3,
+  "max_holding_days": 10,
+  "_comment": "风控参数可根据实盘反馈调整。修改后重启选股器生效。"
+ },
+ "today": "2026-07-23",
+ "history_10days": [
+  {
+   "date": "2026-07-23",
+   "weekday": "四",
+   "has_scan": true,
+   "has_trades": true,
+   "scan_count": 20,
+   "trade_count": 1,
+   "scan_time": "2026-07-23 13:53:10"
+  },
+  {
+   "date": "2026-07-22",
+   "weekday": "三",
+   "has_scan": false,
+   "has_trades": false,
+   "scan_count": 0,
+   "trade_count": 0
+  },
+  {
+   "date": "2026-07-21",
+   "weekday": "二",
+   "has_scan": false,
+   "has_trades": false,
+   "scan_count": 0,
+   "trade_count": 0
+  },
+  {
+   "date": "2026-07-20",
+   "weekday": "一",
+   "has_scan": false,
+   "has_trades": false,
+   "scan_count": 0,
+   "trade_count": 0
+  },
+  {
+   "date": "2026-07-19",
+   "weekday": "日",
+   "has_scan": false,
+   "has_trades": false,
+   "scan_count": 0,
+   "trade_count": 0
+  },
+  {
+   "date": "2026-07-18",
+   "weekday": "六",
+   "has_scan": false,
+   "has_trades": false,
+   "scan_count": 0,
+   "trade_count": 0
+  },
+  {
+   "date": "2026-07-17",
+   "weekday": "五",
+   "has_scan": false,
+   "has_trades": false,
+   "scan_count": 0,
+   "trade_count": 0
+  },
+  {
+   "date": "2026-07-16",
+   "weekday": "四",
+   "has_scan": false,
+   "has_trades": false,
+   "scan_count": 0,
+   "trade_count": 0
+  },
+  {
+   "date": "2026-07-15",
+   "weekday": "三",
+   "has_scan": false,
+   "has_trades": false,
+   "scan_count": 0,
+   "trade_count": 0
+  },
+  {
+   "date": "2026-07-14",
+   "weekday": "二",
+   "has_scan": false,
+   "has_trades": false,
+   "scan_count": 0,
+   "trade_count": 0
+  }
+ ],
+ "days_detail": [
+  {
+   "date": "2026-07-23",
+   "weekday": "四",
+   "scan_time": "2026-07-23 13:53:10",
+   "total_zt": 20,
+   "advices": [
+    {
+     "code": "601179",
+     "name": "中国西电",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "电网设备",
+     "industry_heat": 1.0,
+     "score": 0.56,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度1.00"
+     ]
+    },
+    {
+     "code": "300444",
+     "name": "双杰电气",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "电网设备",
+     "industry_heat": 1.0,
+     "score": 0.466,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度1.00"
+     ]
+    },
+    {
+     "code": "600550",
+     "name": "保变电气",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "电网设备",
+     "industry_heat": 1.0,
+     "score": 0.446,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度1.00"
+     ]
+    },
+    {
+     "code": "002298",
+     "name": "中电鑫龙",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "电网设备",
+     "industry_heat": 1.0,
+     "score": 0.445,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度1.00"
+     ]
+    },
+    {
+     "code": "300062",
+     "name": "中能电气",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "电网设备",
+     "industry_heat": 1.0,
+     "score": 0.408,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度1.00"
+     ]
+    },
+    {
+     "code": "001208",
+     "name": "华菱线缆",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "电网设备",
+     "industry_heat": 1.0,
+     "score": 0.389,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度1.00"
+     ]
+    },
+    {
+     "code": "002112",
+     "name": "三变科技",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "电网设备",
+     "industry_heat": 1.0,
+     "score": 0.385,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度1.00"
+     ]
+    },
+    {
+     "code": "301234",
+     "name": "五洲医疗",
+     "path": "A-连板",
+     "zt_count": 2,
+     "industry": "医疗器械",
+     "industry_heat": 0.043,
+     "score": 0.381,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.25,
+     "pos_note": "二板，主仓位",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 25% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度0.04"
+     ]
+    },
+    {
+     "code": "002353",
+     "name": "杰瑞股份",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "专用设备",
+     "industry_heat": 0.261,
+     "score": 0.375,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度0.26"
+     ]
+    },
+    {
+     "code": "002546",
+     "name": "新联电子",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "电网设备",
+     "industry_heat": 1.0,
+     "score": 0.375,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度1.00"
+     ]
+    }
+   ],
+   "trades": [
+    {
+     "action": "证券买入",
+     "name": "中国西电",
+     "code": "601179",
+     "price": 8.5,
+     "qty": 200,
+     "pnl": 0.0,
+     "time": "10:30",
+     "reason": "电网设备题材热度第一，首板封单强",
+     "emotion": "平静",
+     "followed_plan": true
+    }
+   ],
+   "trade_count": 1,
+   "advice_count": 10
+  },
+  {
+   "date": "2026-07-22",
+   "weekday": "三",
+   "scan_time": "",
+   "total_zt": 0,
+   "advices": [],
+   "trades": [],
+   "trade_count": 0,
+   "advice_count": 0
+  },
+  {
+   "date": "2026-07-21",
+   "weekday": "二",
+   "scan_time": "",
+   "total_zt": 0,
+   "advices": [],
+   "trades": [],
+   "trade_count": 0,
+   "advice_count": 0
+  },
+  {
+   "date": "2026-07-20",
+   "weekday": "一",
+   "scan_time": "",
+   "total_zt": 0,
+   "advices": [],
+   "trades": [],
+   "trade_count": 0,
+   "advice_count": 0
+  },
+  {
+   "date": "2026-07-19",
+   "weekday": "日",
+   "scan_time": "",
+   "total_zt": 0,
+   "advices": [],
+   "trades": [],
+   "trade_count": 0,
+   "advice_count": 0
+  },
+  {
+   "date": "2026-07-18",
+   "weekday": "六",
+   "scan_time": "",
+   "total_zt": 0,
+   "advices": [],
+   "trades": [],
+   "trade_count": 0,
+   "advice_count": 0
+  },
+  {
+   "date": "2026-07-17",
+   "weekday": "五",
+   "scan_time": "",
+   "total_zt": 0,
+   "advices": [],
+   "trades": [],
+   "trade_count": 0,
+   "advice_count": 0
+  },
+  {
+   "date": "2026-07-16",
+   "weekday": "四",
+   "scan_time": "",
+   "total_zt": 0,
+   "advices": [],
+   "trades": [],
+   "trade_count": 0,
+   "advice_count": 0
+  },
+  {
+   "date": "2026-07-15",
+   "weekday": "三",
+   "scan_time": "",
+   "total_zt": 0,
+   "advices": [],
+   "trades": [],
+   "trade_count": 0,
+   "advice_count": 0
+  },
+  {
+   "date": "2026-07-14",
+   "weekday": "二",
+   "scan_time": "",
+   "total_zt": 0,
+   "advices": [],
+   "trades": [],
+   "trade_count": 0,
+   "advice_count": 0
+  }
+ ]
+}

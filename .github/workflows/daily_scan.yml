@@ -10,6 +10,8 @@ on:
 jobs:
   scan:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -31,20 +33,40 @@ jobs:
         run: |
           python screener/history.py
 
-      - name: 推送企业微信（如配置了 webhook）
+      - name: 生成前端数据包
+        run: |
+          python screener/generate_web_data.py
+
+      - name: 推送企业微信
         env:
           WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
         run: |
-          if [ -n "$WECOM_WEBHOOK" ]; then
-            python delivery/wecom_bot.py
-          else
-            echo "未配置 WECOM_WEBHOOK secret，跳过推送"
-          fi
+          python -c "
+          import os, json, requests
+          wh = os.getenv('WECOM_WEBHOOK')
+          if not wh:
+              print('未配置 WECOM_WEBHOOK secret，跳过推送')
+          else:
+              with open('reports/每日操作建议.md', encoding='utf-8') as f:
+                  text = f.read()
+              lines = text.split('\n')
+              out, cnt, skip = [], 0, False
+              for ln in lines:
+                  if ln.strip().startswith(('⛔','🛑','🎯','⏱','📝','🔥')):
+                      continue
+                  out.append(ln)
+                  if ln.startswith('### '):
+                      cnt += 1
+                      if cnt > 5: break
+              content = '\n'.join(out)[:3900]
+              r = requests.post(wh, json={'msgtype':'markdown','markdown':{'content':content}})
+              print('推送结果:', r.json())
+          "
 
       - name: 提交数据回仓库
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/ docs/data/
           git diff --staged --quiet || git commit -m "每日扫描数据 $(date +%Y-%m-%d)"
           git push

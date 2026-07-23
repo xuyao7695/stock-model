@@ -37,8 +37,8 @@ def save_webhook(webhook):
         json.dump({"webhook": webhook}, f, ensure_ascii=False, indent=1)
     print(f"✅ webhook 已保存: {CONFIG_PATH}")
 
-def render_markdown(report_path=ADVICE_PATH, max_items=8):
-    """把 Markdown 报告精简成企业微信可发的短版"""
+def render_markdown(report_path=ADVICE_PATH, max_items=5):
+    """把 Markdown 报告精简成企业微信可发的短版（<4096 字符）"""
     if not report_path.exists():
         return None
     with open(report_path, encoding="utf-8") as f:
@@ -47,16 +47,20 @@ def render_markdown(report_path=ADVICE_PATH, max_items=8):
     lines = text.split("\n")
     out = []
     item_count = 0
+    in_disc = False
     for ln in lines:
+        # 跳过交易纪律详情（太长），只保留关键行
+        if ln.strip().startswith("⛔") or ln.strip().startswith("🛑") or ln.strip().startswith("🎯") or ln.strip().startswith("⏱") or ln.strip().startswith("📝") or ln.strip().startswith("🔥"):
+            continue
         out.append(ln)
         if ln.startswith("### "):
             item_count += 1
             if item_count > max_items:
                 break
     body = "\n".join(out)
-    # 企业微信 markdown 限制：<4000 字符
-    if len(body) > 3800:
-        body = body[:3800] + "\n\n> …（更多见完整报告）"
+    # 企业微信 markdown 限制：<4096 字符
+    if len(body) > 3900:
+        body = body[:3900] + "\n\n> …更多见完整报告"
     return body
 
 def push(webhook, content):
