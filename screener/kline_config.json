@@ -1,0 +1,31 @@
+{
+  "scan_universe": "zt_pool",
+  "history_days": 60,
+  "min_volume_multiple": 2.0,
+  "min_change_pct": 3.0,
+  "ma_periods": [5, 10, 20],
+  "breakout_lookback": 20,
+  "top_n": 20,
+  "exclude_st": true,
+  "signals": {
+    "c1_breakout_volume": true,
+    "c2_pullback_shrink": true,
+    "c3_double_volume": true,
+    "c4_morning_star": true,
+    "c5_three_soldiers": true,
+    "c6_hammer": true,
+    "c7_bullish_engulfing": true
+  },
+  "scoring": {
+    "c1_breakout_volume": 0.25,
+    "c2_pullback_shrink": 0.20,
+    "c3_double_volume": 0.15,
+    "c4_morning_star": 0.15,
+    "c5_three_soldiers": 0.10,
+    "c6_hammer": 0.10,
+    "c7_bullish_engulfing": 0.15,
+    "volume_confirm_bonus": 0.10,
+    "ma_align_bonus": 0.10
+  },
+  "note": "K线形态+量能配合策略。扫描范围默认涨停池，可改为spot_strong或自定义列表。信号权重可调。"
+}
