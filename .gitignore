@@ -9,3 +9,4 @@ ocr/test_*.png
 data/uploads/
 *.log
 .DS_Store
+data/history/latest_scan.json
