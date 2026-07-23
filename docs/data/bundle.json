@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-23 16:41:03",
+ "generated_at": "2026-07-23 08:47:10",
  "rules": {
   "max_single_position": 0.3,
   "max_total_position": 0.8,
@@ -16,10 +16,10 @@
    "date": "2026-07-23",
    "weekday": "四",
    "has_scan": true,
-   "has_trades": true,
+   "has_trades": false,
    "scan_count": 20,
-   "trade_count": 1,
-   "scan_time": "2026-07-23 13:53:10"
+   "trade_count": 0,
+   "scan_time": "2026-07-23 08:47:10"
   },
   {
    "date": "2026-07-22",
@@ -98,7 +98,7 @@
   {
    "date": "2026-07-23",
    "weekday": "四",
-   "scan_time": "2026-07-23 13:53:10",
+   "scan_time": "2026-07-23 08:47:10",
    "total_zt": 20,
    "advices": [
     {
@@ -108,7 +108,7 @@
      "zt_count": 1,
      "industry": "电网设备",
      "industry_heat": 1.0,
-     "score": 0.56,
+     "score": 0.524,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
@@ -139,7 +139,7 @@
      "zt_count": 1,
      "industry": "电网设备",
      "industry_heat": 1.0,
-     "score": 0.466,
+     "score": 0.369,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
@@ -164,23 +164,23 @@
      ]
     },
     {
-     "code": "600550",
-     "name": "保变电气",
+     "code": "301234",
+     "name": "五洲医疗",
      "path": "A-连板",
-     "zt_count": 1,
-     "industry": "电网设备",
-     "industry_heat": 1.0,
-     "score": 0.446,
+     "zt_count": 2,
+     "industry": "医疗器械",
+     "industry_heat": 0.034,
+     "score": 0.363,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
-     "pos_pct": 0.18,
-     "pos_note": "首板，轻仓埋伏",
+     "pos_pct": 0.25,
+     "pos_note": "二板，主仓位",
      "stop_pct": -0.08,
      "target_pct": 0.16,
      "max_hold_days": 10,
      "discipline": [
-      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "⛔ 单只 ≤ 25% 仓位，总仓 ≤ 80%",
       "🛑 硬止损 -8%（到价无条件砍，不补仓）",
       "🎯 目标 +16% 或 题材退潮即走",
       "⏱ 最大持仓 10 天，到期强制复盘",
@@ -191,7 +191,7 @@
       "连板数达标",
       "封单达标",
       "未炸板",
-      "行业热度1.00"
+      "行业热度0.03"
      ]
     },
     {
@@ -201,7 +201,100 @@
      "zt_count": 1,
      "industry": "电网设备",
      "industry_heat": 1.0,
-     "score": 0.445,
+     "score": 0.363,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度1.00"
+     ]
+    },
+    {
+     "code": "002353",
+     "name": "杰瑞股份",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "专用设备",
+     "industry_heat": 0.207,
+     "score": 0.362,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度0.21"
+     ]
+    },
+    {
+     "code": "600550",
+     "name": "保变电气",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "电网设备",
+     "industry_heat": 1.0,
+     "score": 0.356,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度1.00"
+     ]
+    },
+    {
+     "code": "002451",
+     "name": "摩恩电气",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "电网设备",
+     "industry_heat": 1.0,
+     "score": 0.356,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
@@ -232,7 +325,7 @@
      "zt_count": 1,
      "industry": "电网设备",
      "industry_heat": 1.0,
-     "score": 0.408,
+     "score": 0.352,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
@@ -257,13 +350,13 @@
      ]
     },
     {
-     "code": "001208",
-     "name": "华菱线缆",
+     "code": "600379",
+     "name": "宝光股份",
      "path": "A-连板",
      "zt_count": 1,
      "industry": "电网设备",
      "industry_heat": 1.0,
-     "score": 0.389,
+     "score": 0.344,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
@@ -288,106 +381,13 @@
      ]
     },
     {
-     "code": "002112",
-     "name": "三变科技",
+     "code": "002560",
+     "name": "通达股份",
      "path": "A-连板",
      "zt_count": 1,
      "industry": "电网设备",
      "industry_heat": 1.0,
-     "score": 0.385,
-     "action": "✅ 关注买入",
-     "gate_pass": true,
-     "gate_reason": "通过",
-     "pos_pct": 0.18,
-     "pos_note": "首板，轻仓埋伏",
-     "stop_pct": -0.08,
-     "target_pct": 0.16,
-     "max_hold_days": 10,
-     "discipline": [
-      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
-      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
-      "🎯 目标 +16% 或 题材退潮即走",
-      "⏱ 最大持仓 10 天，到期强制复盘",
-      "📝 买入前写一句理由 + 信号来源（不写不买）",
-      "🔥 今日已亏 -5% 熔断 → 关 APP"
-     ],
-     "matched": [
-      "连板数达标",
-      "封单达标",
-      "未炸板",
-      "行业热度1.00"
-     ]
-    },
-    {
-     "code": "301234",
-     "name": "五洲医疗",
-     "path": "A-连板",
-     "zt_count": 2,
-     "industry": "医疗器械",
-     "industry_heat": 0.043,
-     "score": 0.381,
-     "action": "✅ 关注买入",
-     "gate_pass": true,
-     "gate_reason": "通过",
-     "pos_pct": 0.25,
-     "pos_note": "二板，主仓位",
-     "stop_pct": -0.08,
-     "target_pct": 0.16,
-     "max_hold_days": 10,
-     "discipline": [
-      "⛔ 单只 ≤ 25% 仓位，总仓 ≤ 80%",
-      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
-      "🎯 目标 +16% 或 题材退潮即走",
-      "⏱ 最大持仓 10 天，到期强制复盘",
-      "📝 买入前写一句理由 + 信号来源（不写不买）",
-      "🔥 今日已亏 -5% 熔断 → 关 APP"
-     ],
-     "matched": [
-      "连板数达标",
-      "封单达标",
-      "未炸板",
-      "行业热度0.04"
-     ]
-    },
-    {
-     "code": "002353",
-     "name": "杰瑞股份",
-     "path": "A-连板",
-     "zt_count": 1,
-     "industry": "专用设备",
-     "industry_heat": 0.261,
-     "score": 0.375,
-     "action": "✅ 关注买入",
-     "gate_pass": true,
-     "gate_reason": "通过",
-     "pos_pct": 0.18,
-     "pos_note": "首板，轻仓埋伏",
-     "stop_pct": -0.08,
-     "target_pct": 0.16,
-     "max_hold_days": 10,
-     "discipline": [
-      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
-      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
-      "🎯 目标 +16% 或 题材退潮即走",
-      "⏱ 最大持仓 10 天，到期强制复盘",
-      "📝 买入前写一句理由 + 信号来源（不写不买）",
-      "🔥 今日已亏 -5% 熔断 → 关 APP"
-     ],
-     "matched": [
-      "连板数达标",
-      "封单达标",
-      "未炸板",
-      "行业热度0.26"
-     ]
-    },
-    {
-     "code": "002546",
-     "name": "新联电子",
-     "path": "A-连板",
-     "zt_count": 1,
-     "industry": "电网设备",
-     "industry_heat": 1.0,
-     "score": 0.375,
+     "score": 0.342,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
