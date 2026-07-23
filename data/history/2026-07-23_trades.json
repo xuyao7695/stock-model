@@ -1,0 +1,18 @@
+{
+ "date": "2026-07-23",
+ "record_time": "2026-07-23 14:13:31",
+ "trades": [
+  {
+   "action": "证券买入",
+   "name": "中国西电",
+   "code": "601179",
+   "price": 8.5,
+   "qty": 200,
+   "pnl": 0.0,
+   "time": "10:30",
+   "reason": "电网设备题材热度第一，首板封单强",
+   "emotion": "平静",
+   "followed_plan": true
+  }
+ ]
+}

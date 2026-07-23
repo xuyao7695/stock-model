@@ -1,0 +1,8 @@
+# Render 专用依赖（精简版，去掉 PaddleOCR 省 500MB 内存）
+flask>=3.0
+gunicorn>=21.0
+pandas>=2.0
+numpy>=1.26
+matplotlib>=3.7
+requests>=2.28
+akshare>=1.12

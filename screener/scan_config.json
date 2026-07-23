@@ -1,0 +1,34 @@
+{
+  "date": "auto",
+  "theme": {
+    "enabled": true,
+    "min_zt_count_in_industry": 2,
+    "industry_top_n": 8
+  },
+  "individual": {
+    "min_zt_count": 1,
+    "max_zt_count": 5,
+    "min_seal_money": 30000000,
+    "max_broken_times": 0,
+    "min_cir_mv": 3000000000,
+    "max_cir_mv": 100000000000,
+    "exclude_st": true,
+    "exclude_new_stock_days": 30
+  },
+  "technical": {
+    "enabled": true,
+    "min_change_pct": 3.0,
+    "max_change_pct": 9.4,
+    "min_turnover_rate": 3.0,
+    "min_volume_ratio": 1.5,
+    "scan_spot": true
+  },
+  "scoring": {
+    "zt_count": 0.30,
+    "seal_money": 0.25,
+    "industry_heat": 0.25,
+    "technical": 0.20
+  },
+  "top_n": 20,
+  "note": "条件可调。涨停池为主要来源（稳定）；全市场 spot 为技术强势补充（限流时跳过）。"
+}

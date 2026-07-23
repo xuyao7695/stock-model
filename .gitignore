@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+ocr/ocr_raw.json
+ocr/ocr_lines.json
+ocr/records*.json
+ocr/_chunk_*
+ocr/test_*.png
+data/uploads/
+*.log
+.DS_Store

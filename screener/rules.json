@@ -1,0 +1,10 @@
+{
+  "max_single_position": 0.30,
+  "max_total_position": 0.80,
+  "daily_loss_circuit_breaker": -0.05,
+  "max_single_loss": -0.08,
+  "min_risk_reward": 2.0,
+  "max_daily_trades": 3,
+  "max_holding_days": 10,
+  "_comment": "风控参数可根据实盘反馈调整。修改后重启选股器生效。"
+}

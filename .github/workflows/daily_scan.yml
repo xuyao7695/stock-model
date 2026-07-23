@@ -1,0 +1,50 @@
+name: 每日选股扫描
+
+on:
+  schedule:
+    # 每个交易日（周一至周五）北京时间 9:25 执行
+    # UTC 时间 1:25 = 北京时间 9:25
+    - cron: '25 1 * * 1-5'
+  workflow_dispatch:  # 也支持手动触发
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: |
+          pip install -r requirements-render.txt
+
+      - name: 运行扫描 + 建议
+        run: |
+          python screener/scan.py
+          python screener/advise.py
+
+      - name: 存档历史
+        run: |
+          python screener/history.py
+
+      - name: 推送企业微信（如配置了 webhook）
+        env:
+          WECOM_WEBHOOK: ${{ secrets.WECOM_WEBHOOK }}
+        run: |
+          if [ -n "$WECOM_WEBHOOK" ]; then
+            python delivery/wecom_bot.py
+          else
+            echo "未配置 WECOM_WEBHOOK secret，跳过推送"
+          fi
+
+      - name: 提交数据回仓库
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "每日扫描数据 $(date +%Y-%m-%d)"
+          git push
