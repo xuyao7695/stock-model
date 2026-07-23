@@ -138,8 +138,6 @@ function renderHome() {
     });
   }
   return `
-    <div class="meta">最近10天 · 点日期查看详情</div>
-    <div class="timeline">${tl}</div>
     <div class="section-h">⚡ 今日候选（${advices.length}只）</div>
     <div class="riskbar">
       <div class="rk">单只<b>${Math.round((r.max_single_position||0.3)*100)}%</b></div>
@@ -148,6 +146,9 @@ function renderHome() {
       <div class="rk">日笔<b>${r.max_daily_trades||3}</b></div>
     </div>
     ${cards}
+    <div class="section-h">📜 最近10天</div>
+    <div class="meta">点日期查看详情</div>
+    <div class="timeline">${tl}</div>
   `;
 }
 
