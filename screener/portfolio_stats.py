@@ -96,7 +96,15 @@ def build_portfolio_data():
     """构建完整持仓盈亏数据"""
     trades = load_all_trades()
     if not trades:
-        return {"trades": [], "realized": [], "monthly": [], "cumulative": 0, "total_trades": 0}
+        return {
+            "total_trades": 0,
+            "realized_count": 0,
+            "cumulative_pnl": 0,
+            "monthly": [],
+            "current_holdings": [],
+            "recent_realized": [],
+            "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        }
 
     realized = calc_pnl_fifo(trades)
     monthly = monthly_summary(realized)

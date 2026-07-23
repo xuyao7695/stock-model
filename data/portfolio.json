@@ -1,16 +1,9 @@
 {
- "total_trades": 1,
+ "total_trades": 0,
  "realized_count": 0,
  "cumulative_pnl": 0,
  "monthly": [],
- "current_holdings": [
-  {
-   "name": "中国西电",
-   "qty": 200,
-   "avg_cost": 8.5,
-   "cost_total": 1700.0
-  }
- ],
+ "current_holdings": [],
  "recent_realized": [],
- "generated_at": "2026-07-23 17:01:30"
+ "generated_at": "2026-07-23 20:22:00"
 }
