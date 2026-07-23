@@ -67,6 +67,7 @@ def list_history(days=10):
             "has_scan": scan_path.exists(),
             "has_trades": trades_path.exists(),
             "scan_count": 0,
+            "advice_count": 0,
             "trade_count": 0,
         }
         if scan_path.exists():
@@ -74,6 +75,7 @@ def list_history(days=10):
                 with open(scan_path, encoding="utf-8") as f:
                     s = json.load(f)
                 entry["scan_count"] = len(s.get("advices", []))
+                entry["advice_count"] = len(s.get("advices", [])[:6])  # 去重后 top6
                 entry["scan_time"] = s.get("scan_time", "")
             except: pass
         if trades_path.exists():

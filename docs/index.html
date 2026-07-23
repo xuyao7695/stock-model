@@ -112,7 +112,7 @@ function renderHome() {
   // 10 天时间线
   let tl = '';
   BUNDLE.history_10days.forEach(h => {
-    const scBadge = h.has_scan ? `<span class="badge b-green">${h.scan_count}只</span>` : '<span class="badge b-gray">无</span>';
+    const scBadge = h.has_scan ? `<span class="badge b-green">${h.advice_count||h.scan_count}只</span>` : '<span class="badge b-gray">无</span>';
     const trBadge = h.has_trades ? `<span class="badge b-green">${h.trade_count}笔</span>` : '';
     tl += `<div class="tl-item" onclick="showDay('${h.date}')"><div class="tl-date">${h.date.slice(5)}</div><div class="tl-info">周${h.weekday} ${scBadge} ${trBadge}</div></div>`;
   });

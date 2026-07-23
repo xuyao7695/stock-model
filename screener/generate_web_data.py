@@ -43,11 +43,23 @@ def generate_bundle():
 
     # 最近 10 天每天的详情概要
     days_detail = []
+    # 优先从 advices.json 读今天去重后的 top6
+    today_advices = None
+    adv_path = BASE / "data/advices.json"
+    if adv_path.exists():
+        with open(adv_path, encoding="utf-8") as f:
+            adv_data = json.load(f)
+        today_advices = adv_data.get("advices", [])
+
     for h in history:
         d = hist.load_day(h["date"])
         s = d.get("scan") or {}
         t = d.get("trades") or {}
-        adv = sorted(s.get("advices", []), key=lambda x: x.get("score", 0), reverse=True)[:10] if s else []
+        # 今天用 advices.json 去重后的 top6，其他天用历史存档
+        if h["date"] == today and today_advices:
+            adv = today_advices
+        else:
+            adv = sorted(s.get("advices", []), key=lambda x: x.get("score", 0), reverse=True)[:6] if s else []
         trades = []  # 隐私保护：不在公开 bundle 中暴露实际交易明细
         days_detail.append({
             "date": h["date"],
