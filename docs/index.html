@@ -88,7 +88,7 @@ function showPage(page) {
   });
   const content = document.getElementById('app-content');
   if (page === 'home') content.innerHTML = renderHome();
-  else if (page === 'record') content.innerHTML = renderRecord();
+  else if (page === 'record') { content.innerHTML = renderRecord(); renderRecentRecords(); }
   else if (page === 'stats') content.innerHTML = renderStats();
   else if (page === 'history') content.innerHTML = renderHistory();
   else if (page === 'rules') content.innerHTML = renderRules();
@@ -372,21 +372,59 @@ function renderRecord() {
         <input id="r-amount" placeholder="持股金额" style="flex:1" readonly>
       </div>
       <input id="r-reason" placeholder="买入理由（必填）" style="margin-bottom:4px">
-      <button class="btn" onclick="exportRecord()" style="padding:8px;font-size:13px">📋 生成记录</button>
+      <button class="btn" onclick="saveRecord()" style="padding:8px;font-size:13px">💾 保存记录</button>
     </div>
-    <div id="export-result"></div>
+    <div id="save-status" class="meta" style="text-align:center;height:18px;margin-bottom:4px"></div>
     <div class="section-h" style="margin-top:8px">📋 最近10笔操作</div>
-    <div class="card" style="padding:6px 8px">
+    <div class="card" id="recent-record-list" style="padding:6px 8px">
       <div style="display:flex;justify-content:space-between;padding:2px 0;font-size:10px;color:#8b949e;border-bottom:1px solid #30363d">
-        <span style="flex:1">名称</span><span style="width:50px;text-align:center">数量</span><span style="width:90px;text-align:center">买→卖额</span>
+        <span style="flex:1">名称</span><span style="width:60px;text-align:center">数量</span><span style="width:100px;text-align:center">买卖额</span><span style="width:40px;text-align:right">操作</span>
       </div>
-      ${recentHtml}
+      <div id="recent-records-body">暂无操作记录</div>
     </div>
   `;
 }
 
 // 股票名称↔代码映射表
 var STOCK_MAP = {};
+
+// 本地存储键
+const LOCAL_RECORDS_KEY = 'stock_model_records_v1';
+
+function loadLocalRecords() {
+  try {
+    const raw = localStorage.getItem(LOCAL_RECORDS_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    return [];
+  }
+}
+
+function saveLocalRecords(records) {
+  localStorage.setItem(LOCAL_RECORDS_KEY, JSON.stringify(records));
+}
+
+function renderRecentRecords() {
+  const records = loadLocalRecords().slice(-10).reverse();
+  const container = document.getElementById('recent-records-body');
+  if (!container) return;
+  if (records.length === 0) {
+    container.innerHTML = '<div style="text-align:center;color:#8b949e;padding:12px;font-size:11px">暂无操作记录</div>';
+    return;
+  }
+  let html = '';
+  records.forEach(r => {
+    const amt = (r.qty * r.price).toLocaleString('zh-CN', {maximumFractionDigits: 0});
+    const actColor = r.action === '证券买入' ? '#f85149' : '#3fb950';
+    html += `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #21262d;font-size:11px">
+      <span style="color:#e6edf3;flex:1">${r.name}</span>
+      <span style="color:#8b949e;width:60px;text-align:center">${r.qty}股</span>
+      <span style="color:#8b949e;width:100px;text-align:center">${amt}</span>
+      <span style="color:${actColor};width:40px;text-align:right;font-weight:600">${r.action === '证券买入' ? '买' : '卖'}</span>
+    </div>`;
+  });
+  container.innerHTML = html;
+}
 
 function autoFillCode() {
   const name = document.getElementById('r-name').value.trim();
@@ -426,23 +464,35 @@ function calcAmount() {
   }
 }
 
-function exportRecord() {
+function saveRecord() {
   const reason = document.getElementById('r-reason').value.trim();
   if (!reason) { showToast('请填写买入理由'); return; }
-  const data = {
+  const price = parseFloat(document.getElementById('r-price').value || 0);
+  const qty = parseInt(document.getElementById('r-qty').value || 0);
+  if (!price || !qty) { showToast('请输入价格和数量'); return; }
+  const record = {
     date: BUNDLE ? BUNDLE.today : new Date().toISOString().slice(0,10),
     action: document.getElementById('r-action').value,
     name: document.getElementById('r-name').value,
     code: document.getElementById('r-code').value,
-    price: parseFloat(document.getElementById('r-price').value || 0),
-    qty: parseInt(document.getElementById('r-qty').value || 0),
-    amount: parseFloat(document.getElementById('r-price').value || 0) * parseInt(document.getElementById('r-qty').value || 0),
+    price: price,
+    qty: qty,
+    amount: price * qty,
     reason: reason,
     time: new Date().toTimeString().slice(0,5),
   };
-  const text = JSON.stringify(data, null, 2);
-  document.getElementById('export-result').innerHTML = `<div class="card" style="padding:8px"><div style="font-size:10px;color:#8b949e;margin-bottom:4px">长按复制 ↓</div><pre style="white-space:pre-wrap;font-size:11px;color:#e6edf3;background:#0d1117;padding:6px;border-radius:6px">${text}</pre></div>`;
-  showToast('已生成记录，长按文本复制');
+  const records = loadLocalRecords();
+  records.push(record);
+  saveLocalRecords(records);
+  renderRecentRecords();
+  const status = document.getElementById('save-status');
+  if (status) { status.textContent = '✅ 已保存到本地'; status.style.color = '#3fb950'; }
+  showToast('记录已保存');
+  // 清空价格/数量，保留名称代码便于连续录入
+  document.getElementById('r-price').value = '';
+  document.getElementById('r-qty').value = '';
+  document.getElementById('r-amount').value = '';
+  document.getElementById('r-reason').value = '';
 }
 
 function renderHistory() {
