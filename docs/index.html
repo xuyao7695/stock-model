@@ -92,6 +92,47 @@ async function loadData() {
   }
 }
 
+function copyCodes(codes) {
+  if (!codes) { alert('暂无股票代码'); return; }
+  // 尝试用 Clipboard API
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(codes).then(() => {
+      showToast('已复制 ' + codes.split(',').length + ' 个代码：' + codes);
+    }).catch(() => {
+      fallbackCopy(codes);
+    });
+  } else {
+    fallbackCopy(codes);
+  }
+}
+
+function fallbackCopy(text) {
+  // 兼容旧浏览器/Safari
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try {
+    document.execCommand('copy');
+    showToast('已复制：' + text);
+  } catch(e) {
+    // 实在不行就弹窗让用户手动复制
+    prompt('长按选择全部，然后复制：', text);
+  }
+  document.body.removeChild(ta);
+}
+
+function showToast(msg) {
+  const t = document.createElement('div');
+  t.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#238636;color:#fff;padding:12px 20px;border-radius:8px;font-size:14px;z-index:9999;max-width:90%;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.5)';
+  t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => { t.style.opacity = '0'; t.style.transition = 'opacity 0.3s'; }, 2000);
+  setTimeout(() => document.body.removeChild(t), 2500);
+}
+
 function showPage(page) {
   // 更新导航高亮
   ['home','record','stats','history','rules'].forEach(p => {
@@ -137,6 +178,8 @@ function renderHome() {
       </div>`;
     });
   }
+  // 股票代码列表（逗号分隔，方便粘贴到交易软件）
+  const codes = advices.map(c => c.code || '').filter(c => c).join(',');
   return `
     <div class="section-h">⚡ 今日候选（${advices.length}只）</div>
     <div class="riskbar">
@@ -145,6 +188,7 @@ function renderHome() {
       <div class="rk">熔断<b>${Math.round((r.daily_loss_circuit_breaker||-0.05)*100)}%</b></div>
       <div class="rk">日笔<b>${r.max_daily_trades||3}</b></div>
     </div>
+    <button class="btn" onclick="copyCodes('${codes}')" style="margin-bottom:10px">📋 一键复制股票代码</button>
     ${cards}
     <div class="section-h">📜 最近10天</div>
     <div class="meta">点日期查看详情</div>
