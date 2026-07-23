@@ -110,6 +110,8 @@ document.addEventListener('touchend', function(e) {
     showPage(PAGE_ORDER[idx + 1]);
   }
 }, {passive: true});
+
+async function loadData() {
   // GitHub Pages: 数据在 docs/data/bundle.json
   // 加时间戳防缓存
   const ts = '?t=' + Date.now();
@@ -169,8 +171,6 @@ function showToast(msg) {
   setTimeout(() => { t.style.opacity = '0'; t.style.transition = 'opacity 0.3s'; }, 2000);
   setTimeout(() => document.body.removeChild(t), 2500);
 }
-
-async function loadData() {
 
 function renderHome() {
   if (!BUNDLE) return '<div class="empty">数据加载中...</div>';
@@ -265,11 +265,12 @@ function renderRecord() {
     const recs = PORTFOLIO.recent_realized.slice(-10).reverse();
     recs.forEach(r => {
       const pnlCls = r.pnl >= 0 ? 'pos' : 'neg';
-      const amt = (r.qty * r.sell_price).toFixed(0);
+      const buyAmt = (r.qty * r.buy_price).toFixed(0);
+      const sellAmt = (r.qty * r.sell_price).toFixed(0);
       recentHtml += `<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #21262d;font-size:11px">
         <span style="color:#e6edf3;flex:1">${r.name}</span>
         <span style="color:#8b949e;width:50px;text-align:center">${r.qty}股</span>
-        <span style="color:#8b949e;width:55px;text-align:center">${r.buy_price}→${r.sell_price}</span>
+        <span style="color:#8b949e;width:80px;text-align:center">${buyAmt}→${sellAmt}</span>
         <span class="${pnlCls}" style="width:60px;text-align:right;font-weight:600">${r.pnl>0?'+':''}${r.pnl.toFixed(0)}</span>
       </div>`;
     });
@@ -299,7 +300,7 @@ function renderRecord() {
     <div class="section-h" style="margin-top:8px">📋 最近10笔操作</div>
     <div class="card" style="padding:6px 8px">
       <div style="display:flex;justify-content:space-between;padding:2px 0;font-size:10px;color:#8b949e;border-bottom:1px solid #30363d">
-        <span style="flex:1">名称</span><span style="width:50px;text-align:center">数量</span><span style="width:55px;text-align:center">买→卖</span><span style="width:60px;text-align:right">盈亏</span>
+        <span style="flex:1">名称</span><span style="width:50px;text-align:center">数量</span><span style="width:80px;text-align:center">买→卖额</span><span style="width:60px;text-align:right">盈亏</span>
       </div>
       ${recentHtml}
     </div>
