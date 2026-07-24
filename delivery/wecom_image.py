@@ -37,13 +37,13 @@ for p in CJK_PATHS:
         except Exception as e:
             print(f"⚠️ 字体 {p} 加载失败: {e}")
 
-# 如果没找到，自动安装 fonts-noto-cjk
+# 如��没找到，自动安装 fonts-noto-cjk
 if not CJK_FAMILY:
     print("📦 系统未找到中文字体，正在安装 fonts-noto-cjk ...")
     try:
-        subprocess.run(["apt-get", "update", "-qq"], check=True, capture_output=True, timeout=60)
-        subprocess.run(["apt-get", "install", "-y", "fonts-noto-cjk"], check=True, capture_output=True, timeout=120)
-        subprocess.run(["fc-cache", "-fv"], check=True, capture_output=True, timeout=30)
+        subprocess.run("sudo apt-get update -qq", shell=True, check=True, capture_output=True, timeout=60)
+        subprocess.run("sudo apt-get install -y fonts-noto-cjk", shell=True, check=True, capture_output=True, timeout=120)
+        subprocess.run("fc-cache -fv", shell=True, check=True, capture_output=True, timeout=30)
         # 安装后重新搜索
         for p in CJK_PATHS:
             if Path(p).exists():
@@ -55,7 +55,21 @@ if not CJK_FAMILY:
                 except Exception:
                     pass
     except Exception as e:
-        print(f"⚠️ 字体安装失败: {e}")
+        print(f"⚠️ apt安装失败: {e}")
+        # 备用：全盘搜索系统所有CJK/Noto字体
+        try:
+            for fp in fm.findSystemFonts():
+                fp_lower = fp.lower()
+                if "cjk" in fp_lower or "noto" in fp_lower or "wqy" in fp_lower:
+                    try:
+                        fm.fontManager.addfont(fp)
+                        CJK_FAMILY = fm.FontProperties(fname=fp).get_name()
+                        print(f"✅ 系统搜索到字体: {fp} -> {CJK_FAMILY}")
+                        break
+                    except Exception:
+                        pass
+        except Exception:
+            pass
 
 if CJK_FAMILY:
     matplotlib.rcParams['font.sans-serif'] = [CJK_FAMILY, 'DejaVu Sans']
