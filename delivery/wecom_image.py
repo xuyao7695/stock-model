@@ -14,13 +14,30 @@ import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 
-# 中文字体
-CJK_PATH = "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
-if Path(CJK_PATH).exists():
-    fm.fontManager.addfont(CJK_PATH)
-    zh = fm.FontProperties(fname=CJK_PATH).get_name()
-    matplotlib.rcParams['font.sans-serif'] = [zh]
+# 中文字体（自动搜索多个可能路径）
+CJK_PATHS = [
+    "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+    "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc",
+    "/usr/share/fonts/noto-cjk/NotoSansCJK-Regular.ttc",
+    "/usr/share/fonts/google-noto-cjk/NotoSansCJK-Regular.ttc",
+    "/usr/share/fonts/opentype/noto/NotoSansCJKsc-Regular.otf",
+]
+CJK_FAMILY = None
+for p in CJK_PATHS:
+    if Path(p).exists():
+        try:
+            fm.fontManager.addfont(p)
+            CJK_FAMILY = fm.FontProperties(fname=p).get_name()
+            print(f"✅ 使用中文字体: {p} -> {CJK_FAMILY}")
+            break
+        except Exception as e:
+            print(f"⚠️ 字体 {p} 加载失败: {e}")
+
+if CJK_FAMILY:
+    matplotlib.rcParams['font.sans-serif'] = [CJK_FAMILY, 'DejaVu Sans']
     matplotlib.rcParams['font.family'] = 'sans-serif'
+else:
+    print("⚠️ 未找到中文字体，中文将显示为方块")
 matplotlib.rcParams['axes.unicode_minus'] = False
 
 ADVices_PATH = Path("data/advices.json")
