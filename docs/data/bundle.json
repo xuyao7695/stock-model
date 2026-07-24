@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-24 01:54:05",
+ "generated_at": "2026-07-24 03:15:24",
  "rules": {
   "max_single_position": 0.3,
   "max_total_position": 0.8,
@@ -20,7 +20,7 @@
    "scan_count": 6,
    "advice_count": 6,
    "trade_count": 0,
-   "scan_time": "2026-07-24 01:53:57"
+   "scan_time": "2026-07-24 03:15:12"
   },
   {
    "date": "2026-07-23",
@@ -109,7 +109,7 @@
   {
    "date": "2026-07-24",
    "weekday": "五",
-   "scan_time": "2026-07-24 01:53:57",
+   "scan_time": "2026-07-24 03:15:12",
    "total_zt": 15,
    "advices": [
     {
@@ -118,8 +118,8 @@
      "path": "A-连板",
      "zt_count": 4,
      "industry": "家居用品",
-     "industry_heat": 0.25,
-     "score": 0.552,
+     "industry_heat": 0.2,
+     "score": 0.538,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
@@ -140,69 +140,7 @@
       "连板数达标",
       "封单达标",
       "未炸板",
-      "行业热度0.25"
-     ]
-    },
-    {
-     "code": "002265",
-     "name": "建设工业",
-     "path": "A-连板",
-     "zt_count": 1,
-     "industry": "汽车零部",
-     "industry_heat": 1.0,
-     "score": 0.54,
-     "action": "✅ 关注买入",
-     "gate_pass": true,
-     "gate_reason": "通过",
-     "pos_pct": 0.18,
-     "pos_note": "首板，轻仓埋伏",
-     "stop_pct": -0.08,
-     "target_pct": 0.16,
-     "max_hold_days": 10,
-     "discipline": [
-      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
-      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
-      "🎯 目标 +16% 或 题材退潮即走",
-      "⏱ 最大持仓 10 天，到期强制复盘",
-      "📝 买入前写一句理由 + 信号来源（不写不买）",
-      "🔥 今日已亏 -5% 熔断 → 关 APP"
-     ],
-     "matched": [
-      "连板数达标",
-      "封单达标",
-      "未炸板",
-      "行业热度1.00"
-     ]
-    },
-    {
-     "code": "301234",
-     "name": "五洲医疗",
-     "path": "A-连板",
-     "zt_count": 3,
-     "industry": "医疗器械",
-     "industry_heat": 0.25,
-     "score": 0.492,
-     "action": "✅ 关注买入",
-     "gate_pass": true,
-     "gate_reason": "通过",
-     "pos_pct": 0.2,
-     "pos_note": "三板，半仓以内",
-     "stop_pct": -0.06,
-     "target_pct": 0.15,
-     "max_hold_days": 10,
-     "discipline": [
-      "⛔ 单只 ≤ 20% 仓位，总仓 ≤ 80%",
-      "🛑 硬止损 -6%（到价无条件砍，不补仓）",
-      "🎯 目标 +15% 或 题材退潮即走",
-      "⏱ 最大持仓 10 天，到期强制复盘",
-      "📝 买入前写一句理由 + 信号来源（不写不买）",
-      "🔥 今日已亏 -5% 熔断 → 关 APP"
-     ],
-     "matched": [
-      "连板数达标",
-      "封单达标",
-      "未炸板",
-      "行业热度0.25"
+      "行业热度0.20"
      ]
     },
     {
@@ -212,7 +150,7 @@
      "zt_count": 2,
      "industry": "电网设备",
      "industry_heat": 1.0,
-     "score": 0.488,
+     "score": 0.487,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
@@ -243,7 +181,7 @@
      "zt_count": 2,
      "industry": "电网设备",
      "industry_heat": 1.0,
-     "score": 0.485,
+     "score": 0.476,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
@@ -268,23 +206,54 @@
      ]
     },
     {
-     "code": "601678",
-     "name": "滨化股份",
+     "code": "301234",
+     "name": "五洲医疗",
      "path": "A-连板",
-     "zt_count": 2,
-     "industry": "化学原料",
-     "industry_heat": 0.25,
-     "score": 0.424,
+     "zt_count": 3,
+     "industry": "医疗器械",
+     "industry_heat": 0.2,
+     "score": 0.476,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
-     "pos_pct": 0.25,
-     "pos_note": "二板，主仓位",
+     "pos_pct": 0.2,
+     "pos_note": "三板，半仓以内",
+     "stop_pct": -0.06,
+     "target_pct": 0.15,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 20% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -6%（到价无条件砍，不补仓）",
+      "🎯 目标 +15% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度0.20"
+     ]
+    },
+    {
+     "code": "002208",
+     "name": "合肥城建",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "房地产开",
+     "industry_heat": 0.4,
+     "score": 0.41,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
      "stop_pct": -0.08,
      "target_pct": 0.16,
      "max_hold_days": 10,
      "discipline": [
-      "⛔ 单只 ≤ 25% 仓位，总仓 ≤ 80%",
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
       "🛑 硬止损 -8%（到价无条件砍，不补仓）",
       "🎯 目标 +16% 或 题材退潮即走",
       "⏱ 最大持仓 10 天，到期强制复盘",
@@ -295,7 +264,38 @@
       "连板数达标",
       "封单达标",
       "未炸板",
-      "行业热度0.25"
+      "行业热度0.40"
+     ]
+    },
+    {
+     "code": "300480",
+     "name": "光力科技",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "专用设备",
+     "industry_heat": 0.4,
+     "score": 0.373,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度0.40"
      ]
     }
    ],
