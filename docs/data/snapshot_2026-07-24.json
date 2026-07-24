@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-24 03:18:43",
+ "generated_at": "2026-07-24 03:25:12",
  "rules": {
   "max_single_position": 0.3,
   "max_total_position": 0.8,
@@ -20,7 +20,7 @@
    "scan_count": 6,
    "advice_count": 6,
    "trade_count": 0,
-   "scan_time": "2026-07-24 03:18:35"
+   "scan_time": "2026-07-24 03:25:04"
   },
   {
    "date": "2026-07-23",
@@ -109,8 +109,8 @@
   {
    "date": "2026-07-24",
    "weekday": "五",
-   "scan_time": "2026-07-24 03:18:35",
-   "total_zt": 16,
+   "scan_time": "2026-07-24 03:25:04",
+   "total_zt": 15,
    "advices": [
     {
      "code": "603221",
@@ -119,7 +119,7 @@
      "zt_count": 4,
      "industry": "家居用品",
      "industry_heat": 0.2,
-     "score": 0.539,
+     "score": 0.537,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
@@ -150,7 +150,7 @@
      "zt_count": 3,
      "industry": "医疗器械",
      "industry_heat": 0.4,
-     "score": 0.526,
+     "score": 0.527,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
@@ -274,7 +274,7 @@
      "zt_count": 1,
      "industry": "专用设备",
      "industry_heat": 0.4,
-     "score": 0.367,
+     "score": 0.357,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
