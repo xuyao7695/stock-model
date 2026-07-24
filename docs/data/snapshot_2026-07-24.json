@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-24 01:51:31",
+ "generated_at": "2026-07-24 01:54:05",
  "rules": {
   "max_single_position": 0.3,
   "max_total_position": 0.8,
@@ -20,7 +20,7 @@
    "scan_count": 6,
    "advice_count": 6,
    "trade_count": 0,
-   "scan_time": "2026-07-24 01:51:14"
+   "scan_time": "2026-07-24 01:53:57"
   },
   {
    "date": "2026-07-23",
@@ -109,8 +109,8 @@
   {
    "date": "2026-07-24",
    "weekday": "五",
-   "scan_time": "2026-07-24 01:51:14",
-   "total_zt": 16,
+   "scan_time": "2026-07-24 01:53:57",
+   "total_zt": 15,
    "advices": [
     {
      "code": "603221",
@@ -150,7 +150,7 @@
      "zt_count": 1,
      "industry": "汽车零部",
      "industry_heat": 1.0,
-     "score": 0.552,
+     "score": 0.54,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
@@ -243,7 +243,7 @@
      "zt_count": 2,
      "industry": "电网设备",
      "industry_heat": 1.0,
-     "score": 0.482,
+     "score": 0.485,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
@@ -274,7 +274,7 @@
      "zt_count": 2,
      "industry": "化学原料",
      "industry_heat": 0.25,
-     "score": 0.432,
+     "score": 0.424,
      "action": "✅ 关注买入",
      "gate_pass": true,
      "gate_reason": "通过",
