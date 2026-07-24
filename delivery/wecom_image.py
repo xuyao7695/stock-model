@@ -14,7 +14,9 @@ import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 
-# 中文字体（自动搜索多个可能路径）
+# 中文字体（自动安装+搜索多个可能路径）
+import subprocess
+
 CJK_PATHS = [
     "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
     "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc",
@@ -23,6 +25,8 @@ CJK_PATHS = [
     "/usr/share/fonts/opentype/noto/NotoSansCJKsc-Regular.otf",
 ]
 CJK_FAMILY = None
+
+# 先尝试从系统查找
 for p in CJK_PATHS:
     if Path(p).exists():
         try:
@@ -32,6 +36,26 @@ for p in CJK_PATHS:
             break
         except Exception as e:
             print(f"⚠️ 字体 {p} 加载失败: {e}")
+
+# 如果没找到，自动安装 fonts-noto-cjk
+if not CJK_FAMILY:
+    print("📦 系统未找到中文字体，正在安装 fonts-noto-cjk ...")
+    try:
+        subprocess.run(["apt-get", "update", "-qq"], check=True, capture_output=True, timeout=60)
+        subprocess.run(["apt-get", "install", "-y", "fonts-noto-cjk"], check=True, capture_output=True, timeout=120)
+        subprocess.run(["fc-cache", "-fv"], check=True, capture_output=True, timeout=30)
+        # 安装后重新搜索
+        for p in CJK_PATHS:
+            if Path(p).exists():
+                try:
+                    fm.fontManager.addfont(p)
+                    CJK_FAMILY = fm.FontProperties(fname=p).get_name()
+                    print(f"✅ 安装后找到字体: {p} -> {CJK_FAMILY}")
+                    break
+                except Exception:
+                    pass
+    except Exception as e:
+        print(f"⚠️ 字体安装失败: {e}")
 
 if CJK_FAMILY:
     matplotlib.rcParams['font.sans-serif'] = [CJK_FAMILY, 'DejaVu Sans']
