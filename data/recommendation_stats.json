@@ -1,7 +1,28 @@
 {
- "records": [],
+ "records": [
+  {
+   "date": "2026-07-23",
+   "code": "600550",
+   "name": "保变电气",
+   "score": 0.356,
+   "industry": "电网设备",
+   "returns": {
+    "1d": -0.43,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.65
+  }
+ ],
  "summary": {
-  "total": 0,
-  "by_period": {}
+  "total": 1,
+  "by_period": {
+   "1d": {
+    "count": 1,
+    "win_rate": 0.0,
+    "avg_return": -0.43
+   }
+  }
  }
 }
