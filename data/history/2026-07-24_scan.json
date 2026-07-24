@@ -1,6 +1,6 @@
 {
- "scan_time": "2026-07-24 03:15:12",
- "total_zt": 15,
+ "scan_time": "2026-07-24 03:18:35",
+ "total_zt": 16,
  "top_n": 6,
  "advices": [
   {
@@ -10,7 +10,7 @@
    "zt_count": 4,
    "industry": "家居用品",
    "industry_heat": 0.2,
-   "score": 0.538,
+   "score": 0.539,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -32,6 +32,37 @@
     "封单达标",
     "未炸板",
     "行业热度0.20"
+   ]
+  },
+  {
+   "code": "301234",
+   "name": "五洲医疗",
+   "path": "A-连板",
+   "zt_count": 3,
+   "industry": "医疗器械",
+   "industry_heat": 0.4,
+   "score": 0.526,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.2,
+   "pos_note": "三板，半仓以内",
+   "stop_pct": -0.06,
+   "target_pct": 0.15,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 20% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -6%（到价无条件砍，不补仓）",
+    "🎯 目标 +15% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度0.40"
    ]
   },
   {
@@ -72,7 +103,7 @@
    "zt_count": 2,
    "industry": "电网设备",
    "industry_heat": 1.0,
-   "score": 0.476,
+   "score": 0.475,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -94,37 +125,6 @@
     "封单达标",
     "未炸板",
     "行业热度1.00"
-   ]
-  },
-  {
-   "code": "301234",
-   "name": "五洲医疗",
-   "path": "A-连板",
-   "zt_count": 3,
-   "industry": "医疗器械",
-   "industry_heat": 0.2,
-   "score": 0.476,
-   "action": "✅ 关注买入",
-   "gate_pass": true,
-   "gate_reason": "通过",
-   "pos_pct": 0.2,
-   "pos_note": "三板，半仓以内",
-   "stop_pct": -0.06,
-   "target_pct": 0.15,
-   "max_hold_days": 10,
-   "discipline": [
-    "⛔ 单只 ≤ 20% 仓位，总仓 ≤ 80%",
-    "🛑 硬止损 -6%（到价无条件砍，不补仓）",
-    "🎯 目标 +15% 或 题材退潮即走",
-    "⏱ 最大持仓 10 天，到期强制复盘",
-    "📝 买入前写一句理由 + 信号来源（不写不买）",
-    "🔥 今日已亏 -5% 熔断 → 关 APP"
-   ],
-   "matched": [
-    "连板数达标",
-    "封单达标",
-    "未炸板",
-    "行业热度0.20"
    ]
   },
   {
@@ -165,7 +165,7 @@
    "zt_count": 1,
    "industry": "专用设备",
    "industry_heat": 0.4,
-   "score": 0.373,
+   "score": 0.367,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -198,7 +198,7 @@
    "zt_count": 4,
    "industry": "家居用品",
    "industry_heat": 0.2,
-   "score": 0.538,
+   "score": 0.539,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -220,6 +220,37 @@
     "封单达标",
     "未炸板",
     "行业热度0.20"
+   ]
+  },
+  {
+   "code": "301234",
+   "name": "五洲医疗",
+   "path": "A-连板",
+   "zt_count": 3,
+   "industry": "医疗器械",
+   "industry_heat": 0.4,
+   "score": 0.526,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.2,
+   "pos_note": "三板，半仓以内",
+   "stop_pct": -0.06,
+   "target_pct": 0.15,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 20% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -6%（到价无条件砍，不补仓）",
+    "🎯 目标 +15% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度0.40"
    ]
   },
   {
@@ -254,44 +285,13 @@
    ]
   },
   {
-   "code": "301234",
-   "name": "五洲医疗",
-   "path": "A-连板",
-   "zt_count": 3,
-   "industry": "医疗器械",
-   "industry_heat": 0.2,
-   "score": 0.476,
-   "action": "✅ 关注买入",
-   "gate_pass": true,
-   "gate_reason": "通过",
-   "pos_pct": 0.2,
-   "pos_note": "三板，半仓以内",
-   "stop_pct": -0.06,
-   "target_pct": 0.15,
-   "max_hold_days": 10,
-   "discipline": [
-    "⛔ 单只 ≤ 20% 仓位，总仓 ≤ 80%",
-    "🛑 硬止损 -6%（到价无条件砍，不补仓）",
-    "🎯 目标 +15% 或 题材退潮即走",
-    "⏱ 最大持仓 10 天，到期强制复盘",
-    "📝 买入前写一句理由 + 信号来源（不写不买）",
-    "🔥 今日已亏 -5% 熔断 → 关 APP"
-   ],
-   "matched": [
-    "连板数达标",
-    "封单达标",
-    "未炸板",
-    "行业热度0.20"
-   ]
-  },
-  {
    "code": "002498",
    "name": "汉缆股份",
    "path": "A-连板",
    "zt_count": 2,
    "industry": "电网设备",
    "industry_heat": 1.0,
-   "score": 0.476,
+   "score": 0.475,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -353,7 +353,7 @@
    "zt_count": 1,
    "industry": "专用设备",
    "industry_heat": 0.4,
-   "score": 0.373,
+   "score": 0.367,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -384,7 +384,7 @@
    "zt_count": 1,
    "industry": "汽车零部",
    "industry_heat": 0.6,
-   "score": 0.36,
+   "score": 0.355,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -415,7 +415,7 @@
    "zt_count": 2,
    "industry": "地面兵装",
    "industry_heat": 0.2,
-   "score": 0.34,
+   "score": 0.338,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -446,7 +446,7 @@
    "zt_count": 2,
    "industry": "化学原料",
    "industry_heat": 0.2,
-   "score": 0.319,
+   "score": 0.297,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -477,7 +477,7 @@
    "zt_count": 1,
    "industry": "包装印刷",
    "industry_heat": 0.4,
-   "score": 0.273,
+   "score": 0.271,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -533,6 +533,37 @@
    ]
   },
   {
+   "code": "603976",
+   "name": "正川股份",
+   "path": "A-连板",
+   "zt_count": 1,
+   "industry": "医疗器械",
+   "industry_heat": 0.4,
+   "score": 0.222,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.18,
+   "pos_note": "首板，轻仓埋伏",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度0.40"
+   ]
+  },
+  {
    "code": "600617",
    "name": "国新能源",
    "path": "A-连板",
@@ -570,7 +601,7 @@
    "zt_count": 1,
    "industry": "通信设备",
    "industry_heat": 0.2,
-   "score": 0.192,
+   "score": 0.19,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
