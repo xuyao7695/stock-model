@@ -1,28 +1,28 @@
 {
- "scan_time": "2026-07-24 03:25:04",
+ "scan_time": "2026-07-24 10:01:47",
  "total_zt": 15,
  "top_n": 6,
  "advices": [
   {
-   "code": "603221",
-   "name": "爱丽家居",
+   "code": "000533",
+   "name": "顺钠股份",
    "path": "A-连板",
-   "zt_count": 4,
-   "industry": "家居用品",
-   "industry_heat": 0.2,
-   "score": 0.537,
+   "zt_count": 2,
+   "industry": "电网设备",
+   "industry_heat": 1.0,
+   "score": 0.479,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
-   "pos_pct": 0.15,
-   "pos_note": "高位连板，轻仓试错",
-   "stop_pct": -0.06,
-   "target_pct": 0.15,
+   "pos_pct": 0.25,
+   "pos_note": "二板，主仓位",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
    "max_hold_days": 10,
    "discipline": [
-    "⛔ 单只 ≤ 15% 仓位，总仓 ≤ 80%",
-    "🛑 硬止损 -6%（到价无条件砍，不补仓）",
-    "🎯 目标 +15% 或 题材退潮即走",
+    "⛔ 单只 ≤ 25% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
     "⏱ 最大持仓 10 天，到期强制复盘",
     "📝 买入前写一句理由 + 信号来源（不写不买）",
     "🔥 今日已亏 -5% 熔断 → 关 APP"
@@ -31,7 +31,7 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.20"
+    "行业热度1.00"
    ]
   },
   {
@@ -41,7 +41,7 @@
    "zt_count": 3,
    "industry": "医疗器械",
    "industry_heat": 0.4,
-   "score": 0.527,
+   "score": 0.478,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -66,13 +66,13 @@
    ]
   },
   {
-   "code": "000533",
-   "name": "顺钠股份",
+   "code": "002498",
+   "name": "汉缆股份",
    "path": "A-连板",
    "zt_count": 2,
    "industry": "电网设备",
    "industry_heat": 1.0,
-   "score": 0.487,
+   "score": 0.447,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -97,13 +97,44 @@
    ]
   },
   {
-   "code": "002498",
-   "name": "汉缆股份",
+   "code": "603221",
+   "name": "爱丽家居",
+   "path": "A-连板",
+   "zt_count": 4,
+   "industry": "家居用品",
+   "industry_heat": 0.2,
+   "score": 0.428,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.15,
+   "pos_note": "高位连板，轻仓试错",
+   "stop_pct": -0.06,
+   "target_pct": 0.15,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 15% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -6%（到价无条件砍，不补仓）",
+    "🎯 目标 +15% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度0.20"
+   ]
+  },
+  {
+   "code": "000011",
+   "name": "深物业A",
    "path": "A-连板",
    "zt_count": 2,
-   "industry": "电网设备",
-   "industry_heat": 1.0,
-   "score": 0.475,
+   "industry": "房地产开",
+   "industry_heat": 0.6,
+   "score": 0.305,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -124,7 +155,7 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度1.00"
+    "行业热度0.60"
    ]
   },
   {
@@ -133,8 +164,8 @@
    "path": "A-连板",
    "zt_count": 1,
    "industry": "房地产开",
-   "industry_heat": 0.4,
-   "score": 0.41,
+   "industry_heat": 0.6,
+   "score": 0.296,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -155,62 +186,31 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.40"
-   ]
-  },
-  {
-   "code": "300480",
-   "name": "光力科技",
-   "path": "A-连板",
-   "zt_count": 1,
-   "industry": "专用设备",
-   "industry_heat": 0.4,
-   "score": 0.357,
-   "action": "✅ 关注买入",
-   "gate_pass": true,
-   "gate_reason": "通过",
-   "pos_pct": 0.18,
-   "pos_note": "首板，轻仓埋伏",
-   "stop_pct": -0.08,
-   "target_pct": 0.16,
-   "max_hold_days": 10,
-   "discipline": [
-    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
-    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
-    "🎯 目标 +16% 或 题材退潮即走",
-    "⏱ 最大持仓 10 天，到期强制复盘",
-    "📝 买入前写一句理由 + 信号来源（不写不买）",
-    "🔥 今日已亏 -5% 熔断 → 关 APP"
-   ],
-   "matched": [
-    "连板数达标",
-    "封单达标",
-    "未炸板",
-    "行业热度0.40"
+    "行业热度0.60"
    ]
   }
  ],
  "all_advices": [
   {
-   "code": "603221",
-   "name": "爱丽家居",
+   "code": "000533",
+   "name": "顺钠股份",
    "path": "A-连板",
-   "zt_count": 4,
-   "industry": "家居用品",
-   "industry_heat": 0.2,
-   "score": 0.537,
+   "zt_count": 2,
+   "industry": "电网设备",
+   "industry_heat": 1.0,
+   "score": 0.479,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
-   "pos_pct": 0.15,
-   "pos_note": "高位连板，轻仓试错",
-   "stop_pct": -0.06,
-   "target_pct": 0.15,
+   "pos_pct": 0.25,
+   "pos_note": "二板，主仓位",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
    "max_hold_days": 10,
    "discipline": [
-    "⛔ 单只 ≤ 15% 仓位，总仓 ≤ 80%",
-    "🛑 硬止损 -6%（到价无条件砍，不补仓）",
-    "🎯 目标 +15% 或 题材退潮即走",
+    "⛔ 单只 ≤ 25% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
     "⏱ 最大持仓 10 天，到期强制复盘",
     "📝 买入前写一句理由 + 信号来源（不写不买）",
     "🔥 今日已亏 -5% 熔断 → 关 APP"
@@ -219,7 +219,7 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.20"
+    "行业热度1.00"
    ]
   },
   {
@@ -229,7 +229,7 @@
    "zt_count": 3,
    "industry": "医疗器械",
    "industry_heat": 0.4,
-   "score": 0.527,
+   "score": 0.478,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -254,13 +254,13 @@
    ]
   },
   {
-   "code": "000533",
-   "name": "顺钠股份",
+   "code": "002498",
+   "name": "汉缆股份",
    "path": "A-连板",
    "zt_count": 2,
    "industry": "电网设备",
    "industry_heat": 1.0,
-   "score": 0.487,
+   "score": 0.447,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -285,13 +285,44 @@
    ]
   },
   {
-   "code": "002498",
-   "name": "汉缆股份",
+   "code": "603221",
+   "name": "爱丽家居",
+   "path": "A-连板",
+   "zt_count": 4,
+   "industry": "家居用品",
+   "industry_heat": 0.2,
+   "score": 0.428,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.15,
+   "pos_note": "高位连板，轻仓试错",
+   "stop_pct": -0.06,
+   "target_pct": 0.15,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 15% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -6%（到价无条件砍，不补仓）",
+    "🎯 目标 +15% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度0.20"
+   ]
+  },
+  {
+   "code": "000011",
+   "name": "深物业A",
    "path": "A-连板",
    "zt_count": 2,
-   "industry": "电网设备",
-   "industry_heat": 1.0,
-   "score": 0.475,
+   "industry": "房地产开",
+   "industry_heat": 0.6,
+   "score": 0.305,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -312,7 +343,7 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度1.00"
+    "行业热度0.60"
    ]
   },
   {
@@ -321,70 +352,8 @@
    "path": "A-连板",
    "zt_count": 1,
    "industry": "房地产开",
-   "industry_heat": 0.4,
-   "score": 0.41,
-   "action": "✅ 关注买入",
-   "gate_pass": true,
-   "gate_reason": "通过",
-   "pos_pct": 0.18,
-   "pos_note": "首板，轻仓埋伏",
-   "stop_pct": -0.08,
-   "target_pct": 0.16,
-   "max_hold_days": 10,
-   "discipline": [
-    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
-    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
-    "🎯 目标 +16% 或 题材退潮即走",
-    "⏱ 最大持仓 10 天，到期强制复盘",
-    "📝 买入前写一句理由 + 信号来源（不写不买）",
-    "🔥 今日已亏 -5% 熔断 → 关 APP"
-   ],
-   "matched": [
-    "连板数达标",
-    "封单达标",
-    "未炸板",
-    "行业热度0.40"
-   ]
-  },
-  {
-   "code": "300480",
-   "name": "光力科技",
-   "path": "A-连板",
-   "zt_count": 1,
-   "industry": "专用设备",
-   "industry_heat": 0.4,
-   "score": 0.357,
-   "action": "✅ 关注买入",
-   "gate_pass": true,
-   "gate_reason": "通过",
-   "pos_pct": 0.18,
-   "pos_note": "首板，轻仓埋伏",
-   "stop_pct": -0.08,
-   "target_pct": 0.16,
-   "max_hold_days": 10,
-   "discipline": [
-    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
-    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
-    "🎯 目标 +16% 或 题材退潮即走",
-    "⏱ 最大持仓 10 天，到期强制复盘",
-    "📝 买入前写一句理由 + 信号来源（不写不买）",
-    "🔥 今日已亏 -5% 熔断 → 关 APP"
-   ],
-   "matched": [
-    "连板数达标",
-    "封单达标",
-    "未炸板",
-    "行业热度0.40"
-   ]
-  },
-  {
-   "code": "002265",
-   "name": "建设工业",
-   "path": "A-连板",
-   "zt_count": 1,
-   "industry": "汽车零部",
    "industry_heat": 0.6,
-   "score": 0.353,
+   "score": 0.296,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -415,7 +384,7 @@
    "zt_count": 2,
    "industry": "地面兵装",
    "industry_heat": 0.2,
-   "score": 0.329,
+   "score": 0.294,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -437,6 +406,130 @@
     "封单达标",
     "未炸板",
     "行业热度0.20"
+   ]
+  },
+  {
+   "code": "000668",
+   "name": "荣丰控股",
+   "path": "A-连板",
+   "zt_count": 2,
+   "industry": "房地产开",
+   "industry_heat": 0.6,
+   "score": 0.291,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.25,
+   "pos_note": "二板，主仓位",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 25% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度0.60"
+   ]
+  },
+  {
+   "code": "301583",
+   "name": "托伦斯",
+   "path": "A-连板",
+   "zt_count": 1,
+   "industry": "半导体",
+   "industry_heat": 0.6,
+   "score": 0.251,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.18,
+   "pos_note": "首板，轻仓埋伏",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度0.60"
+   ]
+  },
+  {
+   "code": "002265",
+   "name": "建设工业",
+   "path": "A-连板",
+   "zt_count": 1,
+   "industry": "汽车零部",
+   "industry_heat": 0.6,
+   "score": 0.242,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.18,
+   "pos_note": "首板，轻仓埋伏",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度0.60"
+   ]
+  },
+  {
+   "code": "300480",
+   "name": "光力科技",
+   "path": "A-连板",
+   "zt_count": 1,
+   "industry": "专用设备",
+   "industry_heat": 0.4,
+   "score": 0.209,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.18,
+   "pos_note": "首板，轻仓埋伏",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度0.40"
    ]
   },
   {
@@ -446,7 +539,7 @@
    "zt_count": 1,
    "industry": "包装印刷",
    "industry_heat": 0.4,
-   "score": 0.267,
+   "score": 0.202,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -471,75 +564,13 @@
    ]
   },
   {
-   "code": "000011",
-   "name": "深物业A",
-   "path": "A-连板",
-   "zt_count": 2,
-   "industry": "房地产开",
-   "industry_heat": 0.4,
-   "score": 0.25,
-   "action": "✅ 关注买入",
-   "gate_pass": true,
-   "gate_reason": "通过",
-   "pos_pct": 0.25,
-   "pos_note": "二板，主仓位",
-   "stop_pct": -0.08,
-   "target_pct": 0.16,
-   "max_hold_days": 10,
-   "discipline": [
-    "⛔ 单只 ≤ 25% 仓位，总仓 ≤ 80%",
-    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
-    "🎯 目标 +16% 或 题材退潮即走",
-    "⏱ 最大持仓 10 天，到期强制复盘",
-    "📝 买入前写一句理由 + 信号来源（不写不买）",
-    "🔥 今日已亏 -5% 熔断 → 关 APP"
-   ],
-   "matched": [
-    "连板数达标",
-    "封单达标",
-    "未炸板",
-    "行业热度0.40"
-   ]
-  },
-  {
-   "code": "603976",
-   "name": "正川股份",
+   "code": "000417",
+   "name": "合百集团",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "医疗器械",
-   "industry_heat": 0.4,
-   "score": 0.2,
-   "action": "✅ 关注买入",
-   "gate_pass": true,
-   "gate_reason": "通过",
-   "pos_pct": 0.18,
-   "pos_note": "首板，轻仓埋伏",
-   "stop_pct": -0.08,
-   "target_pct": 0.16,
-   "max_hold_days": 10,
-   "discipline": [
-    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
-    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
-    "🎯 目标 +16% 或 题材退潮即走",
-    "⏱ 最大持仓 10 天，到期强制复盘",
-    "📝 买入前写一句理由 + 信号来源（不写不买）",
-    "🔥 今日已亏 -5% 熔断 → 关 APP"
-   ],
-   "matched": [
-    "连板数达标",
-    "封单达标",
-    "未炸板",
-    "行业热度0.40"
-   ]
-  },
-  {
-   "code": "600617",
-   "name": "国新能源",
-   "path": "A-连板",
-   "zt_count": 1,
-   "industry": "燃气Ⅱ",
+   "industry": "一般零售",
    "industry_heat": 0.2,
-   "score": 0.196,
+   "score": 0.15,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -561,37 +592,6 @@
     "封单达标",
     "未炸板",
     "行业热度0.20"
-   ]
-  },
-  {
-   "code": "002374",
-   "name": "中锐股份",
-   "path": "A-连板",
-   "zt_count": 1,
-   "industry": "包装印刷",
-   "industry_heat": 0.4,
-   "score": 0.191,
-   "action": "✅ 关注买入",
-   "gate_pass": true,
-   "gate_reason": "通过",
-   "pos_pct": 0.18,
-   "pos_note": "首板，轻仓埋伏",
-   "stop_pct": -0.08,
-   "target_pct": 0.16,
-   "max_hold_days": 10,
-   "discipline": [
-    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
-    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
-    "🎯 目标 +16% 或 题材退潮即走",
-    "⏱ 最大持仓 10 天，到期强制复盘",
-    "📝 买入前写一句理由 + 信号来源（不写不买）",
-    "🔥 今日已亏 -5% 熔断 → 关 APP"
-   ],
-   "matched": [
-    "连板数达标",
-    "封单达标",
-    "未炸板",
-    "行业热度0.40"
    ]
   },
   {
@@ -601,7 +601,7 @@
    "zt_count": 1,
    "industry": "通信设备",
    "industry_heat": 0.2,
-   "score": 0.19,
+   "score": 0.146,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -626,11 +626,11 @@
    ]
   },
   {
-   "code": "002012",
-   "name": "凯恩股份",
+   "code": "600617",
+   "name": "国新能源",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "造纸",
+   "industry": "燃气Ⅱ",
    "industry_heat": 0.2,
    "score": 0.141,
    "action": "✅ 关注买入",
