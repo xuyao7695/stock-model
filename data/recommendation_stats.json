@@ -13,15 +13,221 @@
     "10d": null
    },
    "base_price": 11.65
+  },
+  {
+   "date": "2026-07-27",
+   "code": "002636",
+   "name": "金安国纪",
+   "score": 0.387,
+   "industry": "元件",
+   "returns": {
+    "1d": -10.0,
+    "3d": -22.91,
+    "5d": -25.7,
+    "10d": null
+   },
+   "base_price": 63.69
+  },
+  {
+   "date": "2026-07-27",
+   "code": "301526",
+   "name": "国际复材",
+   "score": 0.357,
+   "industry": "玻璃玻纤",
+   "returns": {
+    "1d": -6.39,
+    "3d": 6.78,
+    "5d": -9.6,
+    "10d": null
+   },
+   "base_price": 30.84
+  },
+  {
+   "date": "2026-07-28",
+   "code": "600895",
+   "name": "张江高科",
+   "score": 0.393,
+   "industry": "房地产开",
+   "returns": {
+    "1d": 1.0,
+    "3d": 3.58,
+    "5d": 0.06,
+    "10d": null
+   },
+   "base_price": 31.04
+  },
+  {
+   "date": "2026-07-28",
+   "code": "000503",
+   "name": "国新健康",
+   "score": 0.359,
+   "industry": "软件开发",
+   "returns": {
+    "1d": 0.42,
+    "3d": 7.67,
+    "5d": 6.42,
+    "10d": null
+   },
+   "base_price": 7.17
+  },
+  {
+   "date": "2026-07-28",
+   "code": "002279",
+   "name": "久其软件",
+   "score": 0.355,
+   "industry": "软件开发",
+   "returns": {
+    "1d": 3.09,
+    "3d": 6.65,
+    "5d": 8.19,
+    "10d": null
+   },
+   "base_price": 6.47
+  },
+  {
+   "date": "2026-07-28",
+   "code": "301421",
+   "name": "波长光电",
+   "score": 0.336,
+   "industry": "光学光电",
+   "returns": {
+    "1d": -8.3,
+    "3d": -17.92,
+    "5d": -16.98,
+    "10d": null
+   },
+   "base_price": 82.12
+  },
+  {
+   "date": "2026-07-28",
+   "code": "603358",
+   "name": "华达科技",
+   "score": 0.325,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": -0.08,
+    "3d": 0.21,
+    "5d": 5.74,
+    "10d": null
+   },
+   "base_price": 37.46
+  },
+  {
+   "date": "2026-07-30",
+   "code": "301667",
+   "name": "纳百川",
+   "score": 0.347,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 1.05,
+    "3d": 6.87,
+    "5d": 4.44,
+    "10d": null
+   },
+   "base_price": 65.82
+  },
+  {
+   "date": "2026-07-30",
+   "code": "605179",
+   "name": "一鸣食品",
+   "score": 0.343,
+   "industry": "饮料乳品",
+   "returns": {
+    "1d": 9.99,
+    "3d": 23.17,
+    "5d": 23.0,
+    "10d": null
+   },
+   "base_price": 17.61
+  },
+  {
+   "date": "2026-07-30",
+   "code": "603556",
+   "name": "海兴电力",
+   "score": 0.337,
+   "industry": "电网设备",
+   "returns": {
+    "1d": 0.0,
+    "3d": -0.89,
+    "5d": 0.3,
+    "10d": null
+   },
+   "base_price": 26.99
+  },
+  {
+   "date": "2026-07-30",
+   "code": "002827",
+   "name": "高争民爆",
+   "score": 0.285,
+   "industry": "化学制品",
+   "returns": {
+    "1d": 10.02,
+    "3d": 33.13,
+    "5d": 56.57,
+    "10d": null
+   },
+   "base_price": 31.45
+  },
+  {
+   "date": "2026-07-31",
+   "code": "301396",
+   "name": "宏景科技",
+   "score": 0.363,
+   "industry": "IT服务Ⅱ",
+   "returns": {
+    "1d": -5.73,
+    "3d": 27.37,
+    "5d": 29.91,
+    "10d": null
+   },
+   "base_price": 156.16
+  },
+  {
+   "date": "2026-08-06",
+   "code": "002971",
+   "name": "和远气体",
+   "score": 0.404,
+   "industry": "化学制品",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 41.25
+  },
+  {
+   "date": "2026-08-06",
+   "code": "002180",
+   "name": "奔图科技",
+   "score": 0.401,
+   "industry": "计算机设",
+   "returns": {
+    "1d": -3.81,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 19.69
   }
  ],
  "summary": {
-  "total": 1,
+  "total": 15,
   "by_period": {
    "1d": {
-    "count": 1,
-    "win_rate": 0.0,
-    "avg_return": -0.43
+    "count": 15,
+    "win_rate": 46.7,
+    "avg_return": 0.06
+   },
+   "3d": {
+    "count": 12,
+    "win_rate": 75.0,
+    "avg_return": 6.14
+   },
+   "5d": {
+    "count": 12,
+    "win_rate": 75.0,
+    "avg_return": 6.86
    }
   }
  }
