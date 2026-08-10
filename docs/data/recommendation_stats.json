@@ -209,15 +209,43 @@
     "10d": null
    },
    "base_price": 19.69
+  },
+  {
+   "date": "2026-08-07",
+   "code": "002552",
+   "name": "宝鼎科技",
+   "score": 0.625,
+   "industry": "元件",
+   "returns": {
+    "1d": 10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 47.6
+  },
+  {
+   "date": "2026-08-07",
+   "code": "600664",
+   "name": "哈药股份",
+   "score": 0.425,
+   "industry": "化学制药",
+   "returns": {
+    "1d": 9.94,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.84
   }
  ],
  "summary": {
-  "total": 15,
+  "total": 17,
   "by_period": {
    "1d": {
-    "count": 15,
-    "win_rate": 46.7,
-    "avg_return": 0.06
+    "count": 17,
+    "win_rate": 52.9,
+    "avg_return": 1.22
    },
    "3d": {
     "count": 12,
