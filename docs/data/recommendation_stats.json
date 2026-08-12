@@ -237,25 +237,128 @@
     "10d": null
    },
    "base_price": 6.84
+  },
+  {
+   "date": "2026-07-24",
+   "code": "002498",
+   "name": "汉缆股份",
+   "score": 0.447,
+   "industry": "电网设备",
+   "returns": {
+    "1d": 9.23,
+    "3d": 10.62,
+    "5d": 5.08,
+    "10d": 4.92
+   },
+   "base_price": 6.5
+  },
+  {
+   "date": "2026-07-24",
+   "code": "000011",
+   "name": "深物业A",
+   "score": 0.305,
+   "industry": "房地产开",
+   "returns": {
+    "1d": -1.33,
+    "3d": -5.33,
+    "5d": -3.87,
+    "10d": -6.05
+   },
+   "base_price": 8.26
+  },
+  {
+   "date": "2026-07-24",
+   "code": "002208",
+   "name": "合肥城建",
+   "score": 0.296,
+   "industry": "房地产开",
+   "returns": {
+    "1d": -3.97,
+    "3d": -12.65,
+    "5d": -21.47,
+    "10d": -15.88
+   },
+   "base_price": 13.6
+  },
+  {
+   "date": "2026-07-29",
+   "code": "002827",
+   "name": "高争民爆",
+   "score": 0.431,
+   "industry": "化学制品",
+   "returns": {
+    "1d": 10.0,
+    "3d": 33.12,
+    "5d": 56.56,
+    "10d": 113.92
+   },
+   "base_price": 28.59
+  },
+  {
+   "date": "2026-07-29",
+   "code": "003032",
+   "name": "传智教育",
+   "score": 0.344,
+   "industry": "教育",
+   "returns": {
+    "1d": 10.03,
+    "3d": 33.1,
+    "5d": 61.13,
+    "10d": 77.34
+   },
+   "base_price": 7.28
+  },
+  {
+   "date": "2026-07-29",
+   "code": "002597",
+   "name": "金禾实业",
+   "score": 0.335,
+   "industry": "化学制品",
+   "returns": {
+    "1d": -0.51,
+    "3d": -2.04,
+    "5d": -4.36,
+    "10d": -5.48
+   },
+   "base_price": 21.54
+  },
+  {
+   "date": "2026-07-29",
+   "code": "605388",
+   "name": "均瑶健康",
+   "score": 0.331,
+   "industry": "饮料乳品",
+   "returns": {
+    "1d": 10.07,
+    "3d": 6.29,
+    "5d": 7.37,
+    "10d": 13.31
+   },
+   "base_price": 5.56
   }
  ],
  "summary": {
-  "total": 17,
+  "total": 24,
   "by_period": {
    "1d": {
-    "count": 17,
-    "win_rate": 52.9,
-    "avg_return": 1.22
+    "count": 24,
+    "win_rate": 54.2,
+    "avg_return": 2.26
    },
    "3d": {
-    "count": 12,
-    "win_rate": 75.0,
-    "avg_return": 6.14
+    "count": 19,
+    "win_rate": 68.4,
+    "avg_return": 7.2
    },
    "5d": {
-    "count": 12,
-    "win_rate": 75.0,
-    "avg_return": 6.86
+    "count": 19,
+    "win_rate": 68.4,
+    "avg_return": 9.62
+   },
+   "10d": {
+    "count": 7,
+    "win_rate": 57.1,
+    "avg_return": 26.01
    }
   }
  }
