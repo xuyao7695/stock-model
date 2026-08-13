@@ -335,25 +335,123 @@
     "10d": 13.31
    },
    "base_price": 5.56
+  },
+  {
+   "date": "2026-08-04",
+   "code": "603629",
+   "name": "利通电子",
+   "score": 0.343,
+   "industry": "消费电子",
+   "returns": {
+    "1d": 10.0,
+    "3d": 24.4,
+    "5d": 15.44,
+    "10d": null
+   },
+   "base_price": 102.41
+  },
+  {
+   "date": "2026-08-05",
+   "code": "002703",
+   "name": "浙江世宝",
+   "score": 0.417,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 0.43,
+    "3d": -8.66,
+    "5d": -6.63,
+    "10d": null
+   },
+   "base_price": 16.28
+  },
+  {
+   "date": "2026-08-05",
+   "code": "000657",
+   "name": "中钨高新",
+   "score": 0.383,
+   "industry": "小金属",
+   "returns": {
+    "1d": 8.83,
+    "3d": 26.76,
+    "5d": 22.64,
+    "10d": null
+   },
+   "base_price": 57.43
+  },
+  {
+   "date": "2026-08-05",
+   "code": "002655",
+   "name": "共达电声",
+   "score": 0.373,
+   "industry": "消费电子",
+   "returns": {
+    "1d": 2.84,
+    "3d": 15.52,
+    "5d": 19.25,
+    "10d": null
+   },
+   "base_price": 27.07
+  },
+  {
+   "date": "2026-08-05",
+   "code": "601869",
+   "name": "长飞光纤",
+   "score": 0.356,
+   "industry": "通信设备",
+   "returns": {
+    "1d": 5.07,
+    "3d": 9.82,
+    "5d": 10.69,
+    "10d": null
+   },
+   "base_price": 312.4
+  },
+  {
+   "date": "2026-08-10",
+   "code": "600721",
+   "name": "百花医药",
+   "score": 0.75,
+   "industry": "医疗服务",
+   "returns": {
+    "1d": 10.01,
+    "3d": 22.17,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.59
+  },
+  {
+   "date": "2026-08-10",
+   "code": "002298",
+   "name": "中电鑫龙",
+   "score": 0.552,
+   "industry": "电网设备",
+   "returns": {
+    "1d": -2.36,
+    "3d": -2.46,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 9.34
   }
  ],
  "summary": {
-  "total": 24,
+  "total": 31,
   "by_period": {
    "1d": {
-    "count": 24,
-    "win_rate": 54.2,
-    "avg_return": 2.26
+    "count": 31,
+    "win_rate": 61.3,
+    "avg_return": 2.87
    },
    "3d": {
-    "count": 19,
-    "win_rate": 68.4,
-    "avg_return": 7.2
+    "count": 26,
+    "win_rate": 69.2,
+    "avg_return": 8.63
    },
    "5d": {
-    "count": 19,
-    "win_rate": 68.4,
-    "avg_return": 9.62
+    "count": 24,
+    "win_rate": 70.8,
+    "avg_return": 10.17
    },
    "10d": {
     "count": 7,
