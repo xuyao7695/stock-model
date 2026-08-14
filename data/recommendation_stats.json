@@ -433,15 +433,71 @@
     "10d": null
    },
    "base_price": 9.34
+  },
+  {
+   "date": "2026-08-13",
+   "code": "601991",
+   "name": "大唐发电",
+   "score": 0.488,
+   "industry": "电力",
+   "returns": {
+    "1d": -6.79,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.92
+  },
+  {
+   "date": "2026-08-13",
+   "code": "000887",
+   "name": "中鼎股份",
+   "score": 0.45,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": -10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 23.69
+  },
+  {
+   "date": "2026-08-13",
+   "code": "600683",
+   "name": "京投发展",
+   "score": 0.449,
+   "industry": "房地产开",
+   "returns": {
+    "1d": -9.44,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 12.93
+  },
+  {
+   "date": "2026-08-13",
+   "code": "002172",
+   "name": "澳洋健康",
+   "score": 0.435,
+   "industry": "医疗服务",
+   "returns": {
+    "1d": 9.93,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 4.13
   }
  ],
  "summary": {
-  "total": 31,
+  "total": 35,
   "by_period": {
    "1d": {
-    "count": 31,
-    "win_rate": 61.3,
-    "avg_return": 2.87
+    "count": 35,
+    "win_rate": 57.1,
+    "avg_return": 2.08
    },
    "3d": {
     "count": 26,
