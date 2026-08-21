@@ -629,20 +629,132 @@
     "10d": null
    },
    "base_price": 28.17
+  },
+  {
+   "date": "2026-08-17",
+   "code": "603079",
+   "name": "圣达生物",
+   "score": 0.419,
+   "industry": "化学制品",
+   "returns": {
+    "1d": -0.14,
+    "3d": -13.56,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 14.75
+  },
+  {
+   "date": "2026-08-18",
+   "code": "002365",
+   "name": "永安药业",
+   "score": 0.448,
+   "industry": "化学制药",
+   "returns": {
+    "1d": -7.85,
+    "3d": -0.39,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 15.55
+  },
+  {
+   "date": "2026-08-19",
+   "code": "600127",
+   "name": "金健米业",
+   "score": 0.68,
+   "industry": "农产品加",
+   "returns": {
+    "1d": 9.97,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 7.82
+  },
+  {
+   "date": "2026-08-19",
+   "code": "000505",
+   "name": "京粮控股",
+   "score": 0.508,
+   "industry": "农产品加",
+   "returns": {
+    "1d": 0.27,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 7.47
+  },
+  {
+   "date": "2026-08-19",
+   "code": "301211",
+   "name": "亨迪药业",
+   "score": 0.468,
+   "industry": "化学制药",
+   "returns": {
+    "1d": -7.29,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 14.54
+  },
+  {
+   "date": "2026-08-19",
+   "code": "601011",
+   "name": "宝泰隆",
+   "score": 0.442,
+   "industry": "焦炭Ⅱ",
+   "returns": {
+    "1d": 5.26,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 3.04
+  },
+  {
+   "date": "2026-08-19",
+   "code": "600403",
+   "name": "大有能源",
+   "score": 0.393,
+   "industry": "煤炭开采",
+   "returns": {
+    "1d": 4.25,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.82
+  },
+  {
+   "date": "2026-08-20",
+   "code": "688356",
+   "name": "键凯科技",
+   "score": 0.56,
+   "industry": "化学制药",
+   "returns": {
+    "1d": 20.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 89.45
   }
  ],
  "summary": {
-  "total": 45,
+  "total": 53,
   "by_period": {
    "1d": {
-    "count": 45,
-    "win_rate": 66.7,
-    "avg_return": 3.18
+    "count": 53,
+    "win_rate": 66.0,
+    "avg_return": 3.16
    },
    "3d": {
-    "count": 36,
-    "win_rate": 77.8,
-    "avg_return": 9.45
+    "count": 38,
+    "win_rate": 73.7,
+    "avg_return": 8.58
    },
    "5d": {
     "count": 34,
