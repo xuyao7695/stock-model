@@ -853,25 +853,95 @@
     "10d": null
    },
    "base_price": 18.65
+  },
+  {
+   "date": "2026-08-12",
+   "code": "300862",
+   "name": "蓝盾光电",
+   "score": 0.68,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 20.01,
+    "3d": 66.78,
+    "5d": 67.78,
+    "10d": null
+   },
+   "base_price": 32.84
+  },
+  {
+   "date": "2026-08-12",
+   "code": "603758",
+   "name": "秦安股份",
+   "score": 0.524,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 10.04,
+    "3d": 1.94,
+    "5d": -17.13,
+    "10d": null
+   },
+   "base_price": 13.95
+  },
+  {
+   "date": "2026-08-12",
+   "code": "600683",
+   "name": "京投发展",
+   "score": 0.467,
+   "industry": "房地产开",
+   "returns": {
+    "1d": 10.04,
+    "3d": -0.34,
+    "5d": -17.62,
+    "10d": null
+   },
+   "base_price": 11.75
+  },
+  {
+   "date": "2026-08-12",
+   "code": "605286",
+   "name": "同力天启",
+   "score": 0.454,
+   "industry": "专用设备",
+   "returns": {
+    "1d": 10.0,
+    "3d": -2.71,
+    "5d": -19.78,
+    "10d": null
+   },
+   "base_price": 30.99
+  },
+  {
+   "date": "2026-08-12",
+   "code": "002229",
+   "name": "鸿博股份",
+   "score": 0.445,
+   "industry": "IT服务Ⅱ",
+   "returns": {
+    "1d": 5.73,
+    "3d": 7.05,
+    "5d": -12.32,
+    "10d": null
+   },
+   "base_price": 12.91
   }
  ],
  "summary": {
-  "total": 61,
+  "total": 66,
   "by_period": {
    "1d": {
-    "count": 61,
-    "win_rate": 63.9,
-    "avg_return": 2.97
+    "count": 66,
+    "win_rate": 66.7,
+    "avg_return": 3.59
    },
    "3d": {
-    "count": 40,
-    "win_rate": 70.0,
-    "avg_return": 7.78
+    "count": 45,
+    "win_rate": 68.9,
+    "avg_return": 8.54
    },
    "5d": {
-    "count": 36,
-    "win_rate": 75.0,
-    "avg_return": 11.27
+    "count": 41,
+    "win_rate": 68.3,
+    "avg_return": 9.92
    },
    "10d": {
     "count": 12,
