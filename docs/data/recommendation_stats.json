@@ -923,15 +923,127 @@
     "10d": null
    },
    "base_price": 12.91
+  },
+  {
+   "date": "2026-08-24",
+   "code": "002703",
+   "name": "浙江世宝",
+   "score": 0.427,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 9.98,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 14.43
+  },
+  {
+   "date": "2026-08-24",
+   "code": "000931",
+   "name": "中 关 村",
+   "score": 0.419,
+   "industry": "化学制药",
+   "returns": {
+    "1d": -6.79,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.6
+  },
+  {
+   "date": "2026-08-24",
+   "code": "002882",
+   "name": "金龙羽",
+   "score": 0.417,
+   "industry": "电网设备",
+   "returns": {
+    "1d": -6.65,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 23.76
+  },
+  {
+   "date": "2026-08-25",
+   "code": "002412",
+   "name": "汉森制药",
+   "score": 0.6,
+   "industry": "中药Ⅱ",
+   "returns": {
+    "1d": 3.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 12.33
+  },
+  {
+   "date": "2026-08-25",
+   "code": "003040",
+   "name": "楚天龙",
+   "score": 0.482,
+   "industry": "通信设备",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 15.48
+  },
+  {
+   "date": "2026-08-25",
+   "code": "000070",
+   "name": "特发信息",
+   "score": 0.477,
+   "industry": "通信设备",
+   "returns": {
+    "1d": -0.62,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 16.07
+  },
+  {
+   "date": "2026-08-25",
+   "code": "002081",
+   "name": "金 螳 螂",
+   "score": 0.477,
+   "industry": "装修装饰",
+   "returns": {
+    "1d": 3.45,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.5
+  },
+  {
+   "date": "2026-08-25",
+   "code": "002837",
+   "name": "英维克",
+   "score": 0.477,
+   "industry": "专用设备",
+   "returns": {
+    "1d": 3.62,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 60.23
   }
  ],
  "summary": {
-  "total": 66,
+  "total": 74,
   "by_period": {
    "1d": {
-    "count": 66,
-    "win_rate": 66.7,
-    "avg_return": 3.59
+    "count": 74,
+    "win_rate": 66.2,
+    "avg_return": 3.41
    },
    "3d": {
     "count": 45,
