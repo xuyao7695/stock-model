@@ -1175,25 +1175,109 @@
     "10d": null
    },
    "base_price": 2.9
+  },
+  {
+   "date": "2026-08-26",
+   "code": "300333",
+   "name": "兆日科技",
+   "score": 0.42,
+   "industry": "计算机设",
+   "returns": {
+    "1d": 11.67,
+    "3d": 0.16,
+    "5d": -1.13,
+    "10d": null
+   },
+   "base_price": 12.34
+  },
+  {
+   "date": "2026-09-01",
+   "code": "000892",
+   "name": "欢瑞世纪",
+   "score": 0.46,
+   "industry": "影视院线",
+   "returns": {
+    "1d": 9.94,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 4.73
+  },
+  {
+   "date": "2026-09-01",
+   "code": "000564",
+   "name": "供销大集",
+   "score": 0.445,
+   "industry": "一般零售",
+   "returns": {
+    "1d": -1.81,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 1.66
+  },
+  {
+   "date": "2026-09-01",
+   "code": "003005",
+   "name": "竞业达",
+   "score": 0.433,
+   "industry": "IT服务Ⅱ",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 18.18
+  },
+  {
+   "date": "2026-09-02",
+   "code": "601086",
+   "name": "国芳集团",
+   "score": 0.534,
+   "industry": "一般零售",
+   "returns": {
+    "1d": 10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.1
+  },
+  {
+   "date": "2026-09-02",
+   "code": "603618",
+   "name": "杭电股份",
+   "score": 0.51,
+   "industry": "电网设备",
+   "returns": {
+    "1d": 7.31,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 37.22
   }
  ],
  "summary": {
-  "total": 84,
+  "total": 90,
   "by_period": {
    "1d": {
-    "count": 84,
-    "win_rate": 66.7,
-    "avg_return": 3.65
+    "count": 90,
+    "win_rate": 67.8,
+    "avg_return": 3.93
    },
    "3d": {
-    "count": 53,
-    "win_rate": 67.9,
-    "avg_return": 8.55
+    "count": 54,
+    "win_rate": 68.5,
+    "avg_return": 8.39
    },
    "5d": {
-    "count": 41,
-    "win_rate": 68.3,
-    "avg_return": 9.92
+    "count": 42,
+    "win_rate": 66.7,
+    "avg_return": 9.66
    },
    "10d": {
     "count": 12,
