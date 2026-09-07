@@ -1259,15 +1259,43 @@
     "10d": null
    },
    "base_price": 37.22
+  },
+  {
+   "date": "2026-09-04",
+   "code": "603123",
+   "name": "翠微股份",
+   "score": 0.346,
+   "industry": "多元金融",
+   "returns": {
+    "1d": 5.37,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.18
+  },
+  {
+   "date": "2026-09-04",
+   "code": "000735",
+   "name": "罗 牛 山",
+   "score": 0.264,
+   "industry": "养殖业",
+   "returns": {
+    "1d": 9.95,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.13
   }
  ],
  "summary": {
-  "total": 90,
+  "total": 92,
   "by_period": {
    "1d": {
-    "count": 90,
-    "win_rate": 67.8,
-    "avg_return": 3.93
+    "count": 92,
+    "win_rate": 68.5,
+    "avg_return": 4.01
    },
    "3d": {
     "count": 54,
