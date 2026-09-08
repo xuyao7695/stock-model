@@ -1287,15 +1287,43 @@
     "10d": null
    },
    "base_price": 6.13
+  },
+  {
+   "date": "2026-09-07",
+   "code": "001389",
+   "name": "广合科技",
+   "score": 0.444,
+   "industry": "元件",
+   "returns": {
+    "1d": 1.53,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 167.88
+  },
+  {
+   "date": "2026-09-07",
+   "code": "002881",
+   "name": "美格智能",
+   "score": 0.349,
+   "industry": "通信设备",
+   "returns": {
+    "1d": 3.92,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 46.12
   }
  ],
  "summary": {
-  "total": 92,
+  "total": 94,
   "by_period": {
    "1d": {
-    "count": 92,
-    "win_rate": 68.5,
-    "avg_return": 4.01
+    "count": 94,
+    "win_rate": 69.1,
+    "avg_return": 3.98
    },
    "3d": {
     "count": 54,
