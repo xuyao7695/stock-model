@@ -1315,25 +1315,67 @@
     "10d": null
    },
    "base_price": 46.12
+  },
+  {
+   "date": "2026-09-03",
+   "code": "002851",
+   "name": "麦格米特",
+   "score": 0.36,
+   "industry": "其他电源",
+   "returns": {
+    "1d": -4.7,
+    "3d": 1.15,
+    "5d": 0.52,
+    "10d": null
+   },
+   "base_price": 127.14
+  },
+  {
+   "date": "2026-09-03",
+   "code": "603989",
+   "name": "艾华集团",
+   "score": 0.36,
+   "industry": "元件",
+   "returns": {
+    "1d": -1.59,
+    "3d": 7.06,
+    "5d": -1.03,
+    "10d": null
+   },
+   "base_price": 32.03
+  },
+  {
+   "date": "2026-09-03",
+   "code": "003018",
+   "name": "金富科技",
+   "score": 0.343,
+   "industry": "包装印刷",
+   "returns": {
+    "1d": -1.65,
+    "3d": -7.19,
+    "5d": -11.31,
+    "10d": null
+   },
+   "base_price": 56.43
   }
  ],
  "summary": {
-  "total": 94,
+  "total": 97,
   "by_period": {
    "1d": {
-    "count": 94,
-    "win_rate": 69.1,
-    "avg_return": 3.98
+    "count": 97,
+    "win_rate": 67.0,
+    "avg_return": 3.78
    },
    "3d": {
-    "count": 54,
-    "win_rate": 68.5,
-    "avg_return": 8.39
+    "count": 57,
+    "win_rate": 68.4,
+    "avg_return": 7.97
    },
    "5d": {
-    "count": 42,
-    "win_rate": 66.7,
-    "avg_return": 9.66
+    "count": 45,
+    "win_rate": 64.4,
+    "avg_return": 8.75
    },
    "10d": {
     "count": 12,
