@@ -1511,15 +1511,57 @@
     "10d": null
    },
    "base_price": 27.92
+  },
+  {
+   "date": "2026-09-11",
+   "code": "002790",
+   "name": "瑞尔特",
+   "score": 0.462,
+   "industry": "家居用品",
+   "returns": {
+    "1d": -9.99,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 9.31
+  },
+  {
+   "date": "2026-09-11",
+   "code": "002519",
+   "name": "银河电子",
+   "score": 0.294,
+   "industry": "地面兵装",
+   "returns": {
+    "1d": -0.63,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.31
+  },
+  {
+   "date": "2026-09-11",
+   "code": "002201",
+   "name": "九鼎新材",
+   "score": 0.27,
+   "industry": "玻璃玻纤",
+   "returns": {
+    "1d": 1.17,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.09
   }
  ],
  "summary": {
-  "total": 108,
+  "total": 111,
   "by_period": {
    "1d": {
-    "count": 108,
-    "win_rate": 68.5,
-    "avg_return": 3.87
+    "count": 111,
+    "win_rate": 67.6,
+    "avg_return": 3.68
    },
    "3d": {
     "count": 64,
