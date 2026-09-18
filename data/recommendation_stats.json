@@ -1553,20 +1553,118 @@
     "10d": null
    },
    "base_price": 11.09
+  },
+  {
+   "date": "2026-09-15",
+   "code": "002232",
+   "name": "启明信息",
+   "score": 0.301,
+   "industry": "IT服务Ⅱ",
+   "returns": {
+    "1d": -5.12,
+    "3d": -8.27,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 16.81
+  },
+  {
+   "date": "2026-09-15",
+   "code": "002882",
+   "name": "金龙羽",
+   "score": 0.301,
+   "industry": "电网设备",
+   "returns": {
+    "1d": 1.15,
+    "3d": -0.17,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 23.45
+  },
+  {
+   "date": "2026-09-15",
+   "code": "002213",
+   "name": "大为股份",
+   "score": 0.273,
+   "industry": "半导体",
+   "returns": {
+    "1d": 0.31,
+    "3d": -0.47,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 29.49
+  },
+  {
+   "date": "2026-09-15",
+   "code": "603200",
+   "name": "上海洗霸",
+   "score": 0.216,
+   "industry": "环境治理",
+   "returns": {
+    "1d": 1.78,
+    "3d": 0.63,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 39.81
+  },
+  {
+   "date": "2026-09-15",
+   "code": "001216",
+   "name": "华瓷股份",
+   "score": 0.206,
+   "industry": "家居用品",
+   "returns": {
+    "1d": 9.98,
+    "3d": 33.11,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 16.43
+  },
+  {
+   "date": "2026-09-16",
+   "code": "003031",
+   "name": "中瓷电子",
+   "score": 0.56,
+   "industry": "通信设备",
+   "returns": {
+    "1d": -0.23,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 137.72
+  },
+  {
+   "date": "2026-09-16",
+   "code": "600105",
+   "name": "永鼎股份",
+   "score": 0.56,
+   "industry": "通信设备",
+   "returns": {
+    "1d": -0.18,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 45.22
   }
  ],
  "summary": {
-  "total": 111,
+  "total": 118,
   "by_period": {
    "1d": {
-    "count": 111,
-    "win_rate": 67.6,
-    "avg_return": 3.68
+    "count": 118,
+    "win_rate": 66.9,
+    "avg_return": 3.52
    },
    "3d": {
-    "count": 64,
-    "win_rate": 64.1,
-    "avg_return": 6.6
+    "count": 69,
+    "win_rate": 62.3,
+    "avg_return": 6.48
    },
    "5d": {
     "count": 45,
