@@ -1651,25 +1651,123 @@
     "10d": null
    },
    "base_price": 45.22
+  },
+  {
+   "date": "2026-09-14",
+   "code": "002912",
+   "name": "中新赛克",
+   "score": 0.367,
+   "industry": "计算机设",
+   "returns": {
+    "1d": 10.02,
+    "3d": -9.51,
+    "5d": -7.19,
+    "10d": null
+   },
+   "base_price": 25.86
+  },
+  {
+   "date": "2026-09-14",
+   "code": "600330",
+   "name": "天通股份",
+   "score": 0.352,
+   "industry": "电子化学",
+   "returns": {
+    "1d": -3.97,
+    "3d": -1.89,
+    "5d": -2.65,
+    "10d": null
+   },
+   "base_price": 30.23
+  },
+  {
+   "date": "2026-09-14",
+   "code": "000962",
+   "name": "东方钽业",
+   "score": 0.339,
+   "industry": "小金属",
+   "returns": {
+    "1d": 4.86,
+    "3d": 6.23,
+    "5d": 15.11,
+    "10d": null
+   },
+   "base_price": 54.55
+  },
+  {
+   "date": "2026-09-17",
+   "code": "600699",
+   "name": "均胜电子",
+   "score": 0.523,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 1.36,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 19.87
+  },
+  {
+   "date": "2026-09-17",
+   "code": "600641",
+   "name": "先导基电",
+   "score": 0.372,
+   "industry": "半导体",
+   "returns": {
+    "1d": 1.36,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 36.8
+  },
+  {
+   "date": "2026-09-17",
+   "code": "603960",
+   "name": "克来机电",
+   "score": 0.355,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 0.71,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 17.0
+  },
+  {
+   "date": "2026-09-17",
+   "code": "600127",
+   "name": "金健米业",
+   "score": 0.295,
+   "industry": "农产品加",
+   "returns": {
+    "1d": 9.98,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 13.02
   }
  ],
  "summary": {
-  "total": 118,
+  "total": 125,
   "by_period": {
    "1d": {
-    "count": 118,
-    "win_rate": 66.9,
+    "count": 125,
+    "win_rate": 68.0,
     "avg_return": 3.52
    },
    "3d": {
-    "count": 69,
-    "win_rate": 62.3,
-    "avg_return": 6.48
+    "count": 72,
+    "win_rate": 61.1,
+    "avg_return": 6.14
    },
    "5d": {
-    "count": 45,
-    "win_rate": 64.4,
-    "avg_return": 8.75
+    "count": 48,
+    "win_rate": 62.5,
+    "avg_return": 8.32
    },
    "10d": {
     "count": 12,
