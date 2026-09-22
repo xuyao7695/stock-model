@@ -1749,15 +1749,183 @@
     "10d": null
    },
    "base_price": 13.02
+  },
+  {
+   "date": "2026-09-18",
+   "code": "301583",
+   "name": "托伦斯",
+   "score": 0.56,
+   "industry": "半导体",
+   "returns": {
+    "1d": -1.66,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 142.56
+  },
+  {
+   "date": "2026-09-18",
+   "code": "002300",
+   "name": "太阳电缆",
+   "score": 0.414,
+   "industry": "电网设备",
+   "returns": {
+    "1d": 0.58,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 8.67
+  },
+  {
+   "date": "2026-09-18",
+   "code": "600343",
+   "name": "航天动力",
+   "score": 0.394,
+   "industry": "通用设备",
+   "returns": {
+    "1d": -2.91,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 21.67
+  },
+  {
+   "date": "2026-09-18",
+   "code": "600577",
+   "name": "精达股份",
+   "score": 0.391,
+   "industry": "电网设备",
+   "returns": {
+    "1d": 2.98,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 8.72
+  },
+  {
+   "date": "2026-09-18",
+   "code": "301689",
+   "name": "电科思仪",
+   "score": 0.389,
+   "industry": "通用设备",
+   "returns": {
+    "1d": -0.48,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 63.0
+  },
+  {
+   "date": "2026-09-18",
+   "code": "603118",
+   "name": "共进股份",
+   "score": 0.36,
+   "industry": "通信设备",
+   "returns": {
+    "1d": 1.19,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 18.43
+  },
+  {
+   "date": "2026-09-21",
+   "code": "001216",
+   "name": "华瓷股份",
+   "score": 0.553,
+   "industry": "家居用品",
+   "returns": {
+    "1d": 10.02,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 24.06
+  },
+  {
+   "date": "2026-09-21",
+   "code": "000504",
+   "name": "南华生物",
+   "score": 0.452,
+   "industry": "医疗服务",
+   "returns": {
+    "1d": 9.99,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.01
+  },
+  {
+   "date": "2026-09-21",
+   "code": "000566",
+   "name": "海南海药",
+   "score": 0.401,
+   "industry": "化学制药",
+   "returns": {
+    "1d": -1.97,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.07
+  },
+  {
+   "date": "2026-09-21",
+   "code": "000756",
+   "name": "新华制药",
+   "score": 0.399,
+   "industry": "化学制药",
+   "returns": {
+    "1d": 10.02,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 14.67
+  },
+  {
+   "date": "2026-09-21",
+   "code": "002453",
+   "name": "华软科技",
+   "score": 0.396,
+   "industry": "化学制品",
+   "returns": {
+    "1d": -9.03,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.87
+  },
+  {
+   "date": "2026-09-21",
+   "code": "600825",
+   "name": "新华传媒",
+   "score": 0.393,
+   "industry": "出版",
+   "returns": {
+    "1d": 9.93,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.84
   }
  ],
  "summary": {
-  "total": 125,
+  "total": 137,
   "by_period": {
    "1d": {
-    "count": 125,
-    "win_rate": 68.0,
-    "avg_return": 3.52
+    "count": 137,
+    "win_rate": 67.2,
+    "avg_return": 3.42
    },
    "3d": {
     "count": 72,
