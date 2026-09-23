@@ -1917,15 +1917,99 @@
     "10d": null
    },
    "base_price": 5.84
+  },
+  {
+   "date": "2026-09-22",
+   "code": "600825",
+   "name": "新华传媒",
+   "score": 0.57,
+   "industry": "出版",
+   "returns": {
+    "1d": 9.97,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.42
+  },
+  {
+   "date": "2026-09-22",
+   "code": "000504",
+   "name": "南华生物",
+   "score": 0.549,
+   "industry": "医疗服务",
+   "returns": {
+    "1d": 4.54,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 12.11
+  },
+  {
+   "date": "2026-09-22",
+   "code": "601811",
+   "name": "新华文轩",
+   "score": 0.473,
+   "industry": "出版",
+   "returns": {
+    "1d": 9.99,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 16.82
+  },
+  {
+   "date": "2026-09-22",
+   "code": "000910",
+   "name": "大亚圣象",
+   "score": 0.464,
+   "industry": "家居用品",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.89
+  },
+  {
+   "date": "2026-09-22",
+   "code": "002290",
+   "name": "禾盛新材",
+   "score": 0.378,
+   "industry": "家电零部",
+   "returns": {
+    "1d": -3.53,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 77.85
+  },
+  {
+   "date": "2026-09-22",
+   "code": "000607",
+   "name": "华媒控股",
+   "score": 0.362,
+   "industry": "广告营销",
+   "returns": {
+    "1d": -10.04,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 4.98
   }
  ],
  "summary": {
-  "total": 137,
+  "total": 143,
   "by_period": {
    "1d": {
-    "count": 137,
-    "win_rate": 67.2,
-    "avg_return": 3.42
+    "count": 143,
+    "win_rate": 67.1,
+    "avg_return": 3.43
    },
    "3d": {
     "count": 72,
