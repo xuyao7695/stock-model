@@ -2001,15 +2001,99 @@
     "10d": null
    },
    "base_price": 4.98
+  },
+  {
+   "date": "2026-09-23",
+   "code": "600825",
+   "name": "新华传媒",
+   "score": 0.513,
+   "industry": "出版",
+   "returns": {
+    "1d": 10.06,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 7.06
+  },
+  {
+   "date": "2026-09-23",
+   "code": "002119",
+   "name": "康强电子",
+   "score": 0.435,
+   "industry": "半导体",
+   "returns": {
+    "1d": 9.99,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 26.92
+  },
+  {
+   "date": "2026-09-23",
+   "code": "601811",
+   "name": "新华文轩",
+   "score": 0.411,
+   "industry": "出版",
+   "returns": {
+    "1d": 10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 18.5
+  },
+  {
+   "date": "2026-09-23",
+   "code": "001234",
+   "name": "泰慕士",
+   "score": 0.395,
+   "industry": "服装家纺",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 32.18
+  },
+  {
+   "date": "2026-09-23",
+   "code": "600743",
+   "name": "华远控股",
+   "score": 0.383,
+   "industry": "房地产服",
+   "returns": {
+    "1d": -8.16,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 2.82
+  },
+  {
+   "date": "2026-09-23",
+   "code": "002819",
+   "name": "东方中科",
+   "score": 0.365,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 9.98,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 24.24
   }
  ],
  "summary": {
-  "total": 143,
+  "total": 149,
   "by_period": {
    "1d": {
-    "count": 143,
-    "win_rate": 67.1,
-    "avg_return": 3.43
+    "count": 149,
+    "win_rate": 67.8,
+    "avg_return": 3.57
    },
    "3d": {
     "count": 72,
