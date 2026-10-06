@@ -2085,20 +2085,76 @@
     "10d": null
    },
    "base_price": 24.24
+  },
+  {
+   "date": "2026-09-24",
+   "code": "600825",
+   "name": "新华传媒",
+   "score": 0.64,
+   "industry": "出版",
+   "returns": {
+    "1d": 10.04,
+    "3d": 33.2,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 7.77
+  },
+  {
+   "date": "2026-09-24",
+   "code": "601811",
+   "name": "新华文轩",
+   "score": 0.544,
+   "industry": "出版",
+   "returns": {
+    "1d": -8.99,
+    "3d": 3.78,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 20.35
+  },
+  {
+   "date": "2026-09-24",
+   "code": "001234",
+   "name": "泰慕士",
+   "score": 0.524,
+   "industry": "服装家纺",
+   "returns": {
+    "1d": -10.0,
+    "3d": -27.12,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 35.4
+  },
+  {
+   "date": "2026-09-24",
+   "code": "603949",
+   "name": "雪龙集团",
+   "score": 0.372,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 10.0,
+    "3d": 8.93,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 16.9
   }
  ],
  "summary": {
-  "total": 149,
+  "total": 153,
   "by_period": {
    "1d": {
-    "count": 149,
-    "win_rate": 67.8,
-    "avg_return": 3.57
+    "count": 153,
+    "win_rate": 67.3,
+    "avg_return": 3.48
    },
    "3d": {
-    "count": 72,
-    "win_rate": 61.1,
-    "avg_return": 6.14
+    "count": 76,
+    "win_rate": 61.8,
+    "avg_return": 6.07
    },
    "5d": {
     "count": 48,
