@@ -2141,20 +2141,104 @@
     "10d": null
    },
    "base_price": 16.9
+  },
+  {
+   "date": "2026-09-25",
+   "code": "600825",
+   "name": "新华传媒",
+   "score": 0.615,
+   "industry": "出版",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.39
+  },
+  {
+   "date": "2026-09-25",
+   "code": "001234",
+   "name": "泰慕士",
+   "score": 0.504,
+   "industry": "服装家纺",
+   "returns": {
+    "1d": 2.15,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 23.26
+  },
+  {
+   "date": "2026-09-25",
+   "code": "601811",
+   "name": "新华文轩",
+   "score": 0.493,
+   "industry": "出版",
+   "returns": {
+    "1d": 9.99,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 19.01
+  },
+  {
+   "date": "2026-09-25",
+   "code": "603949",
+   "name": "雪龙集团",
+   "score": 0.326,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": -5.79,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 16.57
+  },
+  {
+   "date": "2026-09-25",
+   "code": "000678",
+   "name": "襄阳轴承",
+   "score": 0.246,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 3.1,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 12.24
+  },
+  {
+   "date": "2026-09-28",
+   "code": "002912",
+   "name": "中新赛克",
+   "score": 0.206,
+   "industry": "计算机设",
+   "returns": {
+    "1d": 10.01,
+    "3d": -1.96,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 26.47
   }
  ],
  "summary": {
-  "total": 153,
+  "total": 159,
   "by_period": {
    "1d": {
-    "count": 153,
-    "win_rate": 67.3,
-    "avg_return": 3.48
+    "count": 159,
+    "win_rate": 67.9,
+    "avg_return": 3.54
    },
    "3d": {
-    "count": 76,
-    "win_rate": 61.8,
-    "avg_return": 6.07
+    "count": 77,
+    "win_rate": 61.0,
+    "avg_return": 5.96
    },
    "5d": {
     "count": 48,
