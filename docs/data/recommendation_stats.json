@@ -2225,20 +2225,776 @@
     "10d": null
    },
    "base_price": 26.47
+  },
+  {
+   "date": "2026-09-30",
+   "code": "000678",
+   "name": "襄阳轴承",
+   "score": 0.53,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": -5.04,
+    "3d": -11.87,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 12.89
+  },
+  {
+   "date": "2026-09-30",
+   "code": "600241",
+   "name": "时代万恒",
+   "score": 0.437,
+   "industry": "电池",
+   "returns": {
+    "1d": 9.98,
+    "3d": 33.13,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 9.72
+  },
+  {
+   "date": "2026-09-30",
+   "code": "002058",
+   "name": "紫竹高科",
+   "score": 0.342,
+   "industry": "电池",
+   "returns": {
+    "1d": 10.0,
+    "3d": 25.25,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 20.2
+  },
+  {
+   "date": "2026-09-30",
+   "code": "002454",
+   "name": "松芝股份",
+   "score": 0.327,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 1.6,
+    "3d": -5.53,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.61
+  },
+  {
+   "date": "2026-09-30",
+   "code": "000710",
+   "name": "贝瑞基因",
+   "score": 0.315,
+   "industry": "医疗服务",
+   "returns": {
+    "1d": -5.52,
+    "3d": 7.64,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 10.87
+  },
+  {
+   "date": "2026-09-30",
+   "code": "000504",
+   "name": "南华生物",
+   "score": 0.291,
+   "industry": "医疗服务",
+   "returns": {
+    "1d": -7.81,
+    "3d": -8.62,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 12.42
+  },
+  {
+   "date": "2026-10-01",
+   "code": "000678",
+   "name": "襄阳轴承",
+   "score": 0.524,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": -2.55,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.36
+  },
+  {
+   "date": "2026-10-01",
+   "code": "600241",
+   "name": "时代万恒",
+   "score": 0.438,
+   "industry": "电池",
+   "returns": {
+    "1d": -0.62,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 12.94
+  },
+  {
+   "date": "2026-10-01",
+   "code": "002058",
+   "name": "紫竹高科",
+   "score": 0.342,
+   "industry": "电池",
+   "returns": {
+    "1d": -10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 25.3
+  },
+  {
+   "date": "2026-10-01",
+   "code": "002454",
+   "name": "松芝股份",
+   "score": 0.327,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 0.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.3
+  },
+  {
+   "date": "2026-10-01",
+   "code": "000710",
+   "name": "贝瑞基因",
+   "score": 0.315,
+   "industry": "医疗服务",
+   "returns": {
+    "1d": -5.13,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.7
+  },
+  {
+   "date": "2026-10-01",
+   "code": "605388",
+   "name": "均瑶健康",
+   "score": 0.284,
+   "industry": "饮料乳品",
+   "returns": {
+    "1d": 3.78,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.62
+  },
+  {
+   "date": "2026-10-02",
+   "code": "000678",
+   "name": "襄阳轴承",
+   "score": 0.524,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": -2.55,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.36
+  },
+  {
+   "date": "2026-10-02",
+   "code": "600241",
+   "name": "时代万恒",
+   "score": 0.438,
+   "industry": "电池",
+   "returns": {
+    "1d": -0.62,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 12.94
+  },
+  {
+   "date": "2026-10-02",
+   "code": "002058",
+   "name": "紫竹高科",
+   "score": 0.342,
+   "industry": "电池",
+   "returns": {
+    "1d": -10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 25.3
+  },
+  {
+   "date": "2026-10-02",
+   "code": "002454",
+   "name": "松芝股份",
+   "score": 0.327,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 0.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.3
+  },
+  {
+   "date": "2026-10-02",
+   "code": "000710",
+   "name": "贝瑞基因",
+   "score": 0.315,
+   "industry": "医疗服务",
+   "returns": {
+    "1d": -5.13,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.7
+  },
+  {
+   "date": "2026-10-02",
+   "code": "605388",
+   "name": "均瑶健康",
+   "score": 0.284,
+   "industry": "饮料乳品",
+   "returns": {
+    "1d": 3.78,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.62
+  },
+  {
+   "date": "2026-10-05",
+   "code": "000678",
+   "name": "襄阳轴承",
+   "score": 0.524,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": -2.55,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.36
+  },
+  {
+   "date": "2026-10-05",
+   "code": "600241",
+   "name": "时代万恒",
+   "score": 0.438,
+   "industry": "电池",
+   "returns": {
+    "1d": -0.62,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 12.94
+  },
+  {
+   "date": "2026-10-05",
+   "code": "002058",
+   "name": "紫竹高科",
+   "score": 0.342,
+   "industry": "电池",
+   "returns": {
+    "1d": -10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 25.3
+  },
+  {
+   "date": "2026-10-05",
+   "code": "002454",
+   "name": "松芝股份",
+   "score": 0.327,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 0.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.3
+  },
+  {
+   "date": "2026-10-05",
+   "code": "000710",
+   "name": "贝瑞基因",
+   "score": 0.315,
+   "industry": "医疗服务",
+   "returns": {
+    "1d": -5.13,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.7
+  },
+  {
+   "date": "2026-10-05",
+   "code": "605388",
+   "name": "均瑶健康",
+   "score": 0.284,
+   "industry": "饮料乳品",
+   "returns": {
+    "1d": 3.78,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.62
+  },
+  {
+   "date": "2026-10-06",
+   "code": "000678",
+   "name": "襄阳轴承",
+   "score": 0.524,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": -2.55,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.36
+  },
+  {
+   "date": "2026-10-06",
+   "code": "600241",
+   "name": "时代万恒",
+   "score": 0.438,
+   "industry": "电池",
+   "returns": {
+    "1d": -0.62,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 12.94
+  },
+  {
+   "date": "2026-10-06",
+   "code": "002058",
+   "name": "紫竹高科",
+   "score": 0.342,
+   "industry": "电池",
+   "returns": {
+    "1d": -10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 25.3
+  },
+  {
+   "date": "2026-10-06",
+   "code": "002454",
+   "name": "松芝股份",
+   "score": 0.327,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 0.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.3
+  },
+  {
+   "date": "2026-10-06",
+   "code": "000710",
+   "name": "贝瑞基因",
+   "score": 0.315,
+   "industry": "医疗服务",
+   "returns": {
+    "1d": -5.13,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.7
+  },
+  {
+   "date": "2026-10-06",
+   "code": "605388",
+   "name": "均瑶健康",
+   "score": 0.284,
+   "industry": "饮料乳品",
+   "returns": {
+    "1d": 3.78,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.62
+  },
+  {
+   "date": "2026-10-07",
+   "code": "000678",
+   "name": "襄阳轴承",
+   "score": 0.524,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": -2.55,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.36
+  },
+  {
+   "date": "2026-10-07",
+   "code": "600241",
+   "name": "时代万恒",
+   "score": 0.438,
+   "industry": "电池",
+   "returns": {
+    "1d": -0.62,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 12.94
+  },
+  {
+   "date": "2026-10-07",
+   "code": "002058",
+   "name": "紫竹高科",
+   "score": 0.342,
+   "industry": "电池",
+   "returns": {
+    "1d": -10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 25.3
+  },
+  {
+   "date": "2026-10-07",
+   "code": "002454",
+   "name": "松芝股份",
+   "score": 0.327,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 0.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.3
+  },
+  {
+   "date": "2026-10-07",
+   "code": "000710",
+   "name": "贝瑞基因",
+   "score": 0.315,
+   "industry": "医疗服务",
+   "returns": {
+    "1d": -5.13,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.7
+  },
+  {
+   "date": "2026-10-07",
+   "code": "605388",
+   "name": "均瑶健康",
+   "score": 0.284,
+   "industry": "饮料乳品",
+   "returns": {
+    "1d": 3.78,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.62
+  },
+  {
+   "date": "2026-10-08",
+   "code": "600241",
+   "name": "时代万恒",
+   "score": 0.553,
+   "industry": "电池",
+   "returns": {
+    "1d": 10.01,
+    "3d": 20.3,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 10.69
+  },
+  {
+   "date": "2026-10-08",
+   "code": "002242",
+   "name": "九阳股份",
+   "score": 0.391,
+   "industry": "小家电",
+   "returns": {
+    "1d": 10.04,
+    "3d": 28.51,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 13.75
+  },
+  {
+   "date": "2026-10-08",
+   "code": "605303",
+   "name": "园林股份",
+   "score": 0.287,
+   "industry": "基础建设",
+   "returns": {
+    "1d": 2.16,
+    "3d": -12.08,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 31.53
+  },
+  {
+   "date": "2026-10-08",
+   "code": "600026",
+   "name": "中远海能",
+   "score": 0.213,
+   "industry": "航运港口",
+   "returns": {
+    "1d": 3.85,
+    "3d": 0.35,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 22.62
+  },
+  {
+   "date": "2026-10-08",
+   "code": "603928",
+   "name": "兴业股份",
+   "score": 0.189,
+   "industry": "塑料",
+   "returns": {
+    "1d": -4.8,
+    "3d": -10.57,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 14.38
+  },
+  {
+   "date": "2026-10-08",
+   "code": "001300",
+   "name": "三柏硕",
+   "score": 0.189,
+   "industry": "文娱用品",
+   "returns": {
+    "1d": 9.99,
+    "3d": -8.88,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 13.51
+  },
+  {
+   "date": "2026-10-09",
+   "code": "600241",
+   "name": "时代万恒",
+   "score": 0.665,
+   "industry": "电池",
+   "returns": {
+    "1d": 10.03,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.76
+  },
+  {
+   "date": "2026-10-09",
+   "code": "002058",
+   "name": "紫竹高科",
+   "score": 0.535,
+   "industry": "电池",
+   "returns": {
+    "1d": 3.52,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 24.44
+  },
+  {
+   "date": "2026-10-09",
+   "code": "300369",
+   "name": "绿盟科技",
+   "score": 0.316,
+   "industry": "软件开发",
+   "returns": {
+    "1d": 6.71,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 10.43
+  },
+  {
+   "date": "2026-10-09",
+   "code": "002212",
+   "name": "天融信",
+   "score": 0.307,
+   "industry": "软件开发",
+   "returns": {
+    "1d": 0.93,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 7.56
+  },
+  {
+   "date": "2026-10-09",
+   "code": "600812",
+   "name": "华北制药",
+   "score": 0.305,
+   "industry": "化学制药",
+   "returns": {
+    "1d": 9.95,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.03
+  },
+  {
+   "date": "2026-10-09",
+   "code": "605577",
+   "name": "龙版传媒",
+   "score": 0.301,
+   "industry": "出版",
+   "returns": {
+    "1d": 10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 16.2
+  },
+  {
+   "date": "2026-10-12",
+   "code": "605577",
+   "name": "龙版传媒",
+   "score": 0.439,
+   "industry": "出版",
+   "returns": {
+    "1d": 9.99,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 17.82
+  },
+  {
+   "date": "2026-10-12",
+   "code": "603096",
+   "name": "新经典",
+   "score": 0.436,
+   "industry": "出版",
+   "returns": {
+    "1d": 10.02,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 19.06
+  },
+  {
+   "date": "2026-10-12",
+   "code": "002343",
+   "name": "慈文传媒",
+   "score": 0.358,
+   "industry": "影视院线",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 6.69
+  },
+  {
+   "date": "2026-10-12",
+   "code": "002692",
+   "name": "远程股份",
+   "score": 0.325,
+   "industry": "电网设备",
+   "returns": {
+    "1d": -5.92,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.24
+  },
+  {
+   "date": "2026-10-12",
+   "code": "601595",
+   "name": "上海电影",
+   "score": 0.302,
+   "industry": "影视院线",
+   "returns": {
+    "1d": 1.29,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 27.21
+  },
+  {
+   "date": "2026-10-12",
+   "code": "605287",
+   "name": "德才股份",
+   "score": 0.281,
+   "industry": "装修装饰",
+   "returns": {
+    "1d": 3.62,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 44.2
   }
  ],
  "summary": {
-  "total": 159,
+  "total": 213,
   "by_period": {
    "1d": {
-    "count": 159,
-    "win_rate": 67.9,
-    "avg_return": 3.54
+    "count": 213,
+    "win_rate": 62.0,
+    "avg_return": 2.79
    },
    "3d": {
-    "count": 77,
-    "win_rate": 61.0,
-    "avg_return": 5.96
+    "count": 89,
+    "win_rate": 59.6,
+    "avg_return": 5.81
    },
    "5d": {
     "count": 48,
