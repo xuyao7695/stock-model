@@ -2981,15 +2981,29 @@
     "10d": null
    },
    "base_price": 44.2
+  },
+  {
+   "date": "2026-10-14",
+   "code": "002696",
+   "name": "百洋股份",
+   "score": 0.471,
+   "industry": "饲料",
+   "returns": {
+    "1d": 10.05,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 9.75
   }
  ],
  "summary": {
-  "total": 213,
+  "total": 214,
   "by_period": {
    "1d": {
-    "count": 213,
-    "win_rate": 62.0,
-    "avg_return": 2.79
+    "count": 214,
+    "win_rate": 62.1,
+    "avg_return": 2.82
    },
    "3d": {
     "count": 89,
