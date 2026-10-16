@@ -2995,20 +2995,188 @@
     "10d": null
    },
    "base_price": 9.75
+  },
+  {
+   "date": "2026-10-13",
+   "code": "000823",
+   "name": "超声电子",
+   "score": 0.504,
+   "industry": "元件",
+   "returns": {
+    "1d": 9.99,
+    "3d": 13.35,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 22.32
+  },
+  {
+   "date": "2026-10-13",
+   "code": "002579",
+   "name": "中京电子",
+   "score": 0.362,
+   "industry": "元件",
+   "returns": {
+    "1d": 0.73,
+    "3d": -5.6,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 16.43
+  },
+  {
+   "date": "2026-10-13",
+   "code": "603096",
+   "name": "新经典",
+   "score": 0.344,
+   "industry": "出版",
+   "returns": {
+    "1d": 10.01,
+    "3d": 4.91,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 20.97
+  },
+  {
+   "date": "2026-10-13",
+   "code": "002343",
+   "name": "慈文传媒",
+   "score": 0.334,
+   "industry": "影视院线",
+   "returns": {
+    "1d": 10.05,
+    "3d": 22.55,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 7.36
+  },
+  {
+   "date": "2026-10-13",
+   "code": "001231",
+   "name": "农心科技",
+   "score": 0.296,
+   "industry": "农化制品",
+   "returns": {
+    "1d": -10.01,
+    "3d": -24.49,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 28.17
+  },
+  {
+   "date": "2026-10-13",
+   "code": "605136",
+   "name": "丽人丽妆",
+   "score": 0.286,
+   "industry": "互联网电",
+   "returns": {
+    "1d": -8.93,
+    "3d": -20.05,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.42
+  },
+  {
+   "date": "2026-10-15",
+   "code": "002815",
+   "name": "崇达技术",
+   "score": 0.56,
+   "industry": "元件",
+   "returns": {
+    "1d": 1.42,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 23.25
+  },
+  {
+   "date": "2026-10-15",
+   "code": "301282",
+   "name": "金禄电子",
+   "score": 0.513,
+   "industry": "元件",
+   "returns": {
+    "1d": -8.65,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 49.92
+  },
+  {
+   "date": "2026-10-15",
+   "code": "002343",
+   "name": "慈文传媒",
+   "score": 0.493,
+   "industry": "影视院线",
+   "returns": {
+    "1d": 1.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 8.91
+  },
+  {
+   "date": "2026-10-15",
+   "code": "001318",
+   "name": "阳光乳业",
+   "score": 0.305,
+   "industry": "饮料乳品",
+   "returns": {
+    "1d": -8.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 16.97
+  },
+  {
+   "date": "2026-10-15",
+   "code": "603329",
+   "name": "上海雅仕",
+   "score": 0.286,
+   "industry": "物流",
+   "returns": {
+    "1d": 1.32,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.33
+  },
+  {
+   "date": "2026-10-15",
+   "code": "002889",
+   "name": "东方嘉盛",
+   "score": 0.284,
+   "industry": "物流",
+   "returns": {
+    "1d": 9.99,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 13.01
   }
  ],
  "summary": {
-  "total": 214,
+  "total": 226,
   "by_period": {
    "1d": {
-    "count": 214,
-    "win_rate": 62.1,
-    "avg_return": 2.82
+    "count": 226,
+    "win_rate": 62.4,
+    "avg_return": 2.71
    },
    "3d": {
-    "count": 89,
-    "win_rate": 59.6,
-    "avg_return": 5.81
+    "count": 95,
+    "win_rate": 58.9,
+    "avg_return": 5.34
    },
    "5d": {
     "count": 48,

@@ -1,16 +1,16 @@
 {
- "scan_time": "2026-10-15 06:06:12",
- "total_zt": 14,
+ "scan_time": "2026-10-16 06:04:59",
+ "total_zt": 20,
  "top_n": 6,
  "advices": [
   {
-   "code": "002815",
-   "name": "崇达技术",
+   "code": "002085",
+   "name": "万丰奥威",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "元件",
+   "industry": "汽车零部",
    "industry_heat": 1.0,
-   "score": 0.56,
+   "score": 0.528,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -35,13 +35,13 @@
    ]
   },
   {
-   "code": "301282",
-   "name": "金禄电子",
+   "code": "600699",
+   "name": "均胜电子",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "元件",
+   "industry": "汽车零部",
    "industry_heat": 1.0,
-   "score": 0.513,
+   "score": 0.471,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -66,13 +66,13 @@
    ]
   },
   {
-   "code": "002343",
-   "name": "慈文传媒",
+   "code": "000530",
+   "name": "冰山冷热",
    "path": "A-连板",
-   "zt_count": 5,
-   "industry": "影视院线",
-   "industry_heat": 0.4,
-   "score": 0.493,
+   "zt_count": 4,
+   "industry": "通用设备",
+   "industry_heat": 0.312,
+   "score": 0.385,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -93,48 +93,17 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.40"
+    "行业热度0.31"
    ]
   },
   {
-   "code": "001318",
-   "name": "阳光乳业",
-   "path": "A-连板",
-   "zt_count": 3,
-   "industry": "饮料乳品",
-   "industry_heat": 0.2,
-   "score": 0.305,
-   "action": "✅ 关注买入",
-   "gate_pass": true,
-   "gate_reason": "通过",
-   "pos_pct": 0.2,
-   "pos_note": "三板，半仓以内",
-   "stop_pct": -0.06,
-   "target_pct": 0.15,
-   "max_hold_days": 10,
-   "discipline": [
-    "⛔ 单只 ≤ 20% 仓位，总仓 ≤ 80%",
-    "🛑 硬止损 -6%（到价无条件砍，不补仓）",
-    "🎯 目标 +15% 或 题材退潮即走",
-    "⏱ 最大持仓 10 天，到期强制复盘",
-    "📝 买入前写一句理由 + 信号来源（不写不买）",
-    "🔥 今日已亏 -5% 熔断 → 关 APP"
-   ],
-   "matched": [
-    "连板数达标",
-    "封单达标",
-    "未炸板",
-    "行业热度0.20"
-   ]
-  },
-  {
-   "code": "603329",
-   "name": "上海雅仕",
+   "code": "001696",
+   "name": "宗申动力",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "物流",
-   "industry_heat": 0.8,
-   "score": 0.286,
+   "industry": "通用设备",
+   "industry_heat": 0.312,
+   "score": 0.35,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -155,17 +124,17 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.80"
+    "行业热度0.31"
    ]
   },
   {
-   "code": "002889",
-   "name": "东方嘉盛",
+   "code": "600418",
+   "name": "江淮汽车",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "物流",
-   "industry_heat": 0.8,
-   "score": 0.284,
+   "industry": "商用车",
+   "industry_heat": 0.062,
+   "score": 0.326,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -186,19 +155,50 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.80"
+    "行业热度0.06"
+   ]
+  },
+  {
+   "code": "601606",
+   "name": "长城军工",
+   "path": "A-连板",
+   "zt_count": 1,
+   "industry": "地面兵装",
+   "industry_heat": 0.125,
+   "score": 0.295,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.18,
+   "pos_note": "首板，轻仓埋伏",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度0.12"
    ]
   }
  ],
  "all_advices": [
   {
-   "code": "002815",
-   "name": "崇达技术",
+   "code": "002085",
+   "name": "万丰奥威",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "元件",
+   "industry": "汽车零部",
    "industry_heat": 1.0,
-   "score": 0.56,
+   "score": 0.528,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -223,13 +223,13 @@
    ]
   },
   {
-   "code": "301282",
-   "name": "金禄电子",
+   "code": "600699",
+   "name": "均胜电子",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "元件",
+   "industry": "汽车零部",
    "industry_heat": 1.0,
-   "score": 0.513,
+   "score": 0.471,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -254,13 +254,106 @@
    ]
   },
   {
-   "code": "002343",
-   "name": "慈文传媒",
+   "code": "000887",
+   "name": "中鼎股份",
    "path": "A-连板",
-   "zt_count": 5,
-   "industry": "影视院线",
-   "industry_heat": 0.4,
-   "score": 0.493,
+   "zt_count": 1,
+   "industry": "汽车零部",
+   "industry_heat": 1.0,
+   "score": 0.469,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.18,
+   "pos_note": "首板，轻仓埋伏",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度1.00"
+   ]
+  },
+  {
+   "code": "603197",
+   "name": "保隆科技",
+   "path": "A-连板",
+   "zt_count": 1,
+   "industry": "汽车零部",
+   "industry_heat": 1.0,
+   "score": 0.433,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.18,
+   "pos_note": "首板，轻仓埋伏",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度1.00"
+   ]
+  },
+  {
+   "code": "002510",
+   "name": "天汽模",
+   "path": "A-连板",
+   "zt_count": 1,
+   "industry": "汽车零部",
+   "industry_heat": 1.0,
+   "score": 0.422,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.18,
+   "pos_note": "首板，轻仓埋伏",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度1.00"
+   ]
+  },
+  {
+   "code": "000530",
+   "name": "冰山冷热",
+   "path": "A-连板",
+   "zt_count": 4,
+   "industry": "通用设备",
+   "industry_heat": 0.312,
+   "score": 0.385,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -281,15 +374,46 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.40"
+    "行业热度0.31"
    ]
   },
   {
-   "code": "603386",
-   "name": "骏亚科技",
+   "code": "603305",
+   "name": "旭升集团",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "元件",
+   "industry": "汽车零部",
+   "industry_heat": 1.0,
+   "score": 0.365,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.18,
+   "pos_note": "首板，轻仓埋伏",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度1.00"
+   ]
+  },
+  {
+   "code": "600178",
+   "name": "东安动力",
+   "path": "A-连板",
+   "zt_count": 1,
+   "industry": "汽车零部",
    "industry_heat": 1.0,
    "score": 0.364,
    "action": "✅ 关注买入",
@@ -316,44 +440,13 @@
    ]
   },
   {
-   "code": "001318",
-   "name": "阳光乳业",
-   "path": "A-连板",
-   "zt_count": 3,
-   "industry": "饮料乳品",
-   "industry_heat": 0.2,
-   "score": 0.305,
-   "action": "✅ 关注买入",
-   "gate_pass": true,
-   "gate_reason": "通过",
-   "pos_pct": 0.2,
-   "pos_note": "三板，半仓以内",
-   "stop_pct": -0.06,
-   "target_pct": 0.15,
-   "max_hold_days": 10,
-   "discipline": [
-    "⛔ 单只 ≤ 20% 仓位，总仓 ≤ 80%",
-    "🛑 硬止损 -6%（到价无条件砍，不补仓）",
-    "🎯 目标 +15% 或 题材退潮即走",
-    "⏱ 最大持仓 10 天，到期强制复盘",
-    "📝 买入前写一句理由 + 信号来源（不写不买）",
-    "🔥 今日已亏 -5% 熔断 → 关 APP"
-   ],
-   "matched": [
-    "连板数达标",
-    "封单达标",
-    "未炸板",
-    "行业热度0.20"
-   ]
-  },
-  {
-   "code": "603329",
-   "name": "上海雅仕",
+   "code": "603013",
+   "name": "亚普股份",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "物流",
-   "industry_heat": 0.8,
-   "score": 0.286,
+   "industry": "汽车零部",
+   "industry_heat": 1.0,
+   "score": 0.36,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -374,17 +467,17 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.80"
+    "行业热度1.00"
    ]
   },
   {
-   "code": "002889",
-   "name": "东方嘉盛",
+   "code": "001696",
+   "name": "宗申动力",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "物流",
-   "industry_heat": 0.8,
-   "score": 0.284,
+   "industry": "通用设备",
+   "industry_heat": 0.312,
+   "score": 0.35,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -405,17 +498,17 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.80"
+    "行业热度0.31"
    ]
   },
   {
-   "code": "000722",
-   "name": "湖南发展",
+   "code": "920690",
+   "name": "捷众科技",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "电力",
-   "industry_heat": 0.4,
-   "score": 0.247,
+   "industry": "汽车零部",
+   "industry_heat": 1.0,
+   "score": 0.345,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -436,27 +529,120 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.40"
+    "行业热度1.00"
+   ]
+  },
+  {
+   "code": "600418",
+   "name": "江淮汽车",
+   "path": "A-连板",
+   "zt_count": 1,
+   "industry": "商用车",
+   "industry_heat": 0.062,
+   "score": 0.326,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.18,
+   "pos_note": "首板，轻仓埋伏",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度0.06"
+   ]
+  },
+  {
+   "code": "601606",
+   "name": "长城军工",
+   "path": "A-连板",
+   "zt_count": 1,
+   "industry": "地面兵装",
+   "industry_heat": 0.125,
+   "score": 0.295,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.18,
+   "pos_note": "首板，轻仓埋伏",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度0.12"
+   ]
+  },
+  {
+   "code": "300411",
+   "name": "金盾股份",
+   "path": "A-连板",
+   "zt_count": 1,
+   "industry": "专用设备",
+   "industry_heat": 0.375,
+   "score": 0.281,
+   "action": "✅ 关注买入",
+   "gate_pass": true,
+   "gate_reason": "通过",
+   "pos_pct": 0.18,
+   "pos_note": "首板，轻仓埋伏",
+   "stop_pct": -0.08,
+   "target_pct": 0.16,
+   "max_hold_days": 10,
+   "discipline": [
+    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+    "🎯 目标 +16% 或 题材退潮即走",
+    "⏱ 最大持仓 10 天，到期强制复盘",
+    "📝 买入前写一句理由 + 信号来源（不写不买）",
+    "🔥 今日已亏 -5% 熔断 → 关 APP"
+   ],
+   "matched": [
+    "连板数达标",
+    "封单达标",
+    "未炸板",
+    "行业热度0.38"
    ]
   },
   {
    "code": "603999",
    "name": "读者传媒",
    "path": "A-连板",
-   "zt_count": 1,
+   "zt_count": 2,
    "industry": "出版",
-   "industry_heat": 0.2,
-   "score": 0.197,
+   "industry_heat": 0.188,
+   "score": 0.261,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
-   "pos_pct": 0.18,
-   "pos_note": "首板，轻仓埋伏",
+   "pos_pct": 0.25,
+   "pos_note": "二板，主仓位",
    "stop_pct": -0.08,
    "target_pct": 0.16,
    "max_hold_days": 10,
    "discipline": [
-    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "⛔ 单只 ≤ 25% 仓位，总仓 ≤ 80%",
     "🛑 硬止损 -8%（到价无条件砍，不补仓）",
     "🎯 目标 +16% 或 题材退潮即走",
     "⏱ 最大持仓 10 天，到期强制复盘",
@@ -467,17 +653,17 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.20"
+    "行业热度0.19"
    ]
   },
   {
-   "code": "000692",
-   "name": "惠天热电",
+   "code": "000099",
+   "name": "中信海直",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "电力",
-   "industry_heat": 0.4,
-   "score": 0.188,
+   "industry": "航空机场",
+   "industry_heat": 0.062,
+   "score": 0.234,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -498,17 +684,17 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.40"
+    "行业热度0.06"
    ]
   },
   {
-   "code": "600721",
-   "name": "百花医药",
+   "code": "600843",
+   "name": "上工申贝",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "医疗服务",
-   "industry_heat": 0.2,
-   "score": 0.185,
+   "industry": "专用设备",
+   "industry_heat": 0.375,
+   "score": 0.226,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -529,27 +715,27 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.20"
+    "行业热度0.38"
    ]
   },
   {
-   "code": "002836",
-   "name": "新宏泽",
+   "code": "600668",
+   "name": "尖峰集团",
    "path": "A-连板",
-   "zt_count": 1,
-   "industry": "包装印刷",
-   "industry_heat": 0.2,
-   "score": 0.173,
+   "zt_count": 2,
+   "industry": "水泥",
+   "industry_heat": 0.125,
+   "score": 0.201,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
-   "pos_pct": 0.18,
-   "pos_note": "首板，轻仓埋伏",
+   "pos_pct": 0.25,
+   "pos_note": "二板，主仓位",
    "stop_pct": -0.08,
    "target_pct": 0.16,
    "max_hold_days": 10,
    "discipline": [
-    "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+    "⛔ 单只 ≤ 25% 仓位，总仓 ≤ 80%",
     "🛑 硬止损 -8%（到价无条件砍，不补仓）",
     "🎯 目标 +16% 或 题材退潮即走",
     "⏱ 最大持仓 10 天，到期强制复盘",
@@ -560,17 +746,17 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.20"
+    "行业热度0.12"
    ]
   },
   {
-   "code": "002748",
-   "name": "世龙实业",
+   "code": "603173",
+   "name": "福斯达",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "化学原料",
-   "industry_heat": 0.2,
-   "score": 0.146,
+   "industry": "专用设备",
+   "industry_heat": 0.375,
+   "score": 0.201,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -591,17 +777,17 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.20"
+    "行业热度0.38"
    ]
   },
   {
-   "code": "603172",
-   "name": "万丰股份",
+   "code": "300045",
+   "name": "华力创通",
    "path": "A-连板",
    "zt_count": 1,
-   "industry": "化学制品",
-   "industry_heat": 0.2,
-   "score": 0.126,
+   "industry": "军工电子",
+   "industry_heat": 0.062,
+   "score": 0.2,
    "action": "✅ 关注买入",
    "gate_pass": true,
    "gate_reason": "通过",
@@ -622,7 +808,7 @@
     "连板数达标",
     "封单达标",
     "未炸板",
-    "行业热度0.20"
+    "行业热度0.06"
    ]
   }
  ]
