@@ -3163,14 +3163,42 @@
     "10d": null
    },
    "base_price": 13.01
+  },
+  {
+   "date": "2026-10-16",
+   "code": "000530",
+   "name": "冰山冷热",
+   "score": 0.385,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 3.02,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 7.62
+  },
+  {
+   "date": "2026-10-16",
+   "code": "001696",
+   "name": "宗申动力",
+   "score": 0.35,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 2.39,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 15.87
   }
  ],
  "summary": {
-  "total": 226,
+  "total": 228,
   "by_period": {
    "1d": {
-    "count": 226,
-    "win_rate": 62.4,
+    "count": 228,
+    "win_rate": 62.7,
     "avg_return": 2.71
    },
    "3d": {
