@@ -3191,15 +3191,57 @@
     "10d": null
    },
    "base_price": 15.87
+  },
+  {
+   "date": "2026-10-19",
+   "code": "002085",
+   "name": "万丰奥威",
+   "score": 0.506,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": -1.74,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 10.9
+  },
+  {
+   "date": "2026-10-19",
+   "code": "002164",
+   "name": "宁波东力",
+   "score": 0.272,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 14.69
+  },
+  {
+   "date": "2026-10-19",
+   "code": "603278",
+   "name": "大业股份",
+   "score": 0.262,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 10.9
   }
  ],
  "summary": {
-  "total": 228,
+  "total": 231,
   "by_period": {
    "1d": {
-    "count": 228,
-    "win_rate": 62.7,
-    "avg_return": 2.71
+    "count": 231,
+    "win_rate": 62.8,
+    "avg_return": 2.76
    },
    "3d": {
     "count": 95,
