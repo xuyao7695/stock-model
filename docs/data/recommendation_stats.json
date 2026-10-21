@@ -3233,15 +3233,99 @@
     "10d": null
    },
    "base_price": 10.9
+  },
+  {
+   "date": "2026-10-20",
+   "code": "603278",
+   "name": "大业股份",
+   "score": 0.583,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.99
+  },
+  {
+   "date": "2026-10-20",
+   "code": "600178",
+   "name": "东安动力",
+   "score": 0.449,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 9.99,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 12.41
+  },
+  {
+   "date": "2026-10-20",
+   "code": "300466",
+   "name": "赛摩智能",
+   "score": 0.359,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 1.5,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 8.64
+  },
+  {
+   "date": "2026-10-20",
+   "code": "600293",
+   "name": "三峡新材",
+   "score": 0.352,
+   "industry": "玻璃玻纤",
+   "returns": {
+    "1d": 9.95,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 4.32
+  },
+  {
+   "date": "2026-10-20",
+   "code": "002792",
+   "name": "通宇通讯",
+   "score": 0.34,
+   "industry": "通信设备",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 29.17
+  },
+  {
+   "date": "2026-10-20",
+   "code": "301313",
+   "name": "凡拓数创",
+   "score": 0.313,
+   "industry": "数字媒体",
+   "returns": {
+    "1d": 13.91,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 46.8
   }
  ],
  "summary": {
-  "total": 231,
+  "total": 237,
   "by_period": {
    "1d": {
-    "count": 231,
-    "win_rate": 62.8,
-    "avg_return": 2.76
+    "count": 237,
+    "win_rate": 63.7,
+    "avg_return": 2.92
    },
    "3d": {
     "count": 95,
