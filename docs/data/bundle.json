@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22 06:18:33",
+ "generated_at": "2026-10-23 06:12:29",
  "rules": {
   "max_single_position": 0.3,
   "max_total_position": 0.8,
@@ -10,8 +10,18 @@
   "max_holding_days": 10,
   "_comment": "风控参数可根据实盘反馈调整。修改后重启选股器生效。"
  },
- "today": "2026-10-22",
+ "today": "2026-10-23",
  "history_10days": [
+  {
+   "date": "2026-10-23",
+   "weekday": "五",
+   "has_scan": true,
+   "has_trades": false,
+   "scan_count": 6,
+   "advice_count": 6,
+   "trade_count": 0,
+   "scan_time": "2026-10-23 06:11:57"
+  },
   {
    "date": "2026-10-22",
    "weekday": "四",
@@ -99,19 +109,206 @@
    "advice_count": 6,
    "trade_count": 0,
    "scan_time": "2026-10-14 06:23:36"
-  },
-  {
-   "date": "2026-10-13",
-   "weekday": "二",
-   "has_scan": true,
-   "has_trades": false,
-   "scan_count": 6,
-   "advice_count": 6,
-   "trade_count": 0,
-   "scan_time": "2026-10-13 07:59:08"
   }
  ],
  "days_detail": [
+  {
+   "date": "2026-10-23",
+   "weekday": "五",
+   "scan_time": "2026-10-23 06:11:57",
+   "total_zt": 20,
+   "advices": [
+    {
+     "code": "000559",
+     "name": "万向钱潮",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "汽车零部",
+     "industry_heat": 0.571,
+     "score": 0.444,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度0.57"
+     ]
+    },
+    {
+     "code": "002535",
+     "name": "林州重机",
+     "path": "A-连板",
+     "zt_count": 2,
+     "industry": "专用设备",
+     "industry_heat": 1.0,
+     "score": 0.395,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.25,
+     "pos_note": "二板，主仓位",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 25% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度1.00"
+     ]
+    },
+    {
+     "code": "600838",
+     "name": "上海九百",
+     "path": "A-连板",
+     "zt_count": 3,
+     "industry": "一般零售",
+     "industry_heat": 0.429,
+     "score": 0.377,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.2,
+     "pos_note": "三板，半仓以内",
+     "stop_pct": -0.06,
+     "target_pct": 0.15,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 20% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -6%（到价无条件砍，不补仓）",
+      "🎯 目标 +15% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度0.43"
+     ]
+    },
+    {
+     "code": "603337",
+     "name": "杰克科技",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "专用设备",
+     "industry_heat": 1.0,
+     "score": 0.368,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度1.00"
+     ]
+    },
+    {
+     "code": "603859",
+     "name": "能科科技",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "IT服务Ⅱ",
+     "industry_heat": 0.714,
+     "score": 0.362,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度0.71"
+     ]
+    },
+    {
+     "code": "301699",
+     "name": "洛轴股份",
+     "path": "A-连板",
+     "zt_count": 1,
+     "industry": "通用设备",
+     "industry_heat": 0.571,
+     "score": 0.346,
+     "action": "✅ 关注买入",
+     "gate_pass": true,
+     "gate_reason": "通过",
+     "pos_pct": 0.18,
+     "pos_note": "首板，轻仓埋伏",
+     "stop_pct": -0.08,
+     "target_pct": 0.16,
+     "max_hold_days": 10,
+     "discipline": [
+      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
+      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
+      "🎯 目标 +16% 或 题材退潮即走",
+      "⏱ 最大持仓 10 天，到期强制复盘",
+      "📝 买入前写一句理由 + 信号来源（不写不买）",
+      "🔥 今日已亏 -5% 熔断 → 关 APP"
+     ],
+     "matched": [
+      "连板数达标",
+      "封单达标",
+      "未炸板",
+      "行业热度0.57"
+     ]
+    }
+   ],
+   "trades": [],
+   "trade_count": 0,
+   "advice_count": 6
+  },
   {
    "date": "2026-10-22",
    "weekday": "四",
@@ -1504,203 +1701,6 @@
       "封单达标",
       "未炸板",
       "行业热度0.50"
-     ]
-    }
-   ],
-   "trades": [],
-   "trade_count": 0,
-   "advice_count": 6
-  },
-  {
-   "date": "2026-10-13",
-   "weekday": "二",
-   "scan_time": "2026-10-13 07:59:08",
-   "total_zt": 20,
-   "advices": [
-    {
-     "code": "000823",
-     "name": "超声电子",
-     "path": "A-连板",
-     "zt_count": 1,
-     "industry": "元件",
-     "industry_heat": 1.0,
-     "score": 0.504,
-     "action": "✅ 关注买入",
-     "gate_pass": true,
-     "gate_reason": "通过",
-     "pos_pct": 0.18,
-     "pos_note": "首板，轻仓埋伏",
-     "stop_pct": -0.08,
-     "target_pct": 0.16,
-     "max_hold_days": 10,
-     "discipline": [
-      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
-      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
-      "🎯 目标 +16% 或 题材退潮即走",
-      "⏱ 最大持仓 10 天，到期强制复盘",
-      "📝 买入前写一句理由 + 信号来源（不写不买）",
-      "🔥 今日已亏 -5% 熔断 → 关 APP"
-     ],
-     "matched": [
-      "连板数达标",
-      "封单达标",
-      "未炸板",
-      "行业热度1.00"
-     ]
-    },
-    {
-     "code": "002579",
-     "name": "中京电子",
-     "path": "A-连板",
-     "zt_count": 1,
-     "industry": "元件",
-     "industry_heat": 1.0,
-     "score": 0.362,
-     "action": "✅ 关注买入",
-     "gate_pass": true,
-     "gate_reason": "通过",
-     "pos_pct": 0.18,
-     "pos_note": "首板，轻仓埋伏",
-     "stop_pct": -0.08,
-     "target_pct": 0.16,
-     "max_hold_days": 10,
-     "discipline": [
-      "⛔ 单只 ≤ 18% 仓位，总仓 ≤ 80%",
-      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
-      "🎯 目标 +16% 或 题材退潮即走",
-      "⏱ 最大持仓 10 天，到期强制复盘",
-      "📝 买入前写一句理由 + 信号来源（不写不买）",
-      "🔥 今日已亏 -5% 熔断 → 关 APP"
-     ],
-     "matched": [
-      "连板数达标",
-      "封单达标",
-      "未炸板",
-      "行业热度1.00"
-     ]
-    },
-    {
-     "code": "603096",
-     "name": "新经典",
-     "path": "A-连板",
-     "zt_count": 3,
-     "industry": "出版",
-     "industry_heat": 0.222,
-     "score": 0.344,
-     "action": "✅ 关注买入",
-     "gate_pass": true,
-     "gate_reason": "通过",
-     "pos_pct": 0.2,
-     "pos_note": "三板，半仓以内",
-     "stop_pct": -0.06,
-     "target_pct": 0.15,
-     "max_hold_days": 10,
-     "discipline": [
-      "⛔ 单只 ≤ 20% 仓位，总仓 ≤ 80%",
-      "🛑 硬止损 -6%（到价无条件砍，不补仓）",
-      "🎯 目标 +15% 或 题材退潮即走",
-      "⏱ 最大持仓 10 天，到期强制复盘",
-      "📝 买入前写一句理由 + 信号来源（不写不买）",
-      "🔥 今日已亏 -5% 熔断 → 关 APP"
-     ],
-     "matched": [
-      "连板数达标",
-      "封单达标",
-      "未炸板",
-      "行业热度0.22"
-     ]
-    },
-    {
-     "code": "002343",
-     "name": "慈文传媒",
-     "path": "A-连板",
-     "zt_count": 3,
-     "industry": "影视院线",
-     "industry_heat": 0.111,
-     "score": 0.334,
-     "action": "✅ 关注买入",
-     "gate_pass": true,
-     "gate_reason": "通过",
-     "pos_pct": 0.2,
-     "pos_note": "三板，半仓以内",
-     "stop_pct": -0.06,
-     "target_pct": 0.15,
-     "max_hold_days": 10,
-     "discipline": [
-      "⛔ 单只 ≤ 20% 仓位，总仓 ≤ 80%",
-      "🛑 硬止损 -6%（到价无条件砍，不补仓）",
-      "🎯 目标 +15% 或 题材退潮即走",
-      "⏱ 最大持仓 10 天，到期强制复盘",
-      "📝 买入前写一句理由 + 信号来源（不写不买）",
-      "🔥 今日已亏 -5% 熔断 → 关 APP"
-     ],
-     "matched": [
-      "连板数达标",
-      "封单达标",
-      "未炸板",
-      "行业热度0.11"
-     ]
-    },
-    {
-     "code": "001231",
-     "name": "农心科技",
-     "path": "A-连板",
-     "zt_count": 2,
-     "industry": "农化制品",
-     "industry_heat": 0.111,
-     "score": 0.296,
-     "action": "✅ 关注买入",
-     "gate_pass": true,
-     "gate_reason": "通过",
-     "pos_pct": 0.25,
-     "pos_note": "二板，主仓位",
-     "stop_pct": -0.08,
-     "target_pct": 0.16,
-     "max_hold_days": 10,
-     "discipline": [
-      "⛔ 单只 ≤ 25% 仓位，总仓 ≤ 80%",
-      "🛑 硬止损 -8%（到价无条件砍，不补仓）",
-      "🎯 目标 +16% 或 题材退潮即走",
-      "⏱ 最大持仓 10 天，到期强制复盘",
-      "📝 买入前写一句理由 + 信号来源（不写不买）",
-      "🔥 今日已亏 -5% 熔断 → 关 APP"
-     ],
-     "matched": [
-      "连板数达标",
-      "封单达标",
-      "未炸板",
-      "行业热度0.11"
-     ]
-    },
-    {
-     "code": "605136",
-     "name": "丽人丽妆",
-     "path": "A-连板",
-     "zt_count": 3,
-     "industry": "互联网电",
-     "industry_heat": 0.222,
-     "score": 0.286,
-     "action": "✅ 关注买入",
-     "gate_pass": true,
-     "gate_reason": "通过",
-     "pos_pct": 0.2,
-     "pos_note": "三板，半仓以内",
-     "stop_pct": -0.06,
-     "target_pct": 0.15,
-     "max_hold_days": 10,
-     "discipline": [
-      "⛔ 单只 ≤ 20% 仓位，总仓 ≤ 80%",
-      "🛑 硬止损 -6%（到价无条件砍，不补仓）",
-      "🎯 目标 +15% 或 题材退潮即走",
-      "⏱ 最大持仓 10 天，到期强制复盘",
-      "📝 买入前写一句理由 + 信号来源（不写不买）",
-      "🔥 今日已亏 -5% 熔断 → 关 APP"
-     ],
-     "matched": [
-      "连板数达标",
-      "封单达标",
-      "未炸板",
-      "行业热度0.22"
      ]
     }
    ],
