@@ -3317,20 +3317,48 @@
     "10d": null
    },
    "base_price": 46.8
+  },
+  {
+   "date": "2026-10-21",
+   "code": "603278",
+   "name": "大业股份",
+   "score": 0.69,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 10.01,
+    "3d": 33.06,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 13.19
+  },
+  {
+   "date": "2026-10-21",
+   "code": "002639",
+   "name": "雪人集团",
+   "score": 0.497,
+   "industry": "通用设备",
+   "returns": {
+    "1d": -1.19,
+    "3d": -10.08,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 15.18
   }
  ],
  "summary": {
-  "total": 237,
+  "total": 239,
   "by_period": {
    "1d": {
-    "count": 237,
-    "win_rate": 63.7,
-    "avg_return": 2.92
+    "count": 239,
+    "win_rate": 63.6,
+    "avg_return": 2.93
    },
    "3d": {
-    "count": 95,
-    "win_rate": 58.9,
-    "avg_return": 5.34
+    "count": 97,
+    "win_rate": 58.8,
+    "avg_return": 5.47
    },
    "5d": {
     "count": 48,
