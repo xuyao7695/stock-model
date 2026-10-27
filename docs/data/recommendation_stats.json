@@ -3345,20 +3345,76 @@
     "10d": null
    },
    "base_price": 15.18
+  },
+  {
+   "date": "2026-10-22",
+   "code": "002724",
+   "name": "海洋王",
+   "score": 0.492,
+   "industry": "照明设备",
+   "returns": {
+    "1d": 9.99,
+    "3d": 16.59,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.21
+  },
+  {
+   "date": "2026-10-22",
+   "code": "600293",
+   "name": "三峡新材",
+   "score": 0.472,
+   "industry": "玻璃玻纤",
+   "returns": {
+    "1d": -6.12,
+    "3d": -20.08,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.23
+  },
+  {
+   "date": "2026-10-22",
+   "code": "002249",
+   "name": "大洋电机",
+   "score": 0.461,
+   "industry": "电机Ⅱ",
+   "returns": {
+    "1d": 7.37,
+    "3d": 9.07,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 7.06
+  },
+  {
+   "date": "2026-10-22",
+   "code": "301023",
+   "name": "奕帆传动",
+   "score": 0.357,
+   "industry": "电机Ⅱ",
+   "returns": {
+    "1d": 7.64,
+    "3d": 0.22,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 32.48
   }
  ],
  "summary": {
-  "total": 239,
+  "total": 243,
   "by_period": {
    "1d": {
-    "count": 239,
-    "win_rate": 63.6,
-    "avg_return": 2.93
+    "count": 243,
+    "win_rate": 63.8,
+    "avg_return": 2.96
    },
    "3d": {
-    "count": 97,
-    "win_rate": 58.8,
-    "avg_return": 5.47
+    "count": 101,
+    "win_rate": 59.4,
+    "avg_return": 5.31
    },
    "5d": {
     "count": 48,
