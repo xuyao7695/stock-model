@@ -3401,20 +3401,188 @@
     "10d": null
    },
    "base_price": 32.48
+  },
+  {
+   "date": "2026-10-23",
+   "code": "600838",
+   "name": "上海九百",
+   "score": 0.377,
+   "industry": "一般零售",
+   "returns": {
+    "1d": 10.0,
+    "3d": 27.18,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 11.0
+  },
+  {
+   "date": "2026-10-23",
+   "code": "603337",
+   "name": "杰克科技",
+   "score": 0.368,
+   "industry": "专用设备",
+   "returns": {
+    "1d": 10.01,
+    "3d": 24.38,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 39.26
+  },
+  {
+   "date": "2026-10-23",
+   "code": "603859",
+   "name": "能科科技",
+   "score": 0.362,
+   "industry": "IT服务Ⅱ",
+   "returns": {
+    "1d": 3.44,
+    "3d": -2.78,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 43.56
+  },
+  {
+   "date": "2026-10-23",
+   "code": "301699",
+   "name": "洛轴股份",
+   "score": 0.346,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 1.44,
+    "3d": -0.09,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 33.42
+  },
+  {
+   "date": "2026-10-26",
+   "code": "603028",
+   "name": "赛福天",
+   "score": 0.57,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 9.39
+  },
+  {
+   "date": "2026-10-26",
+   "code": "603528",
+   "name": "多伦科技",
+   "score": 0.513,
+   "industry": "软件开发",
+   "returns": {
+    "1d": 10.06,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 8.95
+  },
+  {
+   "date": "2026-10-26",
+   "code": "603337",
+   "name": "杰克科技",
+   "score": 0.509,
+   "industry": "专用设备",
+   "returns": {
+    "1d": 2.78,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 43.19
+  },
+  {
+   "date": "2026-10-26",
+   "code": "603089",
+   "name": "正裕工业",
+   "score": 0.471,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": -10.02,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 13.08
+  },
+  {
+   "date": "2026-10-26",
+   "code": "002931",
+   "name": "锋龙股份",
+   "score": 0.393,
+   "industry": "通用设备",
+   "returns": {
+    "1d": -3.04,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 42.37
+  },
+  {
+   "date": "2026-10-26",
+   "code": "603901",
+   "name": "永创智能",
+   "score": 0.388,
+   "industry": "专用设备",
+   "returns": {
+    "1d": -1.69,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 10.63
+  },
+  {
+   "date": "2026-10-27",
+   "code": "600838",
+   "name": "上海九百",
+   "score": 0.549,
+   "industry": "一般零售",
+   "returns": {
+    "1d": 5.11,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 13.31
+  },
+  {
+   "date": "2026-10-27",
+   "code": "002708",
+   "name": "光洋股份",
+   "score": 0.476,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 9.99,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 17.22
   }
  ],
  "summary": {
-  "total": 243,
+  "total": 255,
   "by_period": {
    "1d": {
-    "count": 243,
-    "win_rate": 63.8,
-    "avg_return": 2.96
+    "count": 255,
+    "win_rate": 64.3,
+    "avg_return": 3.01
    },
    "3d": {
-    "count": 101,
-    "win_rate": 59.4,
-    "avg_return": 5.31
+    "count": 105,
+    "win_rate": 59.0,
+    "avg_return": 5.57
    },
    "5d": {
     "count": 48,
