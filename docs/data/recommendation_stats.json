@@ -3653,20 +3653,244 @@
     "10d": null
    },
    "base_price": 6.09
+  },
+  {
+   "date": "2026-10-29",
+   "code": "603131",
+   "name": "上海沪工",
+   "score": 0.439,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 10.03,
+    "3d": -2.38,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 15.95
+  },
+  {
+   "date": "2026-10-29",
+   "code": "001219",
+   "name": "青岛食品",
+   "score": 0.385,
+   "industry": "休闲食品",
+   "returns": {
+    "1d": 9.98,
+    "3d": 21.13,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 18.13
+  },
+  {
+   "date": "2026-10-29",
+   "code": "002862",
+   "name": "实丰文化",
+   "score": 0.385,
+   "industry": "文娱用品",
+   "returns": {
+    "1d": -9.99,
+    "3d": -20.04,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 16.92
+  },
+  {
+   "date": "2026-10-29",
+   "code": "002526",
+   "name": "山东矿机",
+   "score": 0.356,
+   "industry": "专用设备",
+   "returns": {
+    "1d": -10.06,
+    "3d": -12.8,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 3.28
+  },
+  {
+   "date": "2026-10-29",
+   "code": "002086",
+   "name": "东方海洋",
+   "score": 0.194,
+   "industry": "农产品加",
+   "returns": {
+    "1d": 10.12,
+    "3d": 33.07,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 2.57
+  },
+  {
+   "date": "2026-10-29",
+   "code": "301079",
+   "name": "邵阳液压",
+   "score": 0.183,
+   "industry": "工程机械",
+   "returns": {
+    "1d": 8.21,
+    "3d": 0.35,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 34.0
+  },
+  {
+   "date": "2026-10-30",
+   "code": "301520",
+   "name": "万邦医药",
+   "score": 0.316,
+   "industry": "医疗服务",
+   "returns": {
+    "1d": 4.38,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 60.06
+  },
+  {
+   "date": "2026-10-30",
+   "code": "002275",
+   "name": "桂林三金",
+   "score": 0.299,
+   "industry": "中药Ⅱ",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 14.98
+  },
+  {
+   "date": "2026-10-30",
+   "code": "000716",
+   "name": "黑芝麻",
+   "score": 0.266,
+   "industry": "休闲食品",
+   "returns": {
+    "1d": 4.77,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.24
+  },
+  {
+   "date": "2026-10-30",
+   "code": "000410",
+   "name": "沈阳机床",
+   "score": 0.22,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 10.06,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.37
+  },
+  {
+   "date": "2026-10-30",
+   "code": "000897",
+   "name": "津滨发展",
+   "score": 0.208,
+   "industry": "房地产开",
+   "returns": {
+    "1d": 1.09,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 1.84
+  },
+  {
+   "date": "2026-11-02",
+   "code": "600261",
+   "name": "阳光照明",
+   "score": 0.458,
+   "industry": "照明设备",
+   "returns": {
+    "1d": 10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 4.5
+  },
+  {
+   "date": "2026-11-02",
+   "code": "002827",
+   "name": "高争民爆",
+   "score": 0.393,
+   "industry": "化学制品",
+   "returns": {
+    "1d": 10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 56.98
+  },
+  {
+   "date": "2026-11-02",
+   "code": "301262",
+   "name": "海看股份",
+   "score": 0.35,
+   "industry": "广告营销",
+   "returns": {
+    "1d": 2.59,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 23.16
+  },
+  {
+   "date": "2026-11-02",
+   "code": "605577",
+   "name": "龙版传媒",
+   "score": 0.316,
+   "industry": "出版",
+   "returns": {
+    "1d": 10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 13.0
+  },
+  {
+   "date": "2026-11-02",
+   "code": "001230",
+   "name": "劲旅环境",
+   "score": 0.297,
+   "industry": "环境治理",
+   "returns": {
+    "1d": -9.52,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 18.8
   }
  ],
  "summary": {
-  "total": 261,
+  "total": 277,
   "by_period": {
    "1d": {
-    "count": 261,
-    "win_rate": 65.1,
-    "avg_return": 3.15
+    "count": 277,
+    "win_rate": 66.1,
+    "avg_return": 3.22
    },
    "3d": {
-    "count": 105,
-    "win_rate": 59.0,
-    "avg_return": 5.57
+    "count": 111,
+    "win_rate": 58.6,
+    "avg_return": 5.44
    },
    "5d": {
     "count": 48,
