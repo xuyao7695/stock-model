@@ -3877,13 +3877,97 @@
     "10d": null
    },
    "base_price": 18.8
+  },
+  {
+   "date": "2026-11-03",
+   "code": "002580",
+   "name": "圣阳股份",
+   "score": 0.438,
+   "industry": "电池",
+   "returns": {
+    "1d": 2.04,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 18.67
+  },
+  {
+   "date": "2026-11-03",
+   "code": "002058",
+   "name": "紫竹高科",
+   "score": 0.407,
+   "industry": "电池",
+   "returns": {
+    "1d": 9.99,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 21.13
+  },
+  {
+   "date": "2026-11-03",
+   "code": "002827",
+   "name": "高争民爆",
+   "score": 0.406,
+   "industry": "化学制品",
+   "returns": {
+    "1d": 10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 62.68
+  },
+  {
+   "date": "2026-11-03",
+   "code": "600892",
+   "name": "大晟文化",
+   "score": 0.352,
+   "industry": "游戏Ⅱ",
+   "returns": {
+    "1d": 9.98,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 4.81
+  },
+  {
+   "date": "2026-11-03",
+   "code": "000995",
+   "name": "皇台酒业",
+   "score": 0.285,
+   "industry": "白酒Ⅱ",
+   "returns": {
+    "1d": -4.66,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 17.16
+  },
+  {
+   "date": "2026-11-03",
+   "code": "002029",
+   "name": "七 匹 狼",
+   "score": 0.283,
+   "industry": "服装家纺",
+   "returns": {
+    "1d": -9.97,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 10.33
   }
  ],
  "summary": {
-  "total": 277,
+  "total": 283,
   "by_period": {
    "1d": {
-    "count": 277,
+    "count": 283,
     "win_rate": 66.1,
     "avg_return": 3.22
    },
