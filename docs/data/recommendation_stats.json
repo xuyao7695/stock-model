@@ -3961,13 +3961,97 @@
     "10d": null
    },
    "base_price": 10.33
+  },
+  {
+   "date": "2026-11-04",
+   "code": "002156",
+   "name": "通富微电",
+   "score": 0.5,
+   "industry": "半导体",
+   "returns": {
+    "1d": 6.9,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 42.33
+  },
+  {
+   "date": "2026-11-04",
+   "code": "002371",
+   "name": "北方华创",
+   "score": 0.488,
+   "industry": "半导体",
+   "returns": {
+    "1d": 4.76,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 535.5
+  },
+  {
+   "date": "2026-11-04",
+   "code": "002827",
+   "name": "高争民爆",
+   "score": 0.416,
+   "industry": "化学制品",
+   "returns": {
+    "1d": -1.71,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 68.95
+  },
+  {
+   "date": "2026-11-04",
+   "code": "601599",
+   "name": "浙文影业",
+   "score": 0.299,
+   "industry": "纺织制造",
+   "returns": {
+    "1d": 10.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 4.2
+  },
+  {
+   "date": "2026-11-04",
+   "code": "000096",
+   "name": "广聚能源",
+   "score": 0.285,
+   "industry": "炼化及贸",
+   "returns": {
+    "1d": 3.07,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 8.46
+  },
+  {
+   "date": "2026-11-04",
+   "code": "600892",
+   "name": "大晟文化",
+   "score": 0.265,
+   "industry": "游戏Ⅱ",
+   "returns": {
+    "1d": -2.84,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.29
   }
  ],
  "summary": {
-  "total": 283,
+  "total": 289,
   "by_period": {
    "1d": {
-    "count": 283,
+    "count": 289,
     "win_rate": 66.1,
     "avg_return": 3.22
    },
