@@ -4045,15 +4045,99 @@
     "10d": null
    },
    "base_price": 5.29
+  },
+  {
+   "date": "2026-11-05",
+   "code": "603381",
+   "name": "永臻股份",
+   "score": 0.558,
+   "industry": "光伏设备",
+   "returns": {
+    "1d": 10.03,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 18.85
+  },
+  {
+   "date": "2026-11-05",
+   "code": "301697",
+   "name": "贝特利",
+   "score": 0.449,
+   "industry": "光伏设备",
+   "returns": {
+    "1d": 20.0,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 30.5
+  },
+  {
+   "date": "2026-11-05",
+   "code": "601599",
+   "name": "浙文影业",
+   "score": 0.398,
+   "industry": "纺织制造",
+   "returns": {
+    "1d": 9.96,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 4.62
+  },
+  {
+   "date": "2026-11-05",
+   "code": "002578",
+   "name": "闽发铝业",
+   "score": 0.393,
+   "industry": "工业金属",
+   "returns": {
+    "1d": 10.11,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 4.55
+  },
+  {
+   "date": "2026-11-05",
+   "code": "600641",
+   "name": "先导基电",
+   "score": 0.351,
+   "industry": "半导体",
+   "returns": {
+    "1d": 1.23,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 31.02
+  },
+  {
+   "date": "2026-11-05",
+   "code": "002081",
+   "name": "金 螳 螂",
+   "score": 0.278,
+   "industry": "装修装饰",
+   "returns": {
+    "1d": -6.13,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 4.73
   }
  ],
  "summary": {
-  "total": 289,
+  "total": 295,
   "by_period": {
    "1d": {
-    "count": 289,
-    "win_rate": 66.1,
-    "avg_return": 3.22
+    "count": 295,
+    "win_rate": 66.4,
+    "avg_return": 3.31
    },
    "3d": {
     "count": 111,
