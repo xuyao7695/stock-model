@@ -4297,15 +4297,99 @@
     "10d": null
    },
    "base_price": 2.55
+  },
+  {
+   "date": "2026-11-10",
+   "code": "002708",
+   "name": "光洋股份",
+   "score": 0.503,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 24.17
+  },
+  {
+   "date": "2026-11-10",
+   "code": "603366",
+   "name": "日出东方",
+   "score": 0.453,
+   "industry": "厨卫电器",
+   "returns": {
+    "1d": 10.02,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 10.88
+  },
+  {
+   "date": "2026-11-10",
+   "code": "000678",
+   "name": "襄阳轴承",
+   "score": 0.402,
+   "industry": "汽车零部",
+   "returns": {
+    "1d": 10.02,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 19.26
+  },
+  {
+   "date": "2026-11-10",
+   "code": "002310",
+   "name": "东方新能",
+   "score": 0.365,
+   "industry": "电力",
+   "returns": {
+    "1d": 4.98,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 2.81
+  },
+  {
+   "date": "2026-11-10",
+   "code": "600327",
+   "name": "大东方",
+   "score": 0.334,
+   "industry": "一般零售",
+   "returns": {
+    "1d": 9.93,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 5.94
+  },
+  {
+   "date": "2026-11-10",
+   "code": "002931",
+   "name": "锋龙股份",
+   "score": 0.326,
+   "industry": "通用设备",
+   "returns": {
+    "1d": 10.01,
+    "3d": null,
+    "5d": null,
+    "10d": null
+   },
+   "base_price": 48.25
   }
  ],
  "summary": {
-  "total": 307,
+  "total": 313,
   "by_period": {
    "1d": {
-    "count": 307,
-    "win_rate": 67.1,
-    "avg_return": 3.41
+    "count": 313,
+    "win_rate": 67.7,
+    "avg_return": 3.52
    },
    "3d": {
     "count": 111,
